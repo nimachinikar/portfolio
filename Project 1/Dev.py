@@ -1,6 +1,3 @@
-#import pandas as pd
-
-#df = pd.read_csv('/DataSet/911.csv')
 import os
 import pandas as pd
 import numpy as np
