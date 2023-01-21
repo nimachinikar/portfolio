@@ -213,15 +213,5 @@ plt.show()
 #September seems to be the worst frequent time
 
 #How about Lightning
-plt=sns.countplot(x='Lighting',data=data.sort_values('Incident Time (24:00)'),palette='viridis')
+plt=sns.countplot(x='Lighting',data=data.sort_values('Incident Time (24:00)'),hue='Reason',palette='viridis')
 plt.show()
-
-sns.countplot(x = 'reserved_room_type', data = data.sort_values('reserved_room_type'), hue='hotel')
-
-
-sns.countplot(x='Lightning',data=data,hue='Reason',palette='viridis')
-# To relocate the legend
-plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-
-plt.figure(figsize=(20, 20))
-sns.heatmap(data.corr(), annot=True)
