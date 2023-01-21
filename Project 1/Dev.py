@@ -21,9 +21,9 @@ os.chdir('C:\GitHub\portfolio\DataSet')
 
 # Print the current working directory
 print("Current working directory: {0}".format(os.getcwd()))
-
 #import Dataset
 data = pd.read_csv('SGO-2021-01_Incident_Reports_ADS.csv')
+#https://www.nhtsa.gov/laws-regulations/standing-general-order-crash-reporting
 
 ## Data Exploration
 #overview Dataset
@@ -36,7 +36,7 @@ data.info(verbose=True, show_counts=True)
 #Size of DataSet
 data.shape
 
-##INVESTIGATING BAD DATA
+##Wrangling Data
 #1) Missing Value
 #496 rows, 122 columns
 #Check Missing Data
@@ -138,6 +138,31 @@ data['Report Submission Year'] = data['Report Year2']
 data['Report Submission Month'] = data['Report Month2']
 
 data.drop(['Report Year2', 'Report Month2'], axis = 1, inplace = True)
+##
+
+# There are two missing values in Incident Time, we will replace them with the average.
+#then we can change the format to time
+proxy=data
+proxy['Incident Time (24:00)']=proxy['Incident Time (24:00)'].str.strip()
+proxy=proxy[proxy['Incident Time (24:00)'].notna()]
+
+proxy['Incident Time'] = proxy['Incident Time (24:00)'].astype('datetime64[ns]')
+#A warning will be generated, but it can be ignored
+#Is the new field matching?
+(proxy['Incident Time']!=proxy['Incident Time (24:00)']).sum()
+#yes
+
+#Finding the average
+proxy=str((proxy['Incident Time'].mean()).time())[0:5]
+
+data['Incident Time'] = np.where((data['Incident Time (24:00)'].isna()), proxy, data['Incident Time (24:00)'])
+
+#verifying new value
+(data['Incident Time (24:00)']!=data['Incident Time']).sum()
+#2 = Expected Result
+#droping  Incident Time (24:00)
+data.drop(['Incident Time (24:00)'], axis = 1, inplace = True)
+##
 
 #Check Blank Data
 DataBlank = []
@@ -200,23 +225,52 @@ City
 Posted Speed Limit (MPH)', 'Lighting'
 'CP Any Air Bags Deployed?', 'CP Was Vehicle Towed?'
 
-#What is the brand with the most accident
+del(ColumnsToDrop)
+del(DataBlank)
+del(DataBlankUnique)
+del(DataBlank_original)
+del(DataBlank_not_unknown)
+del(OnlyBlank)
+del(PII_tbl)
+del(col)
+del(col_to_remove)
+del(column)
+del(i)
+del(match)
+del(no_match)
+del(proxy)
+del(ratio_match_nomatch)
+del(row)
+del(value)
+del(tbl)
+
+
+## ANALYSIS
+# As some analysis has been already done by the data source, I tried to answer a different question
+# What causes the incident?
+
+#Manufacture issue?
 plot=sns.countplot(x='Make',data=data,palette='viridis',order = data['Make'].value_counts().index)
 plt.setp(plot.get_xticklabels(), rotation=90)
 plt.show()
 
-#When do most of accidents occur?
+# We can see that some manufacture are way more present.
+# Let's keep in mind that, not all car brings the information about the incident the same way (automatic vs manual)
+# See under data on https://www.nhtsa.gov/laws-regulations/standing-general-order-crash-reporting )
+# and the car frequency is different
+
+#Lighting issue?
+plt=sns.countplot(x='Lighting',data=data.sort_values('Incident Time'),palette='viridis')
+plt.show()
+
+#When do most of accidents occur according to submissing period?
 byMonth = data.groupby('Report Submission Month').count()
 byMonth['Report ID'].plot()
 plt.show()
 
 #September seems to be the worst frequent time
-plt2.use('Qt5Agg')
+plt.use('Qt5Agg')
 
-
-#How about Lightning
-plt=sns.countplot(x='Lighting',data=data.sort_values('Incident Time (24:00)'),palette='viridis')
-plt.show()
 
 #Correlation
 plt.figure(figsize=(150, 150))
@@ -228,5 +282,14 @@ plot=sns.countplot(x = 'Crash With', data = data[-(data['Highest Injury Severity
 plt.setp(plot.get_xticklabels(), rotation=90)
 plt.show()
 
+import plotly.express as px
+df = px.data.gapminder()
+fig = px.scatter_geo(df, locations="iso_alpha", color="State",
+                     hover_name="State", size="pop",
+                     animation_frame="year",
+                     projection="natural earth")
+fig.show()
 
+Roadway Type Roadway Surface Posted Speed Limit (MPH) SV Pre-Crash Movement
+Mileage
 sns.heatmap(data,cmap='magma',linecolor='white',linewidths=1)
