@@ -34,7 +34,7 @@ data.info(verbose=True, show_counts=True)
 #Size of DataSet
 data.shape
 
-#INVESTIGATING BAD DATA
+##INVESTIGATING BAD DATA
 #1) Missing Value
 #496 rows, 122 columns
 #Check Missing Data
@@ -212,3 +212,7 @@ plt.show()
 #How about Lightning
 plt=sns.countplot(x='Lighting',data=data.sort_values('Incident Time (24:00)'),hue='Reason',palette='viridis')
 plt.show()
+
+#Correlation
+plt.figure(figsize=(20, 20))
+sns.heatmap(data.corr(), annot=True)
