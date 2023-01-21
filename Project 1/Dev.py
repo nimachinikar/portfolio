@@ -4,6 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_style('whitegrid')
+from datetime import datetime as dt
+
 
 
 #Displaying all columns
@@ -207,12 +209,24 @@ plt.show()
 byMonth = data.groupby('Report Submission Month').count()
 byMonth['Report ID'].plot()
 plt.show()
+
 #September seems to be the worst frequent time
+plt2.use('Qt5Agg')
+
 
 #How about Lightning
-plt=sns.countplot(x='Lighting',data=data.sort_values('Incident Time (24:00)'),hue='Reason',palette='viridis')
+plt=sns.countplot(x='Lighting',data=data.sort_values('Incident Time (24:00)'),palette='viridis')
 plt.show()
 
 #Correlation
-plt.figure(figsize=(20, 20))
+plt.figure(figsize=(150, 150))
 sns.heatmap(data.corr(), annot=True)
+plt.show()
+
+'Crash With' and 'Highest Injury Severity'
+plot=sns.countplot(x = 'Crash With', data = data[-(data['Highest Injury Severity'] == 'No Injuries Reported')].sort_values('Highest Injury Severity'), hue='Highest Injury Severity')
+plt.setp(plot.get_xticklabels(), rotation=90)
+plt.show()
+
+
+sns.heatmap(data,cmap='magma',linecolor='white',linewidths=1)
