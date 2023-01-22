@@ -317,7 +317,7 @@ plt.set_xticklabels(plt.get_xticklabels(), rotation=45, horizontalalignment='rig
 
 #Trough this analysis, we found out that September, 5-5.30pm in Intersections are the major cause of automatic car incident.
 
-#We would need to balance this conclusion by doing a distinction between: - Commercial/ Private driver
+#We would need to balance this conclusion by doing distinctions between: - Commercial/ Private driver
                                                                         # - ADS and ADAS vehicle
                                                                         # - Validating that no variable is skewed (most likely to be on the street than highway for example)
                                                                         # - Please see more limitations of the data under Data and Limitation on https://www.nhtsa.gov/laws-regulations/standing-general-order-crash-reporting
