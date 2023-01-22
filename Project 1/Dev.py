@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib as plt
 import seaborn as sns
 sns.set_style('whitegrid')
 from datetime import datetime as dt
@@ -155,6 +156,7 @@ proxy['Incident Time'] = proxy['Incident Time (24:00)'].astype('datetime64[ns]')
 #Finding the average
 proxy=str((proxy['Incident Time'].mean()).time())[0:5]
 
+#Replacing NA with AVG
 data['Incident Time'] = np.where((data['Incident Time (24:00)'].isna()), proxy, data['Incident Time (24:00)'])
 
 #verifying new value
@@ -210,21 +212,7 @@ for col in col_to_remove:
 # Check new Size of DataSet
  data.shape
 
-
-
-
-#
-list(data.columns.to_list())
-VIN
-Make
-Model
-Model Year
-Incident Time
-City
-'Roadway Type', 'Roadway Surface', 'Roadway Description',
-Posted Speed Limit (MPH)', 'Lighting'
-'CP Any Air Bags Deployed?', 'CP Was Vehicle Towed?'
-
+#Cleaning Environment
 del(ColumnsToDrop)
 del(DataBlank)
 del(DataBlankUnique)
@@ -247,6 +235,7 @@ del(tbl)
 
 ## ANALYSIS
 # As some analysis has been already done by the data source, I tried to answer a different question
+plt.use('Qt5Agg')
 # What causes the incident?
 
 #Manufacture issue?
@@ -260,36 +249,77 @@ plt.show()
 # and the car frequency is different
 
 #Lighting issue?
-plt=sns.countplot(x='Lighting',data=data.sort_values('Incident Time'),palette='viridis')
+plt=sns.countplot(x='Lighting',data=data,palette='viridis')
 plt.show()
+#Most of them seems to be during the daylight
 
-#When do most of accidents occur according to submissing period?
+
+#When do most of accidents occur according to submission date?
 byMonth = data.groupby('Report Submission Month').count()
 byMonth['Report ID'].plot()
 plt.show()
+#September seems to be the highest frequency
 
-#September seems to be the worst frequent time
-plt.use('Qt5Agg')
+#Is traffic a factor?
+
+data['Incident Time'] = pd.to_datetime(data['Incident Time'])
+data_viz=data
+
+#Creating 30min bins
+data_viz=data_viz.groupby(pd.Grouper(key='Incident Time', freq='30min')).count()
+#Formating time
+data_viz.index= pd.to_datetime(data_viz.index).strftime('%H,%M')
+
+#Plot
+plt=sns.lineplot(data=data_viz,x='Incident Time',y='Report ID' )
+plt.set_xticklabels(plt.get_xticklabels(), rotation=45, horizontalalignment='right')
+plt.set(title="Incident per 30min bracket (read 00:00 as 00:00 to 00:29)")
+plt.set(ylabel="Count of Incidents")
+#Major Pick by Evening rush hour
+
+#We could expect The Weather and the Surface Description to be a major factor as well, but according to the data description, most of the drives were done by commercial
+# The data is highly skewed towards dry days as we can see here
+data_viz = data.groupby('Roadway Surface').count()
+data_viz = data_viz.reset_index(level=0) #index as a column
+plt=sns.barplot(data_viz, x='Report ID', y='Roadway Surface', orient='h')
+plt.set(xlabel="Count of Incidents")
 
 
-#Correlation
-plt.figure(figsize=(150, 150))
-sns.heatmap(data.corr(), annot=True)
-plt.show()
+# Is the
+data_viz=data.groupby(['Roadway Type',pd.Grouper(key='Incident Time', freq='30min')]).count()
+data_viz = data_viz.reset_index(level=0)
 
-'Crash With' and 'Highest Injury Severity'
-plot=sns.countplot(x = 'Crash With', data = data[-(data['Highest Injury Severity'] == 'No Injuries Reported')].sort_values('Highest Injury Severity'), hue='Highest Injury Severity')
-plt.setp(plot.get_xticklabels(), rotation=90)
-plt.show()
+data_viz = data_viz.reset_index(level=0)
 
-import plotly.express as px
-df = px.data.gapminder()
-fig = px.scatter_geo(df, locations="iso_alpha", color="State",
-                     hover_name="State", size="pop",
-                     animation_frame="year",
-                     projection="natural earth")
-fig.show()
 
-Roadway Type Roadway Surface Posted Speed Limit (MPH) SV Pre-Crash Movement
-Mileage
-sns.heatmap(data,cmap='magma',linecolor='white',linewidths=1)
+data_viz = np.round(pd.pivot_table(data_viz, values='Report ID',
+                                index='Incident Time',
+                                columns='Roadway Type'),2)
+
+data_viz=data_viz.replace(np.nan,0)
+data_viz['Count']=data['Highway / Freeway']+data['Intersection']+data['Parking Lot']+data['Street']+data['Traffic Circle']+data['Unknown']
+
+
+#second
+
+data_viz=data.groupby(['Roadway Type',pd.Grouper(key='Incident Time', freq='30min')]).count()
+data_viz = data_viz.reset_index(level=0)
+data_viz.index= pd.to_datetime(data_viz.index).strftime('%H:%M')
+data_viz = data_viz.reset_index(level=0)
+
+plt=sns.scatterplot(data=data_viz,x='Incident Time', y='Report ID',hue='Roadway Type', size = 'Report ID',style='Roadway Type', palette='tab10')
+# Move the legend to an empty part of the plot
+plt.legend(loc='upper right')
+plt.set(ylabel="Count of Incidents")
+plt.set(title="Incident per 30min bracket (read 00:00 as 00:00 to 00:29) by Roadway Type")
+plt.set_xticklabels(plt.get_xticklabels(), rotation=45, horizontalalignment='right')
+#We can see that from 17h-17h30 a majority of the incident is due to Intersection
+
+#Trough this analysis, we found out that September, 5-5.30pm in Intersections are the major cause of automatic car incident.
+
+#We would need to balance this conclusion by doing a distinction between: - Commercial/ Private driver
+                                                                        # - ADS and ADAS vehicle
+                                                                        # - Validating that no variable is skewed (most likely to be on the street than highway for example)
+                                                                        # - Please see more limitations of the data under Data and Limitation on https://www.nhtsa.gov/laws-regulations/standing-general-order-crash-reporting
+
+# (without making any distinctions between Commercial/ Private and
