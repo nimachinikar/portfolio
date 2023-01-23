@@ -17,9 +17,11 @@
 -  &nbsp; PyCharm | Jupyter  | Git
 
 <h3>My Portfolio</h3>
--  &nbsp; [nimachinikar]([https://github.com/nimachinikar](https://github.com/nimachinikar/portfolio/tree/main/Project%201-Data%20Wrangling_Analysis_Python))
--  &nbsp; [nimachinikar]([https://github.com/nimachinikar](https://github.com/nimachinikar/portfolio/tree/main/Project%202%20-%20Webscraping_Python))
 
+-  &nbsp; [Project 1](https://github.com/nimachinikar/portfolio/tree/main/Project%201-Data%20Wrangling_Analysis_Python)
+-  &nbsp; [Project 2](https://github.com/nimachinikar/portfolio/tree/main/Project%202%20-%20Webscraping_Python)
+-  &nbsp; I’m currently learning DataBrick and DataFactory
+-  &nbsp; Exploring new technologies and developing software solutions and quick hacks.
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=nimachinikar&theme=submarine-flowers&border_radius=5&fire=DD701B)](https://git.io/streak-stats)
 
