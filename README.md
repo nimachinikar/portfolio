@@ -4,9 +4,10 @@
 <h3> 👨🏻‍💻 About Me </h3>
 
 -  &nbsp; I’m currently learning DataBrick and DataFactory
--  &nbsp; Exploring new technologies and developing software solutions and quick hacks.
--  &nbsp; Master's degree in Economics
 -  &nbsp; Studying to become Microsoft Certified: Azure Data Engineer Associate
+-  &nbsp; I'm looking for a [job](https://www.linkedin.com/nimachinikar/)!
+-  &nbsp; +5 years experience
+-  &nbsp; Master's degree in Economics
 -  &nbsp; When I'm not coding, find me on the mountain hiking/ snowboarding or on the beach playing volleyball
 
 <h3>🛠 Tech Stack</h3>
