@@ -16,6 +16,10 @@
 -  &nbsp; Tableau | Power BI | Microstrategy
 -  &nbsp; PyCharm | Jupyter  | Git
 
+<h3>My Portfolio</h3>
+-  &nbsp; [nimachinikar]([https://github.com/nimachinikar](https://github.com/nimachinikar/portfolio/tree/main/Project%201-Data%20Wrangling_Analysis_Python))
+-  &nbsp; [nimachinikar]([https://github.com/nimachinikar](https://github.com/nimachinikar/portfolio/tree/main/Project%202%20-%20Webscraping_Python))
+
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=nimachinikar&theme=submarine-flowers&border_radius=5&fire=DD701B)](https://git.io/streak-stats)
 
@@ -27,7 +31,7 @@
 
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kumawatlalit912&layout=compact&text_color=daf7dc&bg_color=151515)](https://github.com/nimachinikar/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nimachinikar&layout=compact&text_color=daf7dc&bg_color=151515)](https://github.com/nimachinikar/github-readme-stats)
 
 
 
