@@ -5,7 +5,7 @@
 
 -  &nbsp; I’m currently learning DataBrick and DataFactory
 -  &nbsp; Studying to become Microsoft Certified: Azure Data Engineer Associate
--  &nbsp; I'm looking for a [job](https://www.linkedin.com/nimachinikar/)!
+-  &nbsp; I'm looking for a [job](https://www.canva.com/design/DAEWIzIQqKE/kJ4JfHWt4kgnUrBDchDYyQ/view?utm_content=DAEWIzIQqKE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)!
 -  &nbsp; +5 years experience
 -  &nbsp; Master's degree in Economics
 -  &nbsp; When I'm not coding, find me on the mountain hiking/ snowboarding or on the beach playing volleyball
