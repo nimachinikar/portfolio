@@ -7,8 +7,11 @@ from datetime import datetime
 from pyspark.sql.functions import col
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import trim
-
-
+from pyspark.ml.stat import Correlation
+from pyspark.ml.feature import VectorAssembler
+#import seaborn as sns 
+#import matplotlib.pyplot as plt
+#import pandas as pd
 
 
 
@@ -94,28 +97,31 @@ ComparisonDF.show()
 
 
 #is it as much profitable in each part of the city?
-#TODO CONTINUE
-#regression?
-#How can you make the most money?
-#who is the richest Airbnb host in Vancouver?
-MasterOfAirbnb=listings.select('host_id').groupby('host_id').count().sort(col("count").desc())
 
-#host_id=231663454 with 75 properties (in Vancouver). 81 in total
-#But what if all his properties are most often empty! Let's find the real master of AirBnb in Vancouver
-#Calculating the revenue per year per properties
-RealMasterAirbnb=listings.select('id','price','availability_365','host_id').withColumn('RevenuePerId',(365-listings.availability_365)*listings.price)
+#Which is the most profitable property in Vancouver?
+PropertyMasterAirbnb=listings.withColumn('RevenuePerId',(365-listings.availability_365)*listings.price)
+PropertyMasterAirbnb.select('id','availability_365','price','RevenuePerId','neighbourhood_cleansed','property_type','accommodates').orderBy(col('RevenuePerId').desc()).show(1)
+#It's a property rented $3500 a night with an availability_365 of 28 days only! It is an entire property in Kensington-Cedar Cottage which accommodates up to 8 guests. 
 
 #Keeping only columns that matters to us
-RealMasterAirbnb=RealMasterAirbnb.select('host_id','RevenuePerId')
+MasterAirbnb=PropertyMasterAirbnb.select('host_id','RevenuePerId')
 #Grouping revenue by Host
-RealMasterAirbnb=RealMasterAirbnb.groupby('host_id').agg(func.sum('RevenuePerId').alias('RevenuePerHost')).sort(col("RevenuePerHost").desc())
+MasterAirbnb=MasterAirbnb.groupby('host_id').agg(func.sum('RevenuePerId').alias('RevenuePerHost'),\
+                                                 func.count('*').alias('NbProperties')\
+                                                 ).sort(col("RevenuePerHost").desc())
+MasterAirbnb.show(5)
 
-RealMasterAirbnb.show()
-#Still host_id=231663454 . He/she made  $2,755,984 in 2022!
+#Host_id=231663454 . He/she made  $2,755,984 in 2022 with 75 properties listed in Vancouver! (81 in total)
 
-#Review and income
+#What impacts your income?
+#Reviews?
 
-#when can you charge the most and the less by neighbourhood? join calendar to list (to have neighbourhood)
+print('Correlation between Revenue per property and reviews per months:' , PropertyMasterAirbnb.stat.corr('RevenuePerId','reviews_per_month'))
+#A higher amount of reviews is a sign of a poor accomodation. People are more likely to comment when it was negative experience
+
+print('Correlation between Revenue per property and number of reviews:' , PropertyMasterAirbnb.stat.corr('RevenuePerId','review_scores_rating'))
+#Seems as a lower value than expected. The data must be bias by accomodation which were rent for a small period of time and received very good reviews.
+
 
 #room_type
 
