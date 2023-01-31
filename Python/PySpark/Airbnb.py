@@ -4,6 +4,10 @@ from pyspark.sql.functions import countDistinct
 from pyspark.sql.functions import lit
 from pyspark.sql.functions import when
 from datetime import datetime
+from pyspark.sql.functions import col
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import trim
+
 
 
 
@@ -40,6 +44,15 @@ listings.printSchema()
 #Removing $ sign in price and transforming to double
 listings = listings.withColumn('price', func.regexp_replace('price', '[$,]', '').cast('double'))
 
+#Filtering for odd prices
+listings=listings.filter(listings.price<=20000)
+#Manual check. Above 20k a night, it's data quality issue
+oddlistings=listings.filter((listings.price>5000) & (listings.bedrooms <3))
+#Manual check. Ideally I'd do a regression to estimate their price instead of removing them
+
+#Removing the odd listings
+listings=listings.join(oddlistings,listings.id==oddlistings.id,'leftanti')
+
 #Since our comparison is only with 1bedroom and 3 bedrooms, lets narrow our data to that
 listings_subset=listings.filter(listings.bedrooms.isin(1,3))
 
@@ -55,11 +68,15 @@ avg30=listings_subset.withColumn("availability_30",func.col("availability_30").c
 avg30.show()
 
 #What is the average price per night 
-avgprc=listings_subset.select('IsDowntown','bedrooms','price').groupby('IsDowntown','bedrooms').agg(func.round(func.mean('price'),2).alias('price_avg'))
+avgprc=listings_subset.select('IsDowntown','bedrooms','price')\
+                        .groupby('IsDowntown','bedrooms')\
+                        .agg(func.round(func.mean('price'),2).alias('price_avg'))
 avgprc.show()
 
 #Airbnb Revenue per month     
-AirbnbDF=avg30.join(avgprc, (avg30.IsDowntown==avgprc.IsDowntown) & (avg30.bedrooms == avgprc.bedrooms),'inner').withColumn('Income_avg',(30-avg30.availability_30_avg)*avgprc.price_avg).select(avg30.IsDowntown,avg30.bedrooms,'availability_30_avg','price_avg','Income_avg')
+AirbnbDF=avg30.join(avgprc, (avg30.IsDowntown==avgprc.IsDowntown) & (avg30.bedrooms == avgprc.bedrooms),'inner')\
+                .withColumn('Income_avg',(30-avg30.availability_30_avg)*avgprc.price_avg)\
+                .select(avg30.IsDowntown,avg30.bedrooms,'availability_30_avg','price_avg','Income_avg')
 
 #Comparing Airbnb and Rental Revenues
 ComparisonDF=AirbnbDF.join(RefDF, (AirbnbDF.IsDowntown==RefDF.IsDowntown) & (AirbnbDF.bedrooms == RefDF.bedrooms),'inner')\
@@ -75,10 +92,26 @@ ComparisonDF.show()
 #taking into account vacancy by neighbourhood:  https://www03.cmhc-schl.gc.ca/hmip-pimh/en/TableMapChart/Table?TableId=2.1.31.3&GeographyId=2410&GeographyTypeId=3&DisplayAs=Table&GeograghyName=Vancouver#Total
 #taxation different between airbnb and renting?
 
+
+#is it as much profitable in each part of the city?
 #TODO CONTINUE
 #regression?
 #How can you make the most money?
-#who is the richest Airbnb host in Vancouver? +investigation
+#who is the richest Airbnb host in Vancouver?
+MasterOfAirbnb=listings.select('host_id').groupby('host_id').count().sort(col("count").desc())
+
+#host_id=231663454 with 75 properties (in Vancouver). 81 in total
+#But what if all his properties are most often empty! Let's find the real master of AirBnb in Vancouver
+#Calculating the revenue per year per properties
+RealMasterAirbnb=listings.select('id','price','availability_365','host_id').withColumn('RevenuePerId',(365-listings.availability_365)*listings.price)
+
+#Keeping only columns that matters to us
+RealMasterAirbnb=RealMasterAirbnb.select('host_id','RevenuePerId')
+#Grouping revenue by Host
+RealMasterAirbnb=RealMasterAirbnb.groupby('host_id').agg(func.sum('RevenuePerId').alias('RevenuePerHost')).sort(col("RevenuePerHost").desc())
+
+RealMasterAirbnb.show()
+#Still host_id=231663454 . He/she made  $2,755,984 in 2022!
 
 #Review and income
 
