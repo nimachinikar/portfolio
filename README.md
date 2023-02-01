@@ -23,9 +23,9 @@
 
 -  &nbsp; [PySpark Project](https://github.com/nimachinikar/portfolio/tree/main/Python/PySpark): Analyzing Airbnb Revenue in Vancouver
 
--  &nbsp; [Data Wrangling Project](https://github.com/nimachinikar/portfolio/tree/main/Python/Wrangling_Analysis): Analyzing automatic driving vehicles' accidents 
+-  &nbsp; [Data Wrangling Project](https://github.com/nimachinikar/portfolio/tree/main/Python/Data%20Wrangling): Analyzing automatic driving vehicles' accidents 
 
--  &nbsp; [Webscrapping project](https://github.com/nimachinikar/portfolio/tree/main/Python/Webscraping): Collecting Data from Zillow.ca
+-  &nbsp; [Webscrapping Project](https://github.com/nimachinikar/portfolio/tree/main/Python/Webscraping): Collecting Data from Zillow.ca
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=nimachinikar&theme=submarine-flowers&border_radius=5&fire=DD701B)](https://git.io/streak-stats)
 
