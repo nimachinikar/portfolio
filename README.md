@@ -21,8 +21,11 @@
 
 <h3>My Portfolio</h3>
 
--  &nbsp; [Project 1](https://github.com/nimachinikar/portfolio/tree/main/Project%201-Data%20Wrangling_Analysis_Python): Analyzing automatic driving vehicles' accidents 
--  &nbsp; [Project 2](https://github.com/nimachinikar/portfolio/tree/main/Project%202%20-%20Webscraping_Python): Collecting Data from Zillow.ca
+-  &nbsp; [PySpark Project](https://github.com/nimachinikar/portfolio/tree/main/Python/PySpark): Analyzing Airbnb Revenue in Vancouver
+
+-  &nbsp; [Data Wrangling Project](https://github.com/nimachinikar/portfolio/tree/main/Python/Data%20Wrangling): Analyzing automatic driving vehicles' accidents 
+
+-  &nbsp; [Webscrapping Project](https://github.com/nimachinikar/portfolio/tree/main/Python/Webscraping): Collecting Data from Zillow.ca
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=nimachinikar&theme=submarine-flowers&border_radius=5&fire=DD701B)](https://git.io/streak-stats)
 
