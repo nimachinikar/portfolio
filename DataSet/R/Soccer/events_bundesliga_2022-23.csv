@@ -1,0 +1,1824 @@
+event_id,match_id,team,event_team,event_time,event_type,action_player_1,action_player_2
+1,1,Bayern Munich,away, 35 ,Yellow card, Jamal Musiala ,
+2,1,Bayern Munich,away, 37 ,Goal, Eric Maxim Choupo-Moting , Serge Gnabry 
+3,1,RB Leipzig,home, 41 ,Yellow card, Xaver Schlager ,
+4,1,RB Leipzig,home, 52 ,Goal, Marcel Halstenberg , Dominik Szoboszlai 
+5,1,Bayern Munich,away, 52 ,Yellow card, Leon Goretzka ,
+6,1,Bayern Munich,away, 66 ,Yellow card, Dayot Upamecano ,
+7,1,RB Leipzig,home, 67 ,Substitution, Timo Werner , Emil Forsberg 
+8,1,Bayern Munich,away, 68 ,Substitution, Kingsley Coman , Jamal Musiala 
+9,1,RB Leipzig,home, 71 ,Yellow card, Konrad Laimer ,
+10,1,RB Leipzig,home, 82 ,Substitution, Amadou Haidara , Dani Olmo 
+11,1,Bayern Munich,away, 83 ,Substitution, Thomas Müller , Serge Gnabry 
+12,1,RB Leipzig,home, 83 ,Substitution, Lukas Klostermann , Mohamed Simakan 
+13,1,Bayern Munich,away, 85 ,Substitution, Mathys Tel , Eric Maxim Choupo-Moting 
+14,1,RB Leipzig,home, 91 ,Substitution, David Raum , Marcel Halstenberg 
+15,2,Hoffenheim,away, 7 ,Yellow card, Ozan Kabak ,
+16,2,1. FC Köln,home, 13 ,Goal, Florian Kainz , Linton Maina 
+17,2,Hoffenheim,away, 35 ,Goal, Jacob Bruun Larsen , Christoph Baumgartner 
+18,2,Hoffenheim,away, 45 ,Substitution, Kevin Akpoguma , Stanley Nsoki 
+19,2,1. FC Köln,home, 51 ,Yellow card, Ondrej Duda ,
+20,2,Hoffenheim,away, 57 ,Substitution, Andrej Kramarić , Sebastian Rudy 
+21,2,Hoffenheim,away, 62 ,Substitution, Eduardo Quaresma , Kevin Vogt 
+22,2,1. FC Köln,home, 72 ,Substitution, Kingsley Schindler , Linton Maina 
+23,2,Hoffenheim,away, 74 ,Substitution, Georginio Rutter , Jacob Bruun Larsen 
+24,2,Hoffenheim,away, 74 ,Substitution, Angelo Stiller , Dennis Geiger 
+25,2,1. FC Köln,home, 80 ,Substitution, Mark Uth , Ondrej Duda 
+26,2,1. FC Köln,home, 80 ,Substitution, Florian Dietz , Steffen Tigges 
+27,2,Hoffenheim,away, 87 ,Second yellow card, Ozan Kabak ,
+28,2,1. FC Köln,home, 92 ,Substitution, Sargis Adamyan , Florian Dietz 
+29,3,Schalke 04,home, 18 ,Yellow card, Sebastian Polter ,
+30,3,Schalke 04,home, 34 ,Substitution, Kerim Çalhanoğlu , Thomas Ouwejan 
+31,3,SC Freiburg,away, 41 ,Yellow card, Matthias Ginter ,
+32,3,SC Freiburg,away, 46 ,Goal, Vincenzo Grifo , Maximilian Eggestein 
+33,3,Schalke 04,home, 56 ,Substitution, Tobias Mohr , Kenan Karaman 
+34,3,Schalke 04,home, 56 ,Substitution, Simon Terodde , Sebastian Polter 
+35,3,SC Freiburg,away, 61 ,Penalty, Vincenzo Grifo , Penalty 
+36,3,SC Freiburg,away, 69 ,Substitution, Lucas Höler , Michael Gregoritsch 
+37,3,SC Freiburg,away, 69 ,Substitution, Daniel-Kofi Kyereh , Jeong Woo-yeong 
+38,3,Schalke 04,home, 73 ,Yellow card, Tom Krauß ,
+39,3,SC Freiburg,away, 76 ,Substitution, Kevin Schade , Ritsu Dōan 
+40,3,SC Freiburg,away, 76 ,Substitution, Noah Weißhaupt , Vincenzo Grifo 
+41,3,Schalke 04,home, 81 ,Substitution, Danny Latza , Tom Krauß 
+42,3,SC Freiburg,away, 85 ,Substitution, Kiliann Sildillia , Lukas Kübler 
+43,3,SC Freiburg,away, 88 ,Yellow card, Christian Günter ,
+44,3,Schalke 04,home, 90 ,Yellow card, Maya Yoshida ,
+45,4,1. FC Union Berlin,home, 30 ,Disallowed goal,Disallowed goal,
+46,4,M'gladbach,away, 33 ,Goal, Nico Elvedi , Lars Stindl 
+47,4,1. FC Union Berlin,home, 59 ,Substitution, Sven Michel , Jordan Siebatcheu 
+48,4,1. FC Union Berlin,home, 59 ,Substitution, Christopher Trimmel , Tymoteusz Puchacz 
+49,4,1. FC Union Berlin,home, 59 ,Substitution, Genki Haraguchi , András Schäfer 
+50,4,1. FC Union Berlin,home, 64 ,Yellow card, Sven Michel ,
+51,4,M'gladbach,away, 67 ,Yellow card, Marcus Thuram ,
+52,4,M'gladbach,away, 74 ,Substitution, Patrick Herrmann , Nathan Ngoumou 
+53,4,M'gladbach,away, 74 ,Substitution, Luca Netz , Alassane Plea 
+54,4,1. FC Union Berlin,home, 74 ,Substitution, Jamie Leweling , Janik Haberer 
+55,4,1. FC Union Berlin,home, 74 ,Substitution, Kevin Behrens , Sheraldo Becker 
+56,4,1. FC Union Berlin,home, 79 ,Goal, Kevin Behrens , Diogo Leite 
+57,4,M'gladbach,away, 79 ,Yellow card, Tobias Sippel ,
+58,4,M'gladbach,away, 85 ,Substitution, Yvandro Borges Sanches , Lars Stindl 
+59,4,1. FC Union Berlin,home, 87 ,Disallowed goal,Disallowed goal,
+60,4,1. FC Union Berlin,home, 91 ,Yellow card, Julian Ryerson ,
+61,4,M'gladbach,away, 91 ,Substitution, Tony Jantschke , Ramy Bensebaïni 
+62,4,1. FC Union Berlin,home, 95 ,Yellow card, Christopher Trimmel ,
+63,4,1. FC Union Berlin,home, 97 ,Goal, Danilho Doekhi , Jamie Leweling 
+64,5,Eintracht Frankfurt,home, 16 ,Yellow card, Luca Pellegrini ,
+65,5,Borussia Dortmund,away, 20 ,Goal, Julian Brandt , Donyell Malen 
+66,5,Eintracht Frankfurt,home, 26 ,Goal, Daichi Kamada , Randal Kolo Muani 
+67,5,Borussia Dortmund,away, 52 ,Goal, Jude Bellingham , Youssoufa Moukoko 
+68,5,Eintracht Frankfurt,home, 59 ,Yellow card, Jesper Lindstrøm ,
+69,5,Borussia Dortmund,away, 61 ,Substitution, Giovanni Reyna , Donyell Malen 
+70,5,Borussia Dortmund,away, 61 ,Substitution, Emre Can , Julian Brandt 
+71,5,Borussia Dortmund,away, 61 ,Substitution, Anthony Modeste , Youssoufa Moukoko 
+72,5,Borussia Dortmund,away, 66 ,Yellow card, Salih Özcan ,
+73,5,Borussia Dortmund,away, 69 ,Substitution, Marius Wolf , Karim Adeyemi 
+74,5,Borussia Dortmund,away, 70 ,Yellow card, Emre Can ,
+75,5,Eintracht Frankfurt,home, 72 ,Substitution, Djibril Sow , Sebastian Rode 
+76,5,Eintracht Frankfurt,home, 77 ,Substitution, Lucas Alario , Jesper Lindstrøm 
+77,5,Borussia Dortmund,away, 81 ,Yellow card, Mats Hummels ,
+78,5,Eintracht Frankfurt,home, 84 ,Substitution, Rafael Borré , Daichi Kamada 
+79,5,Eintracht Frankfurt,home, 92 ,Yellow card, Sebastian Rode ,
+80,5,Eintracht Frankfurt,home, 95 ,Yellow card, Tuta ,
+81,5,Borussia Dortmund,away, 95 ,Yellow card, Giovanni Reyna ,
+82,5,Eintracht Frankfurt,home, 95 ,Yellow card, Kevin Trapp ,
+83,5,Borussia Dortmund,away, 95 ,Yellow card, Jude Bellingham ,
+84,6,Augsburg,away, 4 ,Goal, Florian Niederlechner , Fredrik Jensen 
+85,6,Augsburg,away, 13 ,Yellow card, Carlos Gruezo ,
+86,6,VfB Stuttgart,home, 15 ,Goal, Sehrou Guirassy , Borna Sosa 
+87,6,Augsburg,away, 25 ,Substitution, Lukas Petkov , Ruben Vargas 
+88,6,VfB Stuttgart,home, 66 ,Substitution, Tiago Tomás , Silas Katompa Mvumpa 
+89,6,VfB Stuttgart,home, 76 ,Substitution, Lilian Egloff , Chris Führich 
+90,6,Augsburg,away, 78 ,Yellow card, Elvis Rexhbeçaj ,
+91,6,Augsburg,away, 79 ,Substitution, Felix Uduokhai , Mads Pedersen 
+92,6,VfB Stuttgart,home, 91 ,Goal, Waldemar Anton , Tiago Tomás 
+93,6,Augsburg,away, 93 ,Substitution, Arne Maier , Carlos Gruezo 
+94,6,Augsburg,away, 93 ,Substitution, Daniel Caligiuri , Lukas Petkov 
+95,6,VfB Stuttgart,home, 95 ,Yellow card, Luca Pfeiffer ,
+96,6,VfB Stuttgart,home, 95 ,Substitution, Atakan Karazor , Luca Pfeiffer 
+97,6,VfB Stuttgart,home, 95 ,Substitution, Pascal Stenzel , Waldemar Anton 
+98,7,Bayer Leverkusen,away, 26 ,Yellow card, Edmond Tapsoba ,
+99,7,Bayer Leverkusen,away, 31 ,Yellow card, Piero Hincapié ,
+100,7,RB Leipzig,home, 32 ,Goal, Christopher Nkunku , Dominik Szoboszlai 
+101,7,RB Leipzig,home, 35 ,Yellow card, Kevin Kampl ,
+102,7,RB Leipzig,home, 45 ,Substitution, Joško Gvardiol , Mohamed Simakan 
+103,7,RB Leipzig,home, 45 ,Substitution, Amadou Haidara , Kevin Kampl 
+104,7,Bayer Leverkusen,away, 54 ,Substitution, Jeremie Frimpong , Timothy Fosu-Mensah 
+105,7,Bayer Leverkusen,away, 57 ,Yellow card, Robert Andrich ,
+106,7,Bayer Leverkusen,away, 65 ,Substitution, Mitchel Bakker , Daley Sinkgraven 
+107,7,Bayer Leverkusen,away, 65 ,Substitution, Exequiel Palacios , Nadiem Amiri 
+108,7,Bayer Leverkusen,away, 65 ,Substitution, Patrik Schick , Adam Hložek 
+109,7,RB Leipzig,home, 71 ,Substitution, Marcel Halstenberg , David Raum 
+110,7,RB Leipzig,home, 71 ,Substitution, Dani Olmo , Dominik Szoboszlai 
+111,7,RB Leipzig,home, 76 ,Yellow card, Abdou Diallo ,
+112,7,Bayer Leverkusen,away, 77 ,Substitution, Callum Hudson-Odoi , Amine Adli 
+113,7,RB Leipzig,home, 83 ,Goal, Timo Werner , Amadou Haidara 
+114,7,RB Leipzig,home, 84 ,Substitution, André Silva , Christopher Nkunku 
+115,7,RB Leipzig,home, 86 ,Yellow card, Benjamin Henrichs ,
+116,8,Bayern Munich,home, 5 ,Goal, Serge Gnabry , Sadio Mané 
+117,8,Bayern Munich,home, 28 ,Goal, Jamal Musiala , Eric Maxim Choupo-Moting 
+118,8,Mainz 05,away, 34 ,Yellow card, Edimilson Fernandes ,
+119,8,Bayern Munich,home, 43 ,Missed penalty, Sadio Mané , Missed penalty 
+120,8,Bayern Munich,home, 43 ,Goal, Sadio Mané ,
+121,8,Mainz 05,away, 48 ,Missed penalty, Jonathan Burkardt , Missed penalty 
+122,8,Mainz 05,away, 49 ,Goal, Silvan Widmer , Aarón Martin 
+123,8,Bayern Munich,home, 45 ,Substitution, Benjamin Pavard , Matthijs de Ligt 
+124,8,Bayern Munich,home, 57 ,Goal, Leon Goretzka , Sadio Mané 
+125,8,Bayern Munich,home, 60 ,Substitution, Kingsley Coman , Serge Gnabry 
+126,8,Bayern Munich,home, 60 ,Substitution, Marcel Sabitzer , Leon Goretzka 
+127,8,Mainz 05,away, 62 ,Substitution, Aymen Barkok , Anton Stach 
+128,8,Mainz 05,away, 62 ,Substitution, Marcus Ingvartsen , Jonathan Burkardt 
+129,8,Mainz 05,away, 62 ,Substitution, Angelo Fulgini , Lee Jae-sung 
+130,8,Mainz 05,away, 67 ,Substitution, Stefan Bell , Edimilson Fernandes 
+131,8,Bayern Munich,home, 72 ,Substitution, Ryan Gravenberch , Jamal Musiala 
+132,8,Bayern Munich,home, 76 ,Substitution, Mathys Tel , Sadio Mané 
+133,8,Mainz 05,away, 76 ,Substitution, Delano Burgzorg , Karim Onisiwo 
+134,8,Bayern Munich,home, 79 ,Goal, Mathys Tel , Marcel Sabitzer 
+135,8,Mainz 05,away, 82 ,Goal, Marcus Ingvartsen , Delano Burgzorg 
+136,8,Bayern Munich,home, 86 ,Goal, Eric Maxim Choupo-Moting , Kingsley Coman 
+137,8,Bayern Munich,home, 88 ,Yellow card, Benjamin Pavard ,
+138,9,VfL Wolfsburg,home, 24 ,Yellow card, Sebastiaan Bornauw ,
+139,9,VfL Wolfsburg,home, 27 ,Goal, Felix Nmecha , Maximilian Arnold 
+140,9,VfL Wolfsburg,home, 35 ,Goal, Ridle Baku , Patrick Wimmer 
+141,9,VfL Bochum,away, 45 ,Substitution, Silvère Ganvoula , Ivan Ordets 
+142,9,VfL Bochum,away, 57 ,Yellow card, Dominique Heintz ,
+143,9,VfL Bochum,away, 58 ,Substitution, Simon Zoller , Philipp Förster 
+144,9,VfL Wolfsburg,home, 58 ,Goal, Felix Nmecha , Maximilian Arnold 
+145,9,VfL Bochum,away, 59 ,Substitution, Gerrit Holtmann , Jordi Osei-Tutu 
+146,9,VfL Wolfsburg,home, 67 ,Substitution, Omar Marmoush , Patrick Wimmer 
+147,9,VfL Bochum,away, 73 ,Substitution, Tim Oermann , Philipp Hofmann 
+148,9,VfL Wolfsburg,home, 74 ,Substitution, Jonas Wind , Lukas Nmecha 
+149,9,VfL Wolfsburg,home, 74 ,Substitution, Mattias Svanberg , Felix Nmecha 
+150,9,VfL Bochum,away, 74 ,Substitution, Constantinos Stafylidis , Christopher Antwi-Adjei 
+151,9,VfL Wolfsburg,home, 80 ,Goal, Jonas Wind , Paulo Otávio 
+152,9,VfL Wolfsburg,home, 81 ,Substitution, Kilian Fischer , Ridle Baku 
+153,9,VfL Wolfsburg,home, 81 ,Substitution, Josip Brekalo , Jakub Kamiński 
+154,10,Hertha BSC,away, 17 ,Yellow card, Wilfried Kanga ,
+155,10,Hertha BSC,away, 32 ,Substitution, Jean Boëtius , Stevan Jovetic 
+156,10,Hertha BSC,away, 44 ,Yellow card, Dodi Lukebakio ,
+157,10,Werder Bremen,home, 55 ,Yellow card, Mitchell Weiser ,
+158,10,Hertha BSC,away, 58 ,Yellow card, Suat Serdar ,
+159,10,Werder Bremen,home, 60 ,Yellow card, Niklas Stark ,
+160,10,Werder Bremen,home, 64 ,Substitution, Christian Groß , Leonardo Bittencourt 
+161,10,Hertha BSC,away, 72 ,Substitution, Ivan Šunjić , Suat Serdar 
+162,10,Hertha BSC,away, 72 ,Substitution, Davie Selke , Wilfried Kanga 
+163,10,Hertha BSC,away, 72 ,Substitution, Chidera Ejuke , Marco Richter 
+164,10,Werder Bremen,home, 83 ,Substitution, Jens Stage , Ilia Gruev 
+165,10,Werder Bremen,home, 83 ,Substitution, Felix Agu , Mitchell Weiser 
+166,10,Hertha BSC,away, 84 ,Substitution, Derry Scherhant , Dodi Lukebakio 
+167,10,Werder Bremen,home, 85 ,Goal, Niclas Füllkrug , Anthony Jung 
+168,10,Werder Bremen,home, 92 ,Substitution, Oliver Burke , Marvin Ducksch 
+169,11,Schalke 04,away, 16 ,Disallowed goal,Disallowed goal,
+170,11,Hertha BSC,home, 45 ,Substitution, Marco Richter , Chidera Ejuke 
+171,11,Hertha BSC,home, 49 ,Goal, Lucas Tousart ,
+172,11,Schalke 04,away, 59 ,Substitution, Danny Latza , Tom Krauß 
+173,11,Schalke 04,away, 59 ,Substitution, Florent Mollet , Dominick Drexler 
+174,11,Hertha BSC,home, 73 ,Substitution, Ivan Šunjić , Suat Serdar 
+175,11,Schalke 04,away, 73 ,Substitution, Kenan Karaman , Mehmet Aydin 
+176,11,Hertha BSC,home, 75 ,Yellow card, Wilfried Kanga ,
+177,11,Hertha BSC,home, 81 ,Yellow card, Agustín Rogel ,
+178,11,Schalke 04,away, 83 ,Substitution, Sebastian Polter , Marius Bülter 
+179,11,Schalke 04,away, 85 ,Goal, Florent Mollet , Sebastian Polter 
+180,11,Schalke 04,away, 86 ,Yellow card, Sebastian Polter ,
+181,11,Hertha BSC,home, 88 ,Goal, Wilfried Kanga , Stevan Jovetic 
+182,11,Hertha BSC,home, 91 ,Substitution, Márton Dárdai , Dodi Lukebakio 
+183,11,Hertha BSC,home, 91 ,Yellow card, Dodi Lukebakio ,
+184,11,Hertha BSC,home, 91 ,Substitution, Jean Boëtius , Stevan Jovetic 
+185,11,Hertha BSC,home, 93 ,Yellow card, Marco Richter ,
+186,11,Hertha BSC,home, 96 ,Substitution, Davie Selke , Wilfried Kanga 
+187,11,Hertha BSC,home, 96 ,Yellow card, Jean Boëtius ,
+188,12,VfL Bochum,home, 17 ,Yellow card, Ivan Ordets ,
+189,12,1. FC Union Berlin,away, 20 ,Substitution, Milos Pantović , Janik Haberer 
+190,12,1. FC Union Berlin,away, 35 ,Yellow card, Paul Jaeckel ,
+191,12,VfL Bochum,home, 43 ,Goal, Philipp Hofmann , Philipp Förster 
+192,12,1. FC Union Berlin,away, 62 ,Substitution, Jamie Leweling , Sheraldo Becker 
+193,12,1. FC Union Berlin,away, 62 ,Substitution, Julian Ryerson , Niko Gießelmann 
+194,12,1. FC Union Berlin,away, 62 ,Substitution, Kevin Behrens , Jordan Siebatcheu 
+195,12,VfL Bochum,home, 65 ,Substitution, Silvère Ganvoula , Philipp Hofmann 
+196,12,VfL Bochum,home, 65 ,Substitution, Gerrit Holtmann , Jordi Osei-Tutu 
+197,12,1. FC Union Berlin,away, 70 ,Yellow card, Julian Ryerson ,
+198,12,VfL Bochum,home, 71 ,Goal, Gerrit Holtmann , Christopher Antwi-Adjei 
+199,12,1. FC Union Berlin,away, 71 ,Substitution, Tim Skarke , Christopher Trimmel 
+200,12,1. FC Union Berlin,away, 78 ,Missed penalty, Milos Pantović , Missed penalty 
+201,12,1. FC Union Berlin,away, 78 ,Yellow card, Tim Skarke ,
+202,12,VfL Bochum,home, 79 ,Substitution, Constantinos Stafylidis , Philipp Förster 
+203,12,VfL Bochum,home, 79 ,Substitution, Patrick Osterhage , Christopher Antwi-Adjei 
+204,12,VfL Bochum,home, 87 ,Substitution, Tim Oermann , Cristian Gamboa 
+205,12,1. FC Union Berlin,away, 93 ,Goal, Milos Pantović ,
+206,13,Eintracht Frankfurt,away, 6 ,Goal, Jesper Lindstrøm ,
+207,13,M'gladbach,home, 16 ,Yellow card, K Koné ,
+208,13,M'gladbach,home, 18 ,Yellow card, Julian Weigl ,
+209,13,Eintracht Frankfurt,away, 25 ,Yellow card, Daichi Kamada ,
+210,13,Eintracht Frankfurt,away, 29 ,Goal, Éric Ebimbe , Christopher Lenz 
+211,13,Eintracht Frankfurt,away, 31 ,Yellow card, Kristijan Jakić ,
+212,13,Eintracht Frankfurt,away, 45 ,Goal, Jesper Lindstrøm , Randal Kolo Muani 
+213,13,M'gladbach,home, 47 ,Yellow card, Christoph Kramer ,
+214,13,Eintracht Frankfurt,away, 53 ,Substitution, Sebastian Rode , Daichi Kamada 
+215,13,M'gladbach,home, 70 ,Substitution, Nathan Ngoumou , Lars Stindl 
+216,13,M'gladbach,home, 70 ,Substitution, Luca Netz , K Koné 
+217,13,M'gladbach,home, 72 ,Goal, Marcus Thuram , Alassane Plea 
+218,13,Eintracht Frankfurt,away, 83 ,Substitution, Rafael Borré , Randal Kolo Muani 
+219,13,Eintracht Frankfurt,away, 83 ,Substitution, Faride Alidou , Jesper Lindstrøm 
+220,13,M'gladbach,home, 92 ,Substitution, Patrick Herrmann , Joe Scally 
+221,14,Bayern Munich,away, 17 ,Goal, Jamal Musiala , Leon Goretzka 
+222,14,Hoffenheim,home, 33 ,Yellow card, Christoph Baumgartner ,
+223,14,Bayern Munich,away, 38 ,Goal, Eric Maxim Choupo-Moting , Serge Gnabry 
+224,14,Bayern Munich,away, 51 ,Yellow card, Dayot Upamecano ,
+225,14,Bayern Munich,away, 61 ,Substitution, Sadio Mané , Kingsley Coman 
+226,14,Hoffenheim,home, 61 ,Substitution, Pavel Kaderabek , Robert Skov 
+227,14,Bayern Munich,away, 61 ,Yellow card, Joshua Kimmich ,
+228,14,Hoffenheim,home, 61 ,Substitution, Andrej Kramarić , Christoph Baumgartner 
+229,14,Hoffenheim,home, 68 ,Yellow card, Grischa Prömel ,
+230,14,Bayern Munich,away, 70 ,Substitution, Marcel Sabitzer , Leon Goretzka 
+231,14,Bayern Munich,away, 70 ,Substitution, Mathys Tel , Eric Maxim Choupo-Moting 
+232,14,Hoffenheim,home, 76 ,Substitution, Tom Bischof , Munas Dabbur 
+233,14,Bayern Munich,away, 76 ,Substitution, Ryan Gravenberch , Jamal Musiala 
+234,14,Bayern Munich,away, 76 ,Substitution, Noussair Mazraoui , Serge Gnabry 
+235,14,Hoffenheim,home, 80 ,Yellow card, Ozan Kabak ,
+236,14,Hoffenheim,home, 85 ,Substitution, Sebastian Rudy , Dennis Geiger 
+237,14,Hoffenheim,home, 85 ,Substitution, Angelo Stiller , Grischa Prömel 
+238,15,Werder Bremen,away, 14 ,Red card, Marco Friedl ,
+239,15,SC Freiburg,home, 42 ,Yellow card, Nicolas Höfler ,
+240,15,SC Freiburg,home, 45 ,Substitution, Ritsu Dōan , Yannik Keitel 
+241,15,SC Freiburg,home, 56 ,Goal, Lukas Kübler , Vincenzo Grifo 
+242,15,Werder Bremen,away, 60 ,Yellow card, Niclas Füllkrug ,
+243,15,Werder Bremen,away, 65 ,Substitution, Felix Agu , Mitchell Weiser 
+244,15,Werder Bremen,away, 76 ,Substitution, Oliver Burke , Romano Schmid 
+245,15,Werder Bremen,away, 77 ,Substitution, Eren Dinkçi , Jens Stage 
+246,15,Werder Bremen,away, 79 ,Yellow card, Lee Buchanan ,
+247,15,SC Freiburg,home, 80 ,Penalty, Vincenzo Grifo , Penalty 
+248,15,SC Freiburg,home, 88 ,Substitution, Lucas Höler , Vincenzo Grifo 
+249,15,SC Freiburg,home, 88 ,Substitution, Keven Schlotterbeck , Philipp Lienhart 
+250,15,Werder Bremen,away, 88 ,Substitution, Fabio Chiarodia , Lee Buchanan 
+251,15,SC Freiburg,home, 91 ,Substitution, Maximilian Eggestein , Nicolas Höfler 
+252,15,SC Freiburg,home, 91 ,Substitution, Nils Petersen , Daniel-Kofi Kyereh 
+253,15,SC Freiburg,home, 92 ,Yellow card, Maximilian Eggestein ,
+254,16,RB Leipzig,away, 21 ,Yellow card, André Silva ,
+255,16,Augsburg,home, 22 ,Yellow card, Mërgim Berisha ,
+256,16,Augsburg,home, 34 ,Penalty, Mërgim Berisha , Penalty 
+257,16,Augsburg,home, 37 ,Yellow card, Ermedin Demirovic ,
+258,16,Augsburg,home, 51 ,Goal, Ermedin Demirovic , Mërgim Berisha 
+259,16,RB Leipzig,away, 59 ,Substitution, Christopher Nkunku , Yussuf Poulsen 
+260,16,RB Leipzig,away, 59 ,Substitution, Amadou Haidara , Kevin Kampl 
+261,16,Augsburg,home, 60 ,Yellow card, Carlos Gruezo ,
+262,16,Augsburg,home, 64 ,Goal, Ruben Vargas , Mërgim Berisha 
+263,16,Augsburg,home, 65 ,Yellow card, Iago ,
+264,16,Augsburg,home, 65 ,Second yellow card, Iago ,
+265,16,RB Leipzig,away, 72 ,Goal, André Silva , Dominik Szoboszlai 
+266,16,RB Leipzig,away, 73 ,Substitution, Hugo Novoa , Benjamin Henrichs 
+267,16,Augsburg,home, 74 ,Substitution, Raphael Framberger , Mërgim Berisha 
+268,16,Augsburg,home, 78 ,Substitution, Daniel Caligiuri , Mads Pedersen 
+269,16,RB Leipzig,away, 80 ,Substitution, Dani Olmo , Emil Forsberg 
+270,16,Augsburg,home, 83 ,Yellow card, Jeffrey Gouweleeuw ,
+271,16,Augsburg,home, 87 ,Substitution, Arne Maier , Florian Niederlechner 
+272,16,RB Leipzig,away, 89 ,Goal, Christopher Nkunku ,
+273,16,RB Leipzig,away, 90 ,Goal, Hugo Novoa ,
+274,16,Augsburg,home, 93 ,Yellow card, Elvis Rexhbeçaj ,
+275,17,Borussia Dortmund,home, 2 ,Goal, Jude Bellingham , Niklas Süle 
+276,17,Borussia Dortmund,home, 13 ,Goal, Niklas Süle , Raphaël Guerreiro 
+277,17,Borussia Dortmund,home, 44 ,Goal, Giovanni Reyna , Youssoufa Moukoko 
+278,17,Borussia Dortmund,home, 46 ,Yellow card, Salih Özcan ,
+279,17,Borussia Dortmund,home, 53 ,Goal, Jude Bellingham , Nico Schlotterbeck 
+280,17,Borussia Dortmund,home, 56 ,Substitution, Emre Can , Nico Schlotterbeck 
+281,17,VfB Stuttgart,away, 57 ,Substitution, Chris Führich , Silas Katompa Mvumpa 
+282,17,VfB Stuttgart,away, 57 ,Substitution, Nikolas Nartey , Enzo Millot 
+283,17,VfB Stuttgart,away, 62 ,Substitution, Juan Perea , Tiago Tomás 
+284,17,Borussia Dortmund,home, 66 ,Substitution, Felix Passlack , Mats Hummels 
+285,17,Borussia Dortmund,home, 66 ,Substitution, Thorgan Hazard , Karim Adeyemi 
+286,17,Borussia Dortmund,home, 66 ,Substitution, Anthony Modeste , Giovanni Reyna 
+287,17,Borussia Dortmund,home, 72 ,Goal, Youssoufa Moukoko , Raphaël Guerreiro 
+288,17,VfB Stuttgart,away, 74 ,Substitution, Luca Pfeiffer , Sehrou Guirassy 
+289,17,VfB Stuttgart,away, 74 ,Substitution, Atakan Karazor , Naouirou Ahamada 
+290,17,Borussia Dortmund,home, 80 ,Substitution, Marius Wolf , Raphaël Guerreiro 
+291,17,VfB Stuttgart,away, 90 ,Disallowed goal,Disallowed goal,
+292,18,Bayer Leverkusen,home, 10 ,Missed penalty, Moussa Diaby , Missed penalty 
+293,18,Bayer Leverkusen,home, 17 ,Goal, Moussa Diaby , Adam Hložek 
+294,18,VfL Wolfsburg,away, 28 ,Own goal, Robert Andrich , Own goal 
+295,18,Bayer Leverkusen,home, 49 ,Yellow card, Jonathan Tah ,
+296,18,VfL Wolfsburg,away, 54 ,Penalty, Maximilian Arnold , Penalty 
+297,18,VfL Wolfsburg,away, 60 ,Yellow card, Felix Nmecha ,
+298,18,Bayer Leverkusen,home, 60 ,Substitution, Nadiem Amiri , Kerem Demirbay 
+299,18,Bayer Leverkusen,home, 61 ,Substitution, Callum Hudson-Odoi , Adam Hložek 
+300,18,Bayer Leverkusen,home, 70 ,Substitution, Daley Sinkgraven , Mitchel Bakker 
+301,18,Bayer Leverkusen,home, 70 ,Substitution, Timothy Fosu-Mensah , Odilon Kossounou 
+302,18,VfL Wolfsburg,away, 72 ,Substitution, Jonas Wind , Omar Marmoush 
+303,18,VfL Wolfsburg,away, 73 ,Substitution, Mattias Svanberg , Kevin Paredes 
+304,18,VfL Wolfsburg,away, 73 ,Substitution, Josuha Guilavogui , Yannick Gerhardt 
+305,18,Bayer Leverkusen,home, 76 ,Goal, Jeremie Frimpong , Daley Sinkgraven 
+306,18,VfL Wolfsburg,away, 76 ,Substitution, Jérôme Roussillon , Jakub Kamiński 
+307,18,Bayer Leverkusen,home, 80 ,Yellow card, Robert Andrich ,
+308,18,Bayer Leverkusen,home, 82 ,Substitution, Paulinho , Amine Adli 
+309,18,VfL Wolfsburg,away, 90 ,Substitution, Maxence Lacroix , Sebastiaan Bornauw 
+310,18,Bayer Leverkusen,home, 91 ,Yellow card, Timothy Fosu-Mensah ,
+311,19,1. FC Köln,away, 10 ,Yellow card, Luca Kilian ,
+312,19,Mainz 05,home, 11 ,Penalty, Marcus Ingvartsen , Penalty 
+313,19,1. FC Köln,away, 28 ,Second yellow card, Luca Kilian ,
+314,19,Mainz 05,home, 35 ,Goal, Dominik Kohr ,
+315,19,Mainz 05,home, 36 ,Yellow card, Dominik Kohr ,
+316,19,1. FC Köln,away, 36 ,Yellow card, Mark Uth ,
+317,19,1. FC Köln,away, 38 ,Substitution, Nikola Soldo , Ondrej Duda 
+318,19,Mainz 05,home, 40 ,Goal, Anton Stach , Lee Jae-sung 
+319,19,Mainz 05,home, 45 ,Substitution, Angelo Fulgini , Dominik Kohr 
+320,19,1. FC Köln,away, 50 ,Yellow card, Nikola Soldo ,
+321,19,Mainz 05,home, 60 ,Disallowed goal,Disallowed goal,
+322,19,Mainz 05,home, 63 ,Substitution, Stefan Bell , Alexander Hack 
+323,19,Mainz 05,home, 63 ,Substitution, Jonathan Burkardt , Marcus Ingvartsen 
+324,19,1. FC Köln,away, 67 ,Substitution, Kingsley Schindler , Linton Maina 
+325,19,1. FC Köln,away, 67 ,Substitution, Florian Dietz , Steffen Tigges 
+326,19,Mainz 05,home, 69 ,Substitution, Silvan Widmer , Danny Da Costa 
+327,19,1. FC Köln,away, 72 ,Yellow card, Eric Martel ,
+328,19,Mainz 05,home, 73 ,Goal, Aarón Martin ,
+329,19,Mainz 05,home, 77 ,Substitution, Aymen Barkok , Anton Stach 
+330,19,Mainz 05,home, 80 ,Disallowed goal,Disallowed goal,
+331,19,1. FC Köln,away, 80 ,Substitution, Denis Huseinbašić , Florian Kainz 
+332,19,1. FC Köln,away, 80 ,Substitution, Kristian Pedersen , Jonas Hector 
+333,19,Mainz 05,home, 83 ,Goal, Karim Onisiwo , Jonathan Burkardt 
+334,20,Bayern Munich,home, 13 ,Goal, Serge Gnabry ,
+335,20,Bayern Munich,home, 33 ,Goal, Eric Maxim Choupo-Moting , Leroy Sané 
+336,20,SC Freiburg,away, 50 ,Yellow card, Michael Gregoritsch ,
+337,20,SC Freiburg,away, 51 ,Yellow card, Kiliann Sildillia ,
+338,20,Bayern Munich,home, 52 ,Goal, Leroy Sané , Eric Maxim Choupo-Moting 
+339,20,Bayern Munich,home, 55 ,Goal, Sadio Mané , Serge Gnabry 
+340,20,SC Freiburg,away, 56 ,Substitution, Noah Weißhaupt , Vincenzo Grifo 
+341,20,SC Freiburg,away, 56 ,Substitution, Jeong Woo-yeong , Kevin Schade 
+342,20,SC Freiburg,away, 57 ,Substitution, Nils Petersen , Michael Gregoritsch 
+343,20,SC Freiburg,away, 64 ,Substitution, Yannik Keitel , Nicolas Höfler 
+344,20,Bayern Munich,home, 66 ,Substitution, Jamal Musiala , Eric Maxim Choupo-Moting 
+345,20,SC Freiburg,away, 75 ,Substitution, Lucas Höler , Ritsu Dōan 
+346,20,Bayern Munich,home, 76 ,Substitution, Benjamin Pavard , Matthijs de Ligt 
+347,20,Bayern Munich,home, 76 ,Substitution, Mathys Tel , Leroy Sané 
+348,20,Bayern Munich,home, 76 ,Substitution, Marcel Sabitzer , Leon Goretzka 
+349,20,Bayern Munich,home, 79 ,Substitution, Josip Stanišić , Noussair Mazraoui 
+350,20,Bayern Munich,home, 80 ,Goal, Marcel Sabitzer ,
+351,21,1. FC Union Berlin,home, 8 ,Goal, Janik Haberer ,
+352,21,1. FC Union Berlin,home, 16 ,Yellow card, Timo Baumgartl ,
+353,21,1. FC Union Berlin,home, 21 ,Goal, Janik Haberer , Jordan Siebatcheu 
+354,21,Borussia Dortmund,away, 29 ,Yellow card, Salih Özcan ,
+355,21,Borussia Dortmund,away, 45 ,Substitution, Julian Brandt , Karim Adeyemi 
+356,21,Borussia Dortmund,away, 45 ,Substitution, Donyell Malen , Thomas Meunier 
+357,21,Borussia Dortmund,away, 45 ,Substitution, Marco Reus , Salih Özcan 
+358,21,Borussia Dortmund,away, 54 ,Yellow card, Nico Schlotterbeck ,
+359,21,1. FC Union Berlin,home, 62 ,Substitution, Morten Thorsby , Janik Haberer 
+360,21,1. FC Union Berlin,home, 67 ,Substitution, Kevin Behrens , Jordan Siebatcheu 
+361,21,Borussia Dortmund,away, 70 ,Substitution, Thorgan Hazard , Niklas Süle 
+362,21,Borussia Dortmund,away, 82 ,Substitution, Giovanni Reyna , Emre Can 
+363,21,1. FC Union Berlin,home, 87 ,Substitution, Milos Pantović , András Schäfer 
+364,21,1. FC Union Berlin,home, 87 ,Substitution, Jamie Leweling , Sheraldo Becker 
+365,22,Augsburg,away, 14 ,Goal, Florian Niederlechner , Frederik Winther 
+366,22,Augsburg,away, 22 ,Yellow card, Mërgim Berisha ,
+367,22,Augsburg,away, 36 ,Yellow card, Ruben Vargas ,
+368,22,Augsburg,away, 45 ,Substitution, Daniel Caligiuri , Ruben Vargas 
+369,22,1. FC Köln,home, 47 ,Goal, Steffen Tigges , Linton Maina 
+370,22,Augsburg,away, 54 ,Yellow card, Iago ,
+371,22,1. FC Köln,home, 61 ,Goal, Denis Huseinbašić ,
+372,22,1. FC Köln,home, 62 ,Yellow card, Ondrej Duda ,
+373,22,Augsburg,away, 68 ,Goal, Daniel Caligiuri , Florian Niederlechner 
+374,22,1. FC Köln,home, 72 ,Substitution, Mark Uth , Ondrej Duda 
+375,22,Augsburg,away, 74 ,Substitution, Lukas Petkov , Florian Niederlechner 
+376,22,1. FC Köln,home, 78 ,Substitution, Sargis Adamyan , Linton Maina 
+377,22,1. FC Köln,home, 78 ,Substitution, Kingsley Schindler , Denis Huseinbašić 
+378,22,Augsburg,away, 79 ,Yellow card, Lukas Petkov ,
+379,22,1. FC Köln,home, 81 ,Goal, Steffen Tigges ,
+380,22,Augsburg,away, 84 ,Substitution, Mads Pedersen , Raphael Framberger 
+381,22,Augsburg,away, 84 ,Substitution, Julian Baumgartlinger , Carlos Gruezo 
+382,22,1. FC Köln,home, 89 ,Substitution, Florian Dietz , Steffen Tigges 
+383,22,1. FC Köln,home, 90 ,Yellow card, Mark Uth ,
+384,23,RB Leipzig,home, 25 ,Goal, Emil Forsberg , Dominik Szoboszlai 
+385,23,RB Leipzig,home, 30 ,Goal, Abdou Diallo , Dominik Szoboszlai 
+386,23,Hertha BSC,away, 32 ,Yellow card, Marc Kempf ,
+387,23,RB Leipzig,home, 38 ,Yellow card, Amadou Haidara ,
+388,23,Hertha BSC,away, 41 ,Yellow card, Marvin Plattenhardt ,
+389,23,RB Leipzig,home, 45 ,Goal, Willi Orban ,
+390,23,Hertha BSC,away, 45 ,Substitution, Wilfried Kanga , Ivan Šunjić 
+391,23,Hertha BSC,away, 45 ,Substitution, Maximilian Mittelstädt , Marvin Plattenhardt 
+392,23,Hertha BSC,away, 59 ,Substitution, Chidera Ejuke , Marco Richter 
+393,23,RB Leipzig,home, 61 ,Substitution, Benjamin Henrichs , Mohamed Simakan 
+394,23,RB Leipzig,home, 61 ,Substitution, Kevin Kampl , Amadou Haidara 
+395,23,RB Leipzig,home, 61 ,Substitution, Marcel Halstenberg , David Raum 
+396,23,Hertha BSC,away, 62 ,Penalty, Dodi Lukebakio , Penalty 
+397,23,RB Leipzig,home, 63 ,Yellow card, Kevin Kampl ,
+398,23,Hertha BSC,away, 64 ,Goal, Stevan Jovetic ,
+399,23,RB Leipzig,home, 72 ,Substitution, Hugo Novoa , André Silva 
+400,23,RB Leipzig,home, 72 ,Substitution, Yussuf Poulsen , Emil Forsberg 
+401,23,Hertha BSC,away, 83 ,Substitution, Davie Selke , Suat Serdar 
+402,23,RB Leipzig,home, 84 ,Disallowed goal,Disallowed goal,
+403,23,Hertha BSC,away, 93 ,Yellow card, Agustín Rogel ,
+404,24,M'gladbach,away, 13 ,Goal, Marcus Thuram , Alassane Plea 
+405,24,VfL Wolfsburg,home, 43 ,Goal, Yannick Gerhardt , Paulo Otávio 
+406,24,M'gladbach,away, 47 ,Yellow card, Julian Weigl ,
+407,24,M'gladbach,away, 47 ,Goal, Marcus Thuram ,
+408,24,VfL Wolfsburg,home, 59 ,Substitution, Felix Nmecha , Mattias Svanberg 
+409,24,VfL Wolfsburg,home, 59 ,Substitution, Omar Marmoush , Lukas Nmecha 
+410,24,VfL Wolfsburg,home, 66 ,Yellow card, Patrick Wimmer ,
+411,24,VfL Wolfsburg,home, 69 ,Goal, Omar Marmoush , Paulo Otávio 
+412,24,VfL Wolfsburg,home, 73 ,Substitution, Kevin Paredes , Patrick Wimmer 
+413,24,M'gladbach,away, 77 ,Substitution, Nathan Ngoumou , Alassane Plea 
+414,24,VfL Wolfsburg,home, 81 ,Yellow card, Paulo Otávio ,
+415,24,M'gladbach,away, 84 ,Yellow card, Lars Stindl ,
+416,24,VfL Wolfsburg,home, 84 ,Yellow card, Maximilian Arnold ,
+417,24,M'gladbach,away, 86 ,Yellow card, K Koné ,
+418,24,M'gladbach,away, 89 ,Substitution, Patrick Herrmann , Lars Stindl 
+419,24,VfL Wolfsburg,home, 89 ,Substitution, Josuha Guilavogui , Maxence Lacroix 
+420,24,VfL Wolfsburg,home, 89 ,Substitution, Jonas Wind , Jakub Kamiński 
+421,25,VfB Stuttgart,home, 3 ,Penalty, Silas Katompa Mvumpa , Penalty 
+422,25,VfL Bochum,away, 16 ,Yellow card, Philipp Förster ,
+423,25,VfB Stuttgart,home, 22 ,Goal, Naouirou Ahamada , Silas Katompa Mvumpa 
+424,25,VfL Bochum,away, 29 ,Goal, Simon Zoller ,
+425,25,VfL Bochum,away, 45 ,Substitution, Christopher Antwi-Adjei , Simon Zoller 
+426,25,VfB Stuttgart,home, 52 ,Substitution, Chris Führich , Naouirou Ahamada 
+427,25,VfB Stuttgart,home, 64 ,Goal, Silas Katompa Mvumpa , Borna Sosa 
+428,25,VfL Bochum,away, 70 ,Substitution, Silvère Ganvoula , Anthony Losilla 
+429,25,VfL Bochum,away, 71 ,Yellow card, Cristian Gamboa ,
+430,25,VfB Stuttgart,home, 71 ,Goal, Wataru Endo ,
+431,25,VfL Bochum,away, 72 ,Yellow card, Kevin Stöger ,
+432,25,VfB Stuttgart,home, 75 ,Substitution, Hiroki Ito , Konstantinos Mavropanos 
+433,25,VfB Stuttgart,home, 75 ,Substitution, Juan Perea , Tiago Tomás 
+434,25,VfB Stuttgart,home, 76 ,Substitution, Nikolas Nartey , Enzo Millot 
+435,25,VfL Bochum,away, 78 ,Substitution, Patrick Osterhage , Gerrit Holtmann 
+436,25,VfB Stuttgart,home, 84 ,Substitution, Pascal Stenzel , Luca Pfeiffer 
+437,25,VfL Bochum,away, 90 ,Substitution, Jordi Osei-Tutu , Philipp Hofmann 
+438,25,VfL Bochum,away, 90 ,Substitution, Vasilios Lampropoulos , Philipp Förster 
+439,26,Mainz 05,away, 36 ,Goal, Marcus Ingvartsen , Danny Da Costa 
+440,26,Mainz 05,away, 45 ,Yellow card, Alexander Hack ,
+441,26,Werder Bremen,home, 62 ,Substitution, Niklas Schmidt , Ilia Gruev 
+442,26,Mainz 05,away, 66 ,Goal, Lee Jae-sung , Anton Stach 
+443,26,Mainz 05,away, 67 ,Substitution, Jonathan Burkardt , Marcus Ingvartsen 
+444,26,Werder Bremen,home, 73 ,Substitution, Oliver Burke , Romano Schmid 
+445,26,Werder Bremen,home, 73 ,Substitution, Jens Stage , Christian Groß 
+446,26,Werder Bremen,home, 73 ,Substitution, Lee Buchanan , Anthony Jung 
+447,26,Mainz 05,away, 76 ,Substitution, Anthony Caci , Dominik Kohr 
+448,26,Mainz 05,away, 76 ,Substitution, Angelo Fulgini , Lee Jae-sung 
+449,26,Mainz 05,away, 88 ,Substitution, Niklas Tauer , Edimilson Fernandes 
+450,26,Mainz 05,away, 88 ,Substitution, Aymen Barkok , Leandro Barreiro 
+451,26,Mainz 05,away, 90 ,Yellow card, Jonathan Burkardt ,
+452,26,Werder Bremen,home, 92 ,Yellow card, Niclas Füllkrug ,
+453,27,Bayer Leverkusen,away, 11 ,Yellow card, Robert Andrich ,
+454,27,Bayer Leverkusen,away, 42 ,Yellow card, Piero Hincapié ,
+455,27,Bayer Leverkusen,away, 47 ,Yellow card, Edmond Tapsoba ,
+456,27,Eintracht Frankfurt,home, 50 ,Penalty, Daichi Kamada , Penalty 
+457,27,Bayer Leverkusen,away, 45 ,Substitution, Kerem Demirbay , Charles Aránguiz 
+458,27,Bayer Leverkusen,away, 45 ,Substitution, Nadiem Amiri , Paulinho 
+459,27,Bayer Leverkusen,away, 56 ,Goal, Piero Hincapié , Kerem Demirbay 
+460,27,Eintracht Frankfurt,home, 58 ,Goal, Randal Kolo Muani , Christopher Lenz 
+461,27,Eintracht Frankfurt,home, 65 ,Goal, Jesper Lindstrøm ,
+462,27,Bayer Leverkusen,away, 71 ,Second yellow card, Piero Hincapié ,
+463,27,Eintracht Frankfurt,home, 72 ,Penalty, Daichi Kamada , Penalty 
+464,27,Bayer Leverkusen,away, 73 ,Substitution, Odilon Kossounou , Moussa Diaby 
+465,27,Eintracht Frankfurt,home, 76 ,Substitution, Sebastian Rode , Djibril Sow 
+466,27,Eintracht Frankfurt,home, 77 ,Substitution, Rafael Borré , Jesper Lindstrøm 
+467,27,Eintracht Frankfurt,home, 77 ,Substitution, Faride Alidou , Éric Ebimbe 
+468,27,Eintracht Frankfurt,home, 80 ,Substitution, Lucas Alario , Randal Kolo Muani 
+469,27,Bayer Leverkusen,away, 80 ,Substitution, Daley Sinkgraven , Mitchel Bakker 
+470,27,Bayer Leverkusen,away, 80 ,Substitution, Adam Hložek , Patrik Schick 
+471,27,Eintracht Frankfurt,home, 86 ,Goal, Lucas Alario , Rafael Borré 
+472,27,Eintracht Frankfurt,home, 87 ,Substitution, Marcel Wenig , Daichi Kamada 
+473,28,Schalke 04,home, 10 ,Yellow card, Leo Greiml ,
+474,28,Hoffenheim,away, 11 ,Penalty, Robert Skov , Penalty 
+475,28,Hoffenheim,away, 19 ,Yellow card, Kevin Vogt ,
+476,28,Hoffenheim,away, 38 ,Yellow card, Grischa Prömel ,
+477,28,Hoffenheim,away, 47 ,Goal, Munas Dabbur , Georginio Rutter 
+478,28,Schalke 04,home, 45 ,Substitution, Mehmet Aydin , Cédric Brunner 
+479,28,Schalke 04,home, 56 ,Yellow card, Dominick Drexler ,
+480,28,Hoffenheim,away, 59 ,Penalty, Robert Skov , Penalty 
+481,28,Hoffenheim,away, 65 ,Substitution, Sebastian Rudy , Dennis Geiger 
+482,28,Schalke 04,home, 70 ,Substitution, Jordan Larsson , Dominick Drexler 
+483,28,Schalke 04,home, 70 ,Substitution, Kenan Karaman , Simon Terodde 
+484,28,Schalke 04,home, 72 ,Substitution, Sebastian Polter , Florent Mollet 
+485,28,Hoffenheim,away, 75 ,Substitution, Jacob Bruun Larsen , Munas Dabbur 
+486,28,Hoffenheim,away, 75 ,Substitution, Angelo Stiller , Christoph Baumgartner 
+487,28,Hoffenheim,away, 88 ,Substitution, Eduardo Quaresma , Robert Skov 
+488,28,Hoffenheim,away, 88 ,Substitution, Finn Becker , Georginio Rutter 
+489,29,VfB Stuttgart,home, 58 ,Yellow card, Atakan Karazor ,
+490,29,1. FC Union Berlin,away, 65 ,Substitution, Kevin Behrens , Jordan Siebatcheu 
+491,29,1. FC Union Berlin,away, 65 ,Substitution, Morten Thorsby , András Schäfer 
+492,29,1. FC Union Berlin,away, 66 ,Yellow card, Niko Gießelmann ,
+493,29,VfB Stuttgart,home, 67 ,Substitution, Borna Sosa , Dan Zagadou 
+494,29,VfB Stuttgart,home, 68 ,Substitution, Chris Führich , Silas Katompa Mvumpa 
+495,29,VfB Stuttgart,home, 71 ,Substitution, Pascal Stenzel , Hiroki Ito 
+496,29,1. FC Union Berlin,away, 73 ,Substitution, Jamie Leweling , Sheraldo Becker 
+497,29,1. FC Union Berlin,away, 76 ,Goal, Paul Jaeckel , Niko Gießelmann 
+498,29,VfB Stuttgart,home, 78 ,Yellow card, Sehrou Guirassy ,
+499,29,1. FC Union Berlin,away, 78 ,Yellow card, Rani Khedira ,
+500,29,VfB Stuttgart,home, 82 ,Second yellow card, Sehrou Guirassy ,
+501,29,VfB Stuttgart,home, 82 ,Substitution, Luca Pfeiffer , Atakan Karazor 
+502,29,1. FC Union Berlin,away, 82 ,Substitution, Milos Pantović , Genki Haraguchi 
+503,29,1. FC Union Berlin,away, 83 ,Substitution, Paul Seguin , Rani Khedira 
+504,29,1. FC Union Berlin,away, 93 ,Yellow card, Paul Seguin ,
+505,30,SC Freiburg,away, 22 ,Goal, Daniel-Kofi Kyereh , Ritsu Dōan 
+506,30,Hertha BSC,home, 34 ,Penalty, Dodi Lukebakio , Penalty 
+507,30,Hertha BSC,home, 43 ,Yellow card, Agustín Rogel ,
+508,30,Hertha BSC,home, 49 ,Yellow card, Jonjoe Kenny ,
+509,30,Hertha BSC,home, 58 ,Substitution, Marco Richter , Chidera Ejuke 
+510,30,Hertha BSC,home, 61 ,Goal, Suat Serdar , Marco Richter 
+511,30,SC Freiburg,away, 70 ,Substitution, Kevin Schade , Vincenzo Grifo 
+512,30,SC Freiburg,away, 70 ,Substitution, Nils Petersen , Michael Gregoritsch 
+513,30,SC Freiburg,away, 76 ,Substitution, Yannik Keitel , Maximilian Eggestein 
+514,30,SC Freiburg,away, 76 ,Substitution, Jeong Woo-yeong , Daniel-Kofi Kyereh 
+515,30,Hertha BSC,home, 78 ,Substitution, Davie Selke , Stevan Jovetic 
+516,30,SC Freiburg,away, 78 ,Goal, Kevin Schade , Yannik Keitel 
+517,30,SC Freiburg,away, 83 ,Yellow card, Ritsu Dōan ,
+518,30,Hertha BSC,home, 84 ,Substitution, Kevin Boateng , Suat Serdar 
+519,30,SC Freiburg,away, 86 ,Substitution, Lucas Höler , Ritsu Dōan 
+520,31,M'gladbach,home, 7 ,Yellow card, Lars Stindl ,
+521,31,1. FC Köln,away, 10 ,Yellow card, Florian Kainz ,
+522,31,M'gladbach,home, 27 ,Goal, Marvin Friedrich , Jonas Hofmann 
+523,31,1. FC Köln,away, 31 ,Penalty, Florian Kainz , Penalty 
+524,31,M'gladbach,home, 38 ,Yellow card, Ramy Bensebaïni ,
+525,31,1. FC Köln,away, 40 ,Substitution, Kingsley Schindler , Dejan Ljubičić 
+526,31,1. FC Köln,away, 46 ,Second yellow card, Florian Kainz ,
+527,31,M'gladbach,home, 47 ,Penalty, Ramy Bensebaïni , Penalty 
+528,31,M'gladbach,home, 46 ,Goal, Lars Stindl ,
+529,31,M'gladbach,home, 52 ,Substitution, Alassane Plea , Lars Stindl 
+530,31,1. FC Köln,away, 60 ,Substitution, Sargis Adamyan , Ondrej Duda 
+531,31,1. FC Köln,away, 60 ,Substitution, Denis Huseinbašić , Benno Schmitz 
+532,31,1. FC Köln,away, 60 ,Substitution, Florian Dietz , Steffen Tigges 
+533,31,1. FC Köln,away, 63 ,Yellow card, Ellyes Skhiri ,
+534,31,1. FC Köln,away, 75 ,Substitution, Mark Uth , Linton Maina 
+535,31,M'gladbach,home, 76 ,Goal, Ramy Bensebaïni , Jonas Hofmann 
+536,31,M'gladbach,home, 78 ,Substitution, Yvandro Borges Sanches , Christoph Kramer 
+537,31,M'gladbach,home, 82 ,Substitution, Stefan Lainer , Joe Scally 
+538,31,1. FC Köln,away, 83 ,Goal, Denis Huseinbašić ,
+539,31,M'gladbach,home, 83 ,Substitution, Luca Netz , Ramy Bensebaïni 
+540,31,M'gladbach,home, 83 ,Substitution, Patrick Herrmann , Jonas Hofmann 
+541,31,M'gladbach,home, 91 ,Goal, Marcus Thuram , Alassane Plea 
+542,32,Bayern Munich,away, 2 ,Yellow card, Marcel Sabitzer ,
+543,32,Bayern Munich,away, 11 ,Yellow card, Matthijs de Ligt ,
+544,32,Borussia Dortmund,home, 14 ,Yellow card, Jude Bellingham ,
+545,32,Bayern Munich,away, 33 ,Goal, Leon Goretzka , Jamal Musiala 
+546,32,Borussia Dortmund,home, 40 ,Yellow card, Emre Can ,
+547,32,Borussia Dortmund,home, 45 ,Substitution, Marius Wolf , Mats Hummels 
+548,32,Bayern Munich,away, 45 ,Substitution, Joshua Kimmich , Marcel Sabitzer 
+549,32,Bayern Munich,away, 45 ,Substitution, Josip Stanišić , Alphonso Davies 
+550,32,Bayern Munich,away, 45 ,Substitution, Kingsley Coman , Serge Gnabry 
+551,32,Bayern Munich,away, 53 ,Goal, Leroy Sané ,
+552,32,Borussia Dortmund,home, 53 ,Substitution, Karim Adeyemi , Salih Özcan 
+553,32,Bayern Munich,away, 57 ,Yellow card, Leon Goretzka ,
+554,32,Bayern Munich,away, 62 ,Substitution, Noussair Mazraoui , Matthijs de Ligt 
+555,32,Borussia Dortmund,home, 70 ,Substitution, Anthony Modeste , Donyell Malen 
+556,32,Borussia Dortmund,home, 74 ,Goal, Youssoufa Moukoko , Anthony Modeste 
+557,32,Bayern Munich,away, 77 ,Yellow card, Kingsley Coman ,
+558,32,Bayern Munich,away, 82 ,Substitution, Eric Maxim Choupo-Moting , Sadio Mané 
+559,32,Borussia Dortmund,home, 89 ,Substitution, Thorgan Hazard , Youssoufa Moukoko 
+560,32,Bayern Munich,away, 90 ,Second yellow card, Kingsley Coman ,
+561,32,Borussia Dortmund,home, 92 ,Yellow card, Karim Adeyemi ,
+562,32,Bayern Munich,away, 92 ,Yellow card, Leroy Sané ,
+563,32,Borussia Dortmund,home, 95 ,Goal, Anthony Modeste , Nico Schlotterbeck 
+564,33,VfL Bochum,home, 40 ,Yellow card, Simon Zoller ,
+565,33,Eintracht Frankfurt,away, 45 ,Substitution, Timothy Chandler , Kristijan Jakić 
+566,33,VfL Bochum,home, 54 ,Yellow card, Ivan Ordets ,
+567,33,Eintracht Frankfurt,away, 57 ,Yellow card, Éric Ebimbe ,
+568,33,VfL Bochum,home, 60 ,Substitution, Constantinos Stafylidis , Patrick Osterhage 
+569,33,Eintracht Frankfurt,away, 61 ,Substitution, Sebastian Rode , Djibril Sow 
+570,33,Eintracht Frankfurt,away, 61 ,Substitution, Daichi Kamada , Mario Götze 
+571,33,VfL Bochum,home, 71 ,Goal, Philipp Hofmann , Philipp Förster 
+572,33,VfL Bochum,home, 72 ,Substitution, Christopher Antwi-Adjei , Simon Zoller 
+573,33,Eintracht Frankfurt,away, 78 ,Substitution, Christopher Lenz , Luca Pellegrini 
+574,33,Eintracht Frankfurt,away, 78 ,Substitution, Faride Alidou , Jesper Lindstrøm 
+575,33,VfL Bochum,home, 81 ,Substitution, Silvère Ganvoula , Philipp Hofmann 
+576,33,VfL Bochum,home, 81 ,Substitution, Jordi Osei-Tutu , Gerrit Holtmann 
+577,33,VfL Bochum,home, 87 ,Own goal, Evan Ndicka , Own goal 
+578,33,VfL Bochum,home, 91 ,Goal, Philipp Förster , Christopher Antwi-Adjei 
+579,34,Schalke 04,away, 13 ,Yellow card, Maya Yoshida ,
+580,34,Bayer Leverkusen,home, 38 ,Goal, Moussa Diaby , Robert Andrich 
+581,34,Bayer Leverkusen,home, 41 ,Goal, Jeremie Frimpong , Moussa Diaby 
+582,34,Schalke 04,away, 45 ,Substitution, Thomas Ouwejan , Tobias Mohr 
+583,34,Schalke 04,away, 45 ,Substitution, Mehmet Aydin , Sebastian Polter 
+584,34,Bayer Leverkusen,home, 52 ,Goal, Jeremie Frimpong , Moussa Diaby 
+585,34,Bayer Leverkusen,home, 58 ,Yellow card, Piero Hincapié ,
+586,34,Bayer Leverkusen,home, 64 ,Substitution, Kerem Demirbay , Charles Aránguiz 
+587,34,Bayer Leverkusen,home, 64 ,Substitution, Amine Adli , Moussa Diaby 
+588,34,Schalke 04,away, 64 ,Substitution, Florent Mollet , Dominick Drexler 
+589,34,Schalke 04,away, 64 ,Substitution, Alex Král , Florian Flick 
+590,34,Bayer Leverkusen,home, 72 ,Substitution, Adam Hložek , Patrik Schick 
+591,34,Schalke 04,away, 79 ,Substitution, Danny Latza , Maya Yoshida 
+592,34,Bayer Leverkusen,home, 88 ,Substitution, Odilon Kossounou , Piero Hincapié 
+593,34,Bayer Leverkusen,home, 88 ,Substitution, Paulinho , Callum Hudson-Odoi 
+594,34,Bayer Leverkusen,home, 90 ,Goal, Paulinho , Amine Adli 
+595,35,VfL Wolfsburg,away, 27 ,Goal, Yannick Gerhardt , Ridle Baku 
+596,35,VfL Wolfsburg,away, 37 ,Yellow card, Yannick Gerhardt ,
+597,35,Augsburg,home, 38 ,Yellow card, Maximilian Bauer ,
+598,35,VfL Wolfsburg,away, 40 ,Yellow card, Paulo Otávio ,
+599,35,Augsburg,home, 40 ,Yellow card, Jeffrey Gouweleeuw ,
+600,35,Augsburg,home, 40 ,Yellow card, Carlos Gruezo ,
+601,35,Augsburg,home, 55 ,Goal, Robert Gumny ,
+602,35,Augsburg,home, 66 ,Substitution, Mads Pedersen , Ruben Vargas 
+603,35,VfL Wolfsburg,away, 69 ,Substitution, Josuha Guilavogui , Jakub Kamiński 
+604,35,VfL Wolfsburg,away, 75 ,Substitution, Lukas Nmecha , Omar Marmoush 
+605,35,VfL Wolfsburg,away, 75 ,Substitution, Kevin Paredes , Patrick Wimmer 
+606,35,VfL Wolfsburg,away, 75 ,Yellow card, Josuha Guilavogui ,
+607,35,Augsburg,home, 84 ,Yellow card, Iago ,
+608,35,Augsburg,home, 86 ,Substitution, Daniel Caligiuri , Fredrik Jensen 
+609,35,Augsburg,home, 91 ,Yellow card, Daniel Caligiuri ,
+610,36,Mainz 05,home, 45 ,Goal, Marcus Ingvartsen , Anton Stach 
+611,36,Mainz 05,home, 45 ,Substitution, Danny Da Costa , Silvan Widmer 
+612,36,RB Leipzig,away, 63 ,Yellow card, Emil Forsberg ,
+613,36,Mainz 05,home, 65 ,Substitution, Leandro Barreiro , Lee Jae-sung 
+614,36,Mainz 05,home, 65 ,Substitution, Delano Burgzorg , Marcus Ingvartsen 
+615,36,RB Leipzig,away, 73 ,Substitution, Kevin Kampl , Xaver Schlager 
+616,36,RB Leipzig,away, 73 ,Substitution, André Silva , Dominik Szoboszlai 
+617,36,Mainz 05,home, 77 ,Yellow card, Alexander Hack ,
+618,36,RB Leipzig,away, 79 ,Substitution, Yussuf Poulsen , Emil Forsberg 
+619,36,RB Leipzig,away, 80 ,Goal, Christopher Nkunku , Marcel Halstenberg 
+620,36,Mainz 05,home, 82 ,Substitution, Stefan Bell , Edimilson Fernandes 
+621,36,Mainz 05,home, 86 ,Substitution, Angelo Fulgini , Anton Stach 
+622,37,Hoffenheim,home, 8 ,Yellow card, Dennis Geiger ,
+623,37,Werder Bremen,away, 18 ,Goal, Marvin Ducksch , Niclas Füllkrug 
+624,37,Hoffenheim,home, 32 ,Goal, Munas Dabbur , Dennis Geiger 
+625,37,Werder Bremen,away, 44 ,Yellow card, Ilia Gruev ,
+626,37,Werder Bremen,away, 46 ,Yellow card, Marco Friedl ,
+627,37,Werder Bremen,away, 59 ,Substitution, Leonardo Bittencourt , Ilia Gruev 
+628,37,Hoffenheim,home, 66 ,Substitution, Pavel Kaderabek , Robert Skov 
+629,37,Hoffenheim,home, 66 ,Substitution, Georginio Rutter , Andrej Kramarić 
+630,37,Hoffenheim,home, 71 ,Yellow card, Kevin Vogt ,
+631,37,Werder Bremen,away, 75 ,Substitution, Lee Buchanan , Anthony Jung 
+632,37,Werder Bremen,away, 87 ,Penalty, Niclas Füllkrug , Penalty 
+633,37,Hoffenheim,home, 88 ,Substitution, Jacob Bruun Larsen , Angeliño 
+634,37,Hoffenheim,home, 88 ,Substitution, Angelo Stiller , Dennis Geiger 
+635,37,Hoffenheim,home, 91 ,Yellow card, Ozan Kabak ,
+636,37,Werder Bremen,away, 91 ,Substitution, Jens Stage , Romano Schmid 
+637,37,Werder Bremen,away, 92 ,Substitution, Amos Pieper , Christian Groß 
+638,37,Werder Bremen,away, 93 ,Yellow card, Leonardo Bittencourt ,
+639,38,Augsburg,away, 9 ,Goal, Ermedin Demirovic ,
+640,38,Augsburg,away, 21 ,Goal, Ermedin Demirovic , Mërgim Berisha 
+641,38,Augsburg,away, 30 ,Yellow card, Maximilian Bauer ,
+642,38,Schalke 04,home, 33 ,Goal, Simon Terodde , Dominick Drexler 
+643,38,Schalke 04,home, 34 ,Yellow card, Simon Terodde ,
+644,38,Schalke 04,home, 34 ,Yellow card, Marius Bülter ,
+645,38,Augsburg,away, 34 ,Yellow card, Mërgim Berisha ,
+646,38,Schalke 04,home, 45 ,Substitution, Rodrigo Zalazar , Marius Bülter 
+647,38,Schalke 04,home, 53 ,Substitution, Leo Greiml , Sepp van den Berg 
+648,38,Schalke 04,home, 63 ,Goal, Tom Krauß , Dominick Drexler 
+649,38,Schalke 04,home, 67 ,Substitution, Mehmet Aydin , Henning Matriciani 
+650,38,Augsburg,away, 70 ,Second yellow card, Mërgim Berisha ,
+651,38,Augsburg,away, 70 ,Yellow card, Florian Niederlechner ,
+652,38,Augsburg,away, 72 ,Substitution, Fredrik Jensen , Florian Niederlechner 
+653,38,Augsburg,away, 73 ,Yellow card, Ermedin Demirovic ,
+654,38,Augsburg,away, 74 ,Yellow card, Robert Gumny ,
+655,38,Augsburg,away, 77 ,Goal, Andre Hahn , Robert Gumny 
+656,38,Schalke 04,home, 81 ,Substitution, Kenan Karaman , Dominick Drexler 
+657,38,Schalke 04,home, 81 ,Substitution, Tobias Mohr , Thomas Ouwejan 
+658,38,Augsburg,away, 84 ,Substitution, Mads Pedersen , Ermedin Demirovic 
+659,39,Hertha BSC,home, 21 ,Yellow card, Suat Serdar ,
+660,39,Hoffenheim,away, 25 ,Goal, Andrej Kramarić , Ozan Kabak 
+661,39,Hoffenheim,away, 29 ,Yellow card, Dennis Geiger ,
+662,39,Hertha BSC,home, 29 ,Yellow card, Ivan Šunjić ,
+663,39,Hertha BSC,home, 37 ,Goal, Dodi Lukebakio , Chidera Ejuke 
+664,39,Hertha BSC,home, 45 ,Substitution, Agustín Rogel , Filip Uremović 
+665,39,Hoffenheim,away, 61 ,Substitution, Georginio Rutter , Munas Dabbur 
+666,39,Hoffenheim,away, 63 ,Substitution, Angelo Stiller , Dennis Geiger 
+667,39,Hertha BSC,home, 72 ,Substitution, Marco Richter , Suat Serdar 
+668,39,Hertha BSC,home, 72 ,Substitution, Davie Selke , Wilfried Kanga 
+669,39,Hoffenheim,away, 81 ,Substitution, Robert Skov , Angeliño 
+670,39,Hoffenheim,away, 81 ,Substitution, Kevin Akpoguma , Stanley Nsoki 
+671,39,Hoffenheim,away, 81 ,Substitution, Jacob Bruun Larsen , Christoph Baumgartner 
+672,39,Hertha BSC,home, 83 ,Substitution, Kevin Boateng , Dodi Lukebakio 
+673,39,Hertha BSC,home, 91 ,Substitution, Maximilian Mittelstädt , Chidera Ejuke 
+674,40,Werder Bremen,home, 5 ,Goal, Niclas Füllkrug , Romano Schmid 
+675,40,Werder Bremen,home, 8 ,Goal, Marvin Ducksch ,
+676,40,Werder Bremen,home, 13 ,Goal, Niclas Füllkrug , Marvin Ducksch 
+677,40,Werder Bremen,home, 37 ,Own goal, Ramy Bensebaïni , Own goal 
+678,40,M'gladbach,away, 39 ,Yellow card, K Koné ,
+679,40,M'gladbach,away, 63 ,Goal, Marcus Thuram , Lars Stindl 
+680,40,Werder Bremen,home, 72 ,Substitution, Oliver Burke , Marvin Ducksch 
+681,40,Werder Bremen,home, 72 ,Substitution, Jens Stage , Romano Schmid 
+682,40,Werder Bremen,home, 73 ,Goal, Mitchell Weiser , Niclas Füllkrug 
+683,40,M'gladbach,away, 77 ,Substitution, Stefan Lainer , Joe Scally 
+684,40,M'gladbach,away, 77 ,Substitution, Patrick Herrmann , Lars Stindl 
+685,40,Werder Bremen,home, 77 ,Substitution, Leonardo Bittencourt , Ilia Gruev 
+686,40,Werder Bremen,home, 77 ,Substitution, Nicolai Rapp , Christian Groß 
+687,40,M'gladbach,away, 83 ,Substitution, Nathan Ngoumou , Christoph Kramer 
+688,40,Werder Bremen,home, 85 ,Substitution, Niklas Schmidt , Marco Friedl 
+689,40,M'gladbach,away, 88 ,Substitution, Luca Netz , Ramy Bensebaïni 
+690,40,M'gladbach,away, 88 ,Substitution, Rocco Reitz , K Koné 
+691,41,SC Freiburg,home, 3 ,Goal, Michael Gregoritsch , Maximilian Eggestein 
+692,41,Mainz 05,away, 33 ,Yellow card, Stefan Bell ,
+693,41,SC Freiburg,home, 37 ,Goal, Daniel-Kofi Kyereh ,
+694,41,Mainz 05,away, 52 ,Goal, Aarón Martin , Jonathan Burkardt 
+695,41,Mainz 05,away, 53 ,Yellow card, Leandro Barreiro ,
+696,41,Mainz 05,away, 60 ,Yellow card, Anton Stach ,
+697,41,Mainz 05,away, 66 ,Substitution, Edimilson Fernandes , Stefan Bell 
+698,41,Mainz 05,away, 66 ,Substitution, Lee Jae-sung , Leandro Barreiro 
+699,41,SC Freiburg,home, 69 ,Substitution, Kevin Schade , Ritsu Dōan 
+700,41,SC Freiburg,home, 69 ,Substitution, Jeong Woo-yeong , Daniel-Kofi Kyereh 
+701,41,SC Freiburg,home, 70 ,Yellow card, Nicolas Höfler ,
+702,41,Mainz 05,away, 77 ,Substitution, Angelo Fulgini , Danny Da Costa 
+703,41,Mainz 05,away, 77 ,Substitution, Delano Burgzorg , Jonathan Burkardt 
+704,41,SC Freiburg,home, 84 ,Substitution, Nils Petersen , Michael Gregoritsch 
+705,41,SC Freiburg,home, 84 ,Substitution, Noah Weißhaupt , Vincenzo Grifo 
+706,41,Mainz 05,away, 86 ,Substitution, Nelson Weiper , Anton Stach 
+707,41,Mainz 05,away, 90 ,Yellow card, Dominik Kohr ,
+708,41,SC Freiburg,home, 93 ,Substitution, Yannik Keitel , Maximilian Eggestein 
+709,41,SC Freiburg,home, 94 ,Yellow card, Yannik Keitel ,
+710,42,1. FC Köln,home, 21 ,Yellow card, Timo Hübers ,
+711,42,Borussia Dortmund,away, 23 ,Yellow card, Karim Adeyemi ,
+712,42,1. FC Köln,home, 25 ,Yellow card, Ondrej Duda ,
+713,42,Borussia Dortmund,away, 29 ,Yellow card, Raphaël Guerreiro ,
+714,42,Borussia Dortmund,away, 31 ,Goal, Julian Brandt , Jude Bellingham 
+715,42,Borussia Dortmund,away, 36 ,Yellow card, Niklas Süle ,
+716,42,1. FC Köln,home, 53 ,Goal, Florian Kainz , Linton Maina 
+717,42,1. FC Köln,home, 56 ,Goal, Steffen Tigges , Florian Kainz 
+718,42,Borussia Dortmund,away, 61 ,Substitution, Thorgan Hazard , Karim Adeyemi 
+719,42,1. FC Köln,home, 61 ,Substitution, Sargis Adamyan , Ondrej Duda 
+720,42,1. FC Köln,home, 61 ,Substitution, Florian Dietz , Steffen Tigges 
+721,42,Borussia Dortmund,away, 70 ,Substitution, Youssoufa Moukoko , Salih Özcan 
+722,42,1. FC Köln,home, 70 ,Substitution, Kingsley Schindler , Linton Maina 
+723,42,1. FC Köln,home, 70 ,Substitution, Denis Huseinbašić , Florian Kainz 
+724,42,1. FC Köln,home, 71 ,Goal, Dejan Ljubičić , Denis Huseinbašić 
+725,42,Borussia Dortmund,away, 77 ,Substitution, Emre Can , Donyell Malen 
+726,42,Borussia Dortmund,away, 77 ,Substitution, Tom Rothe , Raphaël Guerreiro 
+727,42,Borussia Dortmund,away, 79 ,Own goal, Benno Schmitz , Own goal 
+728,42,1. FC Köln,home, 79 ,Yellow card, Kingsley Schindler ,
+729,42,1. FC Köln,home, 83 ,Substitution, Eric Martel , Benno Schmitz 
+730,42,1. FC Köln,home, 90 ,Yellow card, Denis Huseinbašić ,
+731,43,VfB Stuttgart,away, 22 ,Goal, Sehrou Guirassy , Hiroki Ito 
+732,43,VfL Wolfsburg,home, 23 ,Goal, Omar Marmoush , Jakub Kamiński 
+733,43,VfL Wolfsburg,home, 38 ,Goal, Maximilian Arnold , Paulo Otávio 
+734,43,VfL Wolfsburg,home, 42 ,Yellow card, Patrick Wimmer ,
+735,43,VfB Stuttgart,away, 46 ,Goal, Konstantinos Mavropanos , Pascal Stenzel 
+736,43,VfB Stuttgart,away, 47 ,Yellow card, Sehrou Guirassy ,
+737,43,VfB Stuttgart,away, 48 ,Yellow card, Waldemar Anton ,
+738,43,VfL Wolfsburg,home, 53 ,Yellow card, Ridle Baku ,
+739,43,VfB Stuttgart,away, 68 ,Substitution, Enzo Millot , Wataru Endo 
+740,43,VfB Stuttgart,away, 70 ,Yellow card, Hiroki Ito ,
+741,43,VfL Wolfsburg,home, 71 ,Yellow card, Maximilian Arnold ,
+742,43,VfL Wolfsburg,home, 76 ,Substitution, Kevin Paredes , Jakub Kamiński 
+743,43,VfB Stuttgart,away, 76 ,Substitution, Dan Zagadou , Pascal Stenzel 
+744,43,VfB Stuttgart,away, 77 ,Substitution, Luca Pfeiffer , Sehrou Guirassy 
+745,43,VfB Stuttgart,away, 77 ,Substitution, Tiago Tomás , Chris Führich 
+746,43,VfB Stuttgart,away, 79 ,Yellow card, Atakan Karazor ,
+747,43,VfB Stuttgart,away, 84 ,Yellow card, Enzo Millot ,
+748,43,VfL Wolfsburg,home, 85 ,Substitution, Sebastiaan Bornauw , Maxence Lacroix 
+749,43,VfL Wolfsburg,home, 85 ,Substitution, Felix Nmecha , Patrick Wimmer 
+750,43,VfB Stuttgart,away, 87 ,Substitution, Lilian Egloff , Naouirou Ahamada 
+751,43,VfL Wolfsburg,home, 91 ,Goal, Yannick Gerhardt , Mattias Svanberg 
+752,43,VfL Wolfsburg,home, 94 ,Substitution, Bartol Franjić , Omar Marmoush 
+753,44,RB Leipzig,home, 15 ,Goal, Timo Werner ,
+754,44,VfL Bochum,away, 19 ,Yellow card, Danilo Soares ,
+755,44,VfL Bochum,away, 22 ,Yellow card, Jannes Horn ,
+756,44,RB Leipzig,home, 23 ,Penalty, Christopher Nkunku , Penalty 
+757,44,VfL Bochum,away, 35 ,Substitution, Erhan Mašović , Danilo Soares 
+758,44,VfL Bochum,away, 45 ,Substitution, Philipp Hofmann , Simon Zoller 
+759,44,VfL Bochum,away, 45 ,Substitution, Kevin Stöger , Jacek Góralski 
+760,44,VfL Bochum,away, 45 ,Substitution, Christopher Antwi-Adjei , Jannes Horn 
+761,44,RB Leipzig,home, 53 ,Goal, Timo Werner ,
+762,44,RB Leipzig,home, 60 ,Substitution, Benjamin Henrichs , Mohamed Simakan 
+763,44,RB Leipzig,home, 64 ,Missed penalty, Christopher Nkunku , Missed penalty 
+764,44,RB Leipzig,home, 73 ,Substitution, Emil Forsberg , Dominik Szoboszlai 
+765,44,RB Leipzig,home, 73 ,Substitution, Amadou Haidara , Xaver Schlager 
+766,44,RB Leipzig,home, 73 ,Substitution, David Raum , Marcel Halstenberg 
+767,44,RB Leipzig,home, 82 ,Substitution, Hugo Novoa , Timo Werner 
+768,44,RB Leipzig,home, 85 ,Goal, Christopher Nkunku , Emil Forsberg 
+769,45,Eintracht Frankfurt,home, 12 ,Goal, Mario Götze , Randal Kolo Muani 
+770,45,1. FC Union Berlin,away, 19 ,Yellow card, Sheraldo Becker ,
+771,45,Eintracht Frankfurt,home, 42 ,Goal, Jesper Lindstrøm ,
+772,45,Eintracht Frankfurt,home, 43 ,Yellow card, Randal Kolo Muani ,
+773,45,1. FC Union Berlin,away, 57 ,Substitution, András Schäfer , Morten Thorsby 
+774,45,Eintracht Frankfurt,home, 57 ,Yellow card, Sebastian Rode ,
+775,45,1. FC Union Berlin,away, 65 ,Yellow card, Rani Khedira ,
+776,45,Eintracht Frankfurt,home, 66 ,Substitution, Djibril Sow , Mario Götze 
+777,45,1. FC Union Berlin,away, 66 ,Substitution, Paul Seguin , Janik Haberer 
+778,45,1. FC Union Berlin,away, 66 ,Substitution, Sven Michel , Sheraldo Becker 
+779,45,Eintracht Frankfurt,home, 68 ,Second yellow card, Randal Kolo Muani ,
+780,45,Eintracht Frankfurt,home, 71 ,Substitution, Éric Ebimbe , Sebastian Rode 
+781,45,Eintracht Frankfurt,home, 71 ,Substitution, Christopher Lenz , Luca Pellegrini 
+782,45,1. FC Union Berlin,away, 74 ,Yellow card, Sven Michel ,
+783,45,1. FC Union Berlin,away, 74 ,Substitution, Kevin Behrens , Rani Khedira 
+784,45,1. FC Union Berlin,away, 74 ,Substitution, Tim Skarke , Timo Baumgartl 
+785,45,1. FC Union Berlin,away, 77 ,Yellow card, Niko Gießelmann ,
+786,45,Eintracht Frankfurt,home, 86 ,Substitution, Rafael Borré , Jesper Lindstrøm 
+787,46,Bayern Munich,home, 3 ,Goal, Leroy Sané , Jamal Musiala 
+788,46,Bayern Munich,home, 17 ,Goal, Jamal Musiala , Thomas Müller 
+789,46,Bayern Munich,home, 39 ,Goal, Sadio Mané , Jamal Musiala 
+790,46,Bayer Leverkusen,away, 45 ,Substitution, Piero Hincapié , Mitchel Bakker 
+791,46,Bayer Leverkusen,away, 45 ,Substitution, Charles Aránguiz , Jeremie Frimpong 
+792,46,Bayern Munich,home, 56 ,Disallowed goal,Disallowed goal,
+793,46,Bayer Leverkusen,away, 61 ,Substitution, Sardar Azmoun , Patrik Schick 
+794,46,Bayer Leverkusen,away, 61 ,Substitution, Amine Adli , Callum Hudson-Odoi 
+795,46,Bayern Munich,home, 65 ,Substitution, Serge Gnabry , Sadio Mané 
+796,46,Bayern Munich,home, 65 ,Substitution, Leon Goretzka , Marcel Sabitzer 
+797,46,Bayern Munich,home, 74 ,Substitution, Eric Maxim Choupo-Moting , Leroy Sané 
+798,46,Bayer Leverkusen,away, 74 ,Substitution, Adam Hložek , Moussa Diaby 
+799,46,Bayern Munich,home, 81 ,Substitution, Ryan Gravenberch , Jamal Musiala 
+800,46,Bayern Munich,home, 82 ,Substitution, Noussair Mazraoui , Dayot Upamecano 
+801,46,Bayern Munich,home, 84 ,Goal, Thomas Müller ,
+802,47,SC Freiburg,away, 56 ,Yellow card, Christian Günter ,
+803,47,Hoffenheim,home, 64 ,Substitution, Munas Dabbur , Christoph Baumgartner 
+804,47,Hoffenheim,home, 64 ,Substitution, Muhammed Damar , Dennis Geiger 
+805,47,SC Freiburg,away, 78 ,Substitution, Jeong Woo-yeong , Daniel-Kofi Kyereh 
+806,47,SC Freiburg,away, 78 ,Substitution, Kevin Schade , Ritsu Dōan 
+807,47,SC Freiburg,away, 78 ,Substitution, Noah Weißhaupt , Vincenzo Grifo 
+808,47,Hoffenheim,home, 80 ,Yellow card, Munas Dabbur ,
+809,47,SC Freiburg,away, 80 ,Yellow card, Matthias Ginter ,
+810,47,Hoffenheim,home, 81 ,Substitution, Sebastian Rudy , Andrej Kramarić 
+811,47,SC Freiburg,away, 85 ,Substitution, Nils Petersen , Michael Gregoritsch 
+812,48,VfL Bochum,home, 9 ,Own goal, Benno Schmitz , Own goal 
+813,48,VfL Bochum,home, 45 ,Substitution, Jordi Osei-Tutu , Gerrit Holtmann 
+814,48,1. FC Köln,away, 63 ,Substitution, Eric Martel , Ondrej Duda 
+815,48,1. FC Köln,away, 63 ,Substitution, Kingsley Schindler , Benno Schmitz 
+816,48,1. FC Köln,away, 63 ,Substitution, Linton Maina , Jan Thielmann 
+817,48,1. FC Köln,away, 68 ,Yellow card, Timo Hübers ,
+818,48,1. FC Köln,away, 74 ,Substitution, Sargis Adamyan , Florian Kainz 
+819,48,1. FC Köln,away, 74 ,Substitution, Florian Dietz , Dejan Ljubičić 
+820,48,VfL Bochum,home, 79 ,Substitution, Christopher Antwi-Adjei , Philipp Hofmann 
+821,48,VfL Bochum,home, 83 ,Substitution, Erhan Mašović , Tim Oermann 
+822,48,VfL Bochum,home, 83 ,Substitution, Saidy Janko , Cristian Gamboa 
+823,48,1. FC Köln,away, 88 ,Goal, Linton Maina ,
+824,48,VfL Bochum,home, 90 ,Substitution, Vasilios Lampropoulos , Ivan Ordets 
+825,49,1. FC Union Berlin,home, 54 ,Goal, Jordan Siebatcheu , Sheraldo Becker 
+826,49,VfL Wolfsburg,away, 60 ,Substitution, Omar Marmoush , Luca Waldschmidt 
+827,49,VfL Wolfsburg,away, 60 ,Substitution, Felix Nmecha , Mattias Svanberg 
+828,49,1. FC Union Berlin,home, 62 ,Substitution, Paul Jaeckel , Timo Baumgartl 
+829,49,1. FC Union Berlin,home, 62 ,Substitution, Morten Thorsby , Janik Haberer 
+830,49,VfL Wolfsburg,away, 69 ,Substitution, Yannick Gerhardt , Paulo Otávio 
+831,49,1. FC Union Berlin,home, 76 ,Substitution, Paul Seguin , András Schäfer 
+832,49,1. FC Union Berlin,home, 77 ,Goal, Sheraldo Becker , Paul Seguin 
+833,49,VfL Wolfsburg,away, 79 ,Substitution, Kevin Paredes , Bartol Franjić 
+834,49,VfL Wolfsburg,away, 79 ,Substitution, Jakub Kamiński , Josip Brekalo 
+835,49,1. FC Union Berlin,home, 87 ,Substitution, Sven Michel , Sheraldo Becker 
+836,49,1. FC Union Berlin,home, 87 ,Substitution, Kevin Behrens , Jordan Siebatcheu 
+837,50,M'gladbach,home, 10 ,Goal, Jonas Hofmann ,
+838,50,RB Leipzig,away, 25 ,Yellow card, Kevin Kampl ,
+839,50,M'gladbach,home, 35 ,Goal, Jonas Hofmann , Marcus Thuram 
+840,50,RB Leipzig,away, 45 ,Substitution, Timo Werner , Emil Forsberg 
+841,50,RB Leipzig,away, 45 ,Substitution, Xaver Schlager , Amadou Haidara 
+842,50,M'gladbach,home, 52 ,Yellow card, Julian Weigl ,
+843,50,M'gladbach,home, 53 ,Goal, Ramy Bensebaïni , Lars Stindl 
+844,50,RB Leipzig,away, 66 ,Yellow card, Benjamin Henrichs ,
+845,50,M'gladbach,home, 66 ,Yellow card, Lars Stindl ,
+846,50,RB Leipzig,away, 67 ,Substitution, Yussuf Poulsen , André Silva 
+847,50,RB Leipzig,away, 80 ,Substitution, Hugo Novoa , Benjamin Henrichs 
+848,50,M'gladbach,home, 82 ,Substitution, Hannes Wolf , Lars Stindl 
+849,50,M'gladbach,home, 86 ,Substitution, Patrick Herrmann , Hannes Wolf 
+850,50,M'gladbach,home, 91 ,Substitution, Nathan Ngoumou , Marcus Thuram 
+851,50,M'gladbach,home, 91 ,Substitution, Tony Jantschke , Julian Weigl 
+852,50,M'gladbach,home, 91 ,Substitution, Stefan Lainer , Jonas Hofmann 
+853,51,Eintracht Frankfurt,away, 6 ,Goal, Sebastian Rode ,
+854,51,VfB Stuttgart,home, 31 ,Yellow card, Atakan Karazor ,
+855,51,VfB Stuttgart,home, 52 ,Yellow card, Konstantinos Mavropanos ,
+856,51,Eintracht Frankfurt,away, 55 ,Goal, Daichi Kamada ,
+857,51,VfB Stuttgart,home, 59 ,Substitution, Lilian Egloff , Atakan Karazor 
+858,51,VfB Stuttgart,home, 65 ,Substitution, Tiago Tomás , Chris Führich 
+859,51,VfB Stuttgart,home, 65 ,Substitution, Enzo Millot , Naouirou Ahamada 
+860,51,Eintracht Frankfurt,away, 67 ,Substitution, Éric Ebimbe , Sebastian Rode 
+861,51,Eintracht Frankfurt,away, 68 ,Substitution, Rafael Borré , Randal Kolo Muani 
+862,51,Eintracht Frankfurt,away, 75 ,Substitution, Timothy Chandler , Mario Götze 
+863,51,VfB Stuttgart,home, 79 ,Goal, Tiago Tomás , Borna Sosa 
+864,51,Eintracht Frankfurt,away, 83 ,Substitution, Hrvoje Smolčić , Evan Ndicka 
+865,51,VfB Stuttgart,home, 86 ,Substitution, Thomas Kastanaras , Waldemar Anton 
+866,51,Eintracht Frankfurt,away, 88 ,Goal, Kristijan Jakić , Daichi Kamada 
+867,52,Augsburg,home, 31 ,Yellow card, Mërgim Berisha ,
+868,52,Bayern Munich,away, 38 ,Yellow card, Sadio Mané ,
+869,52,Augsburg,home, 46 ,Yellow card, Andre Hahn ,
+870,52,Augsburg,home, 58 ,Yellow card, Jeffrey Gouweleeuw ,
+871,52,Augsburg,home, 59 ,Goal, Mërgim Berisha , Iago 
+872,52,Bayern Munich,away, 62 ,Substitution, Serge Gnabry , Noussair Mazraoui 
+873,52,Augsburg,home, 67 ,Substitution, Mads Pedersen , Ermedin Demirovic 
+874,52,Bayern Munich,away, 69 ,Substitution, Marcel Sabitzer , Leon Goretzka 
+875,52,Augsburg,home, 75 ,Substitution, Ruben Vargas , Iago 
+876,52,Augsburg,home, 75 ,Substitution, Fredrik Jensen , Florian Niederlechner 
+877,52,Bayern Munich,away, 78 ,Substitution, Eric Maxim Choupo-Moting , Sadio Mané 
+878,52,Bayern Munich,away, 78 ,Substitution, Josip Stanišić , Jamal Musiala 
+879,52,Augsburg,home, 94 ,Substitution, Lukas Petkov , Mërgim Berisha 
+880,53,Schalke 04,away, 20 ,Yellow card, Sepp van den Berg ,
+881,53,Borussia Dortmund,home, 32 ,Substitution, Giovanni Reyna , Marco Reus 
+882,53,Schalke 04,away, 39 ,Yellow card, Simon Terodde ,
+883,53,Borussia Dortmund,home, 48 ,Yellow card, Anthony Modeste ,
+884,53,Schalke 04,away, 58 ,Substitution, Sebastian Polter , Simon Terodde 
+885,53,Schalke 04,away, 58 ,Substitution, Kenan Karaman , Jordan Larsson 
+886,53,Borussia Dortmund,home, 64 ,Substitution, Youssoufa Moukoko , Anthony Modeste 
+887,53,Borussia Dortmund,home, 64 ,Substitution, Karim Adeyemi , Donyell Malen 
+888,53,Schalke 04,away, 76 ,Substitution, Alex Král , Marius Bülter 
+889,53,Borussia Dortmund,home, 78 ,Goal, Youssoufa Moukoko , Marius Wolf 
+890,53,Schalke 04,away, 81 ,Substitution, Rodrigo Zalazar , Tom Krauß 
+891,53,Borussia Dortmund,home, 83 ,Yellow card, Karim Adeyemi ,
+892,53,Borussia Dortmund,home, 84 ,Substitution, Emre Can , Julian Brandt 
+893,53,Borussia Dortmund,home, 84 ,Substitution, Thorgan Hazard , Giovanni Reyna 
+894,53,Borussia Dortmund,home, 85 ,Yellow card, Emre Can ,
+895,54,Bayer Leverkusen,home, 24 ,Yellow card, Kerem Demirbay ,
+896,54,Werder Bremen,away, 26 ,Yellow card, Romano Schmid ,
+897,54,Bayer Leverkusen,home, 57 ,Goal, Kerem Demirbay , Odilon Kossounou 
+898,54,Bayer Leverkusen,home, 61 ,Substitution, Charles Aránguiz , Kerem Demirbay 
+899,54,Werder Bremen,away, 69 ,Substitution, Oliver Burke , Christian Groß 
+900,54,Bayer Leverkusen,home, 69 ,Substitution, Adam Hložek , Jeremie Frimpong 
+901,54,Werder Bremen,away, 69 ,Substitution, Lee Buchanan , Anthony Jung 
+902,54,Werder Bremen,away, 79 ,Substitution, Nicolai Rapp , Ilia Gruev 
+903,54,Werder Bremen,away, 82 ,Goal, Milos Veljkovic ,
+904,54,Bayer Leverkusen,home, 84 ,Substitution, Mitchel Bakker , Piero Hincapié 
+905,54,Bayer Leverkusen,home, 84 ,Substitution, Sardar Azmoun , Callum Hudson-Odoi 
+906,54,Werder Bremen,away, 88 ,Yellow card, Amos Pieper ,
+907,54,Werder Bremen,away, 95 ,Substitution, Niklas Stark , Marvin Ducksch 
+908,54,Bayer Leverkusen,home, 96 ,Yellow card, Jonathan Tah ,
+909,54,Werder Bremen,away, 98 ,Yellow card, Mitchell Weiser ,
+910,55,Hertha BSC,away, 30 ,Goal, Lucas Tousart , Chidera Ejuke 
+911,55,Mainz 05,home, 40 ,Yellow card, Dominik Kohr ,
+912,55,Hertha BSC,away, 45 ,Substitution, Márton Dárdai , Marc Kempf 
+913,55,Mainz 05,home, 45 ,Substitution, Marlon Mustapha , Angelo Fulgini 
+914,55,Hertha BSC,away, 48 ,Yellow card, Marvin Plattenhardt ,
+915,55,Mainz 05,home, 55 ,Substitution, Anthony Caci , Aarón Martin 
+916,55,Hertha BSC,away, 55 ,Substitution, Maximilian Mittelstädt , Marvin Plattenhardt 
+917,55,Hertha BSC,away, 58 ,Yellow card, Dodi Lukebakio ,
+918,55,Mainz 05,home, 59 ,Substitution, Danny Da Costa , Edimilson Fernandes 
+919,55,Hertha BSC,away, 64 ,Yellow card, Márton Dárdai ,
+920,55,Hertha BSC,away, 65 ,Yellow card, Jean Boëtius ,
+921,55,Mainz 05,home, 67 ,Yellow card, Marlon Mustapha ,
+922,55,Hertha BSC,away, 72 ,Substitution, Vladimir Darida , Dodi Lukebakio 
+923,55,Hertha BSC,away, 73 ,Substitution, Marco Richter , Jean Boëtius 
+924,55,Mainz 05,home, 74 ,Yellow card, Karim Onisiwo ,
+925,55,Mainz 05,home, 79 ,Substitution, Aymen Barkok , Stefan Bell 
+926,55,Mainz 05,home, 79 ,Substitution, Marcus Ingvartsen , Marlon Mustapha 
+927,55,Hertha BSC,away, 83 ,Substitution, Peter Pekarik , Chidera Ejuke 
+928,55,Mainz 05,home, 94 ,Goal, Anthony Caci ,
+929,55,Hertha BSC,away, 94 ,Yellow card, Oliver Christensen ,
+930,56,M'gladbach,away, 34 ,Substitution, Nathan Ngoumou , Florian Neuhaus 
+931,56,SC Freiburg,home, 54 ,Yellow card, Christian Günter ,
+932,56,M'gladbach,away, 62 ,Yellow card, Ramy Bensebaïni ,
+933,56,SC Freiburg,home, 68 ,Substitution, Yannik Keitel , Maximilian Eggestein 
+934,56,SC Freiburg,home, 69 ,Substitution, Jeong Woo-yeong , Daniel-Kofi Kyereh 
+935,56,SC Freiburg,home, 81 ,Substitution, Kevin Schade , Ritsu Dōan 
+936,56,M'gladbach,away, 82 ,Substitution, Yvandro Borges Sanches , Nathan Ngoumou 
+937,56,M'gladbach,away, 82 ,Substitution, Hannes Wolf , Lars Stindl 
+938,56,SC Freiburg,home, 82 ,Substitution, Noah Weißhaupt , Vincenzo Grifo 
+939,56,SC Freiburg,home, 83 ,Substitution, Nils Petersen , Michael Gregoritsch 
+940,57,1. FC Union Berlin,away, 3 ,Own goal, Timo Hübers , Own goal 
+941,57,1. FC Köln,home, 9 ,Yellow card, Luca Kilian ,
+942,57,1. FC Union Berlin,away, 10 ,Missed penalty, Jordan Siebatcheu , Missed penalty 
+943,57,1. FC Union Berlin,away, 15 ,Disallowed goal,Disallowed goal,
+944,57,1. FC Köln,home, 45 ,Substitution, Steffen Tigges , Florian Dietz 
+945,57,1. FC Union Berlin,away, 53 ,Yellow card, Robin Knoche ,
+946,57,1. FC Köln,home, 54 ,Yellow card, Kristian Pedersen ,
+947,57,1. FC Köln,home, 62 ,Substitution, Kingsley Schindler , Benno Schmitz 
+948,57,1. FC Köln,home, 62 ,Substitution, Dejan Ljubičić , Kristian Pedersen 
+949,57,1. FC Union Berlin,away, 64 ,Substitution, Milos Pantović , Janik Haberer 
+950,57,1. FC Köln,home, 72 ,Yellow card, Kingsley Schindler ,
+951,57,1. FC Union Berlin,away, 75 ,Substitution, Kevin Behrens , Jordan Siebatcheu 
+952,57,1. FC Union Berlin,away, 75 ,Substitution, Sven Michel , Sheraldo Becker 
+953,57,1. FC Köln,home, 75 ,Substitution, Jan Thielmann , Florian Kainz 
+954,57,1. FC Köln,home, 81 ,Second yellow card, Luca Kilian ,
+955,57,1. FC Köln,home, 85 ,Substitution, Sargis Adamyan , Linton Maina 
+956,57,1. FC Union Berlin,away, 89 ,Substitution, Paul Seguin , András Schäfer 
+957,58,VfL Bochum,away, 4 ,Substitution, Gerrit Holtmann , Takuma Asano 
+958,58,VfL Bochum,away, 9 ,Yellow card, Simon Zoller ,
+959,58,VfL Bochum,away, 29 ,Yellow card, Anthony Losilla ,
+960,58,Schalke 04,home, 38 ,Goal, Dominick Drexler ,
+961,58,VfL Bochum,away, 45 ,Substitution, Saidy Janko , Cristian Gamboa 
+962,58,VfL Bochum,away, 51 ,Goal, Philipp Hofmann , Gerrit Holtmann 
+963,58,Schalke 04,home, 57 ,Substitution, Rodrigo Zalazar , Jordan Larsson 
+964,58,Schalke 04,home, 68 ,Substitution, Sebastian Polter , Dominick Drexler 
+965,58,Schalke 04,home, 73 ,Own goal, Erhan Mašović , Own goal 
+966,58,VfL Bochum,away, 77 ,Substitution, Jordi Osei-Tutu , Philipp Förster 
+967,58,VfL Bochum,away, 77 ,Substitution, Patrick Osterhage , Simon Zoller 
+968,58,VfL Bochum,away, 82 ,Yellow card, Danilo Soares ,
+969,58,VfL Bochum,away, 85 ,Substitution, Silvère Ganvoula , Danilo Soares 
+970,58,Schalke 04,home, 86 ,Yellow card, Alexander Schwolow ,
+971,58,Schalke 04,home, 86 ,Yellow card, Florian Flick ,
+972,58,Schalke 04,home, 87 ,Substitution, Kenan Karaman , Simon Terodde 
+973,58,Schalke 04,home, 87 ,Substitution, Leo Greiml , Tom Krauß 
+974,58,Schalke 04,home, 96 ,Goal, Sebastian Polter , Tobias Mohr 
+975,59,RB Leipzig,home, 6 ,Goal, Willi Orban , Dominik Szoboszlai 
+976,59,RB Leipzig,home, 45 ,Goal, Dominik Szoboszlai , Mohamed Simakan 
+977,59,Borussia Dortmund,away, 58 ,Yellow card, Thomas Meunier ,
+978,59,Borussia Dortmund,away, 59 ,Substitution, Giovanni Reyna , Marius Wolf 
+979,59,Borussia Dortmund,away, 59 ,Substitution, Youssoufa Moukoko , Julian Brandt 
+980,59,RB Leipzig,home, 68 ,Substitution, Benjamin Henrichs , Mohamed Simakan 
+981,59,Borussia Dortmund,away, 69 ,Substitution, Justin Njinmah , Salih Özcan 
+982,59,RB Leipzig,home, 75 ,Yellow card, Konrad Laimer ,
+983,59,RB Leipzig,home, 77 ,Substitution, Joško Gvardiol , Abdou Diallo 
+984,59,RB Leipzig,home, 77 ,Substitution, Amadou Haidara , Emil Forsberg 
+985,59,RB Leipzig,home, 84 ,Goal, Amadou Haidara , Timo Werner 
+986,59,RB Leipzig,home, 85 ,Substitution, Kevin Kampl , Konrad Laimer 
+987,59,RB Leipzig,home, 85 ,Substitution, André Silva , Timo Werner 
+988,59,Borussia Dortmund,away, 87 ,Substitution, Emre Can , Anthony Modeste 
+989,59,RB Leipzig,home, 89 ,Yellow card, David Raum ,
+990,60,Bayer Leverkusen,away, 41 ,Substitution, Charles Aránguiz , Exequiel Palacios 
+991,60,Hertha BSC,home, 43 ,Yellow card, Suat Serdar ,
+992,60,Hertha BSC,home, 48 ,Yellow card, Ivan Šunjić ,
+993,60,Bayer Leverkusen,away, 49 ,Goal, Kerem Demirbay ,
+994,60,Bayer Leverkusen,away, 52 ,Yellow card, Charles Aránguiz ,
+995,60,Hertha BSC,home, 55 ,Goal, Suat Serdar , Chidera Ejuke 
+996,60,Bayer Leverkusen,away, 66 ,Substitution, Nadiem Amiri , Adam Hložek 
+997,60,Hertha BSC,home, 67 ,Substitution, Jean Boëtius , Suat Serdar 
+998,60,Hertha BSC,home, 67 ,Substitution, Marco Richter , Chidera Ejuke 
+999,60,Hertha BSC,home, 74 ,Goal, Marco Richter ,
+1000,60,Bayer Leverkusen,away, 76 ,Substitution, Sardar Azmoun , Callum Hudson-Odoi 
+1001,60,Bayer Leverkusen,away, 76 ,Substitution, Robert Andrich , Kerem Demirbay 
+1002,60,Bayer Leverkusen,away, 76 ,Substitution, Odilon Kossounou , Jeremie Frimpong 
+1003,60,Bayer Leverkusen,away, 79 ,Goal, Patrik Schick , Robert Andrich 
+1004,60,Hertha BSC,home, 81 ,Substitution, Davie Selke , Wilfried Kanga 
+1005,60,Hertha BSC,home, 81 ,Substitution, Márton Dárdai , Dodi Lukebakio 
+1006,60,Hertha BSC,home, 86 ,Yellow card, Davie Selke ,
+1007,60,Hertha BSC,home, 93 ,Substitution, Vladimir Darida , Lucas Tousart 
+1008,61,VfB Stuttgart,away, 4 ,Yellow card, Borna Sosa ,
+1009,61,Bayern Munich,home, 36 ,Goal, Mathys Tel , Alphonso Davies 
+1010,61,VfB Stuttgart,away, 45 ,Substitution, Chris Führich , Tiago Tomás 
+1011,61,VfB Stuttgart,away, 51 ,Disallowed goal,Disallowed goal,
+1012,61,VfB Stuttgart,away, 57 ,Goal, Chris Führich , Konstantinos Mavropanos 
+1013,61,VfB Stuttgart,away, 59 ,Yellow card, Hiroki Ito ,
+1014,61,Bayern Munich,home, 60 ,Goal, Jamal Musiala , Noussair Mazraoui 
+1015,61,Bayern Munich,home, 61 ,Substitution, Josip Stanišić , Noussair Mazraoui 
+1016,61,Bayern Munich,home, 61 ,Substitution, Leroy Sané , Mathys Tel 
+1017,61,Bayern Munich,home, 69 ,Substitution, Eric Maxim Choupo-Moting , Thomas Müller 
+1018,61,VfB Stuttgart,away, 75 ,Substitution, Juan Perea , Silas Katompa Mvumpa 
+1019,61,VfB Stuttgart,away, 75 ,Substitution, Lilian Egloff , Wataru Endo 
+1020,61,VfB Stuttgart,away, 79 ,Yellow card, Naouirou Ahamada ,
+1021,61,VfB Stuttgart,away, 81 ,Yellow card, Waldemar Anton ,
+1022,61,Bayern Munich,home, 81 ,Substitution, Sadio Mané , Jamal Musiala 
+1023,61,Bayern Munich,home, 81 ,Substitution, Ryan Gravenberch , Serge Gnabry 
+1024,61,VfB Stuttgart,away, 84 ,Substitution, Enzo Millot , Naouirou Ahamada 
+1025,61,VfB Stuttgart,away, 84 ,Substitution, Pascal Stenzel , Konstantinos Mavropanos 
+1026,61,VfB Stuttgart,away, 90 ,Yellow card, Atakan Karazor ,
+1027,61,Bayern Munich,home, 91 ,Yellow card, Matthijs de Ligt ,
+1028,61,VfB Stuttgart,away, 92 ,Penalty, Sehrou Guirassy , Penalty 
+1029,61,Bayern Munich,home, 94 ,Yellow card, Leroy Sané ,
+1030,62,VfL Wolfsburg,away, 10 ,Yellow card, Paulo Otávio ,
+1031,62,Eintracht Frankfurt,home, 15 ,Yellow card, Djibril Sow ,
+1032,62,VfL Wolfsburg,away, 52 ,Yellow card, Mattias Svanberg ,
+1033,62,VfL Wolfsburg,away, 60 ,Goal, Maxence Lacroix , Josip Brekalo 
+1034,62,Eintracht Frankfurt,home, 62 ,Yellow card, Tuta ,
+1035,62,VfL Wolfsburg,away, 64 ,Substitution, Josuha Guilavogui , Bartol Franjić 
+1036,62,Eintracht Frankfurt,home, 64 ,Substitution, Lucas Alario , Rafael Borré 
+1037,62,Eintracht Frankfurt,home, 64 ,Substitution, Jesper Lindstrøm , Daichi Kamada 
+1038,62,VfL Wolfsburg,away, 79 ,Substitution, Felix Nmecha , Mattias Svanberg 
+1039,62,VfL Wolfsburg,away, 79 ,Substitution, Omar Marmoush , Luca Waldschmidt 
+1040,62,Eintracht Frankfurt,home, 82 ,Substitution, Faride Alidou , Ansgar Knauff 
+1041,62,VfL Wolfsburg,away, 86 ,Yellow card, Lukas Nmecha ,
+1042,62,VfL Wolfsburg,away, 89 ,Substitution, Yannick Gerhardt , Josip Brekalo 
+1043,62,VfL Wolfsburg,away, 91 ,Yellow card, Maximilian Arnold ,
+1044,63,Hoffenheim,home, 9 ,Yellow card, Christoph Baumgartner ,
+1045,63,Hoffenheim,home, 10 ,Yellow card, Kevin Akpoguma ,
+1046,63,Mainz 05,away, 14 ,Substitution, Delano Burgzorg , Jonathan Burkardt 
+1047,63,Mainz 05,away, 41 ,Red card, Alexander Hack ,
+1048,63,Hoffenheim,home, 44 ,Missed penalty, Andrej Kramarić , Missed penalty 
+1049,63,Hoffenheim,home, 45 ,Substitution, Stanley Nsoki , Kevin Akpoguma 
+1050,63,Mainz 05,away, 45 ,Substitution, Niklas Tauer , Delano Burgzorg 
+1051,63,Hoffenheim,home, 53 ,Goal, Andrej Kramarić , Georginio Rutter 
+1052,63,Mainz 05,away, 64 ,Substitution, Lee Jae-sung , Angelo Fulgini 
+1053,63,Mainz 05,away, 64 ,Substitution, Edimilson Fernandes , Leandro Barreiro 
+1054,63,Hoffenheim,home, 66 ,Yellow card, Kevin Vogt ,
+1055,63,Hoffenheim,home, 69 ,Goal, Grischa Prömel , Christoph Baumgartner 
+1056,63,Hoffenheim,home, 70 ,Substitution, Munas Dabbur , Andrej Kramarić 
+1057,63,Hoffenheim,home, 70 ,Substitution, Sebastian Rudy , Dennis Geiger 
+1058,63,Hoffenheim,home, 75 ,Substitution, Angeliño , Robert Skov 
+1059,63,Mainz 05,away, 75 ,Substitution, Anthony Caci , Aarón Martin 
+1060,63,Hoffenheim,home, 80 ,Goal, Munas Dabbur , Angeliño 
+1061,63,Mainz 05,away, 83 ,Goal, Dominik Kohr ,
+1062,63,Hoffenheim,home, 84 ,Substitution, Angelo Stiller , Christoph Baumgartner 
+1063,63,Mainz 05,away, 85 ,Yellow card, Karim Onisiwo ,
+1064,63,Mainz 05,away, 87 ,Yellow card, Stefan Bell ,
+1065,63,Hoffenheim,home, 92 ,Goal, Pavel Kaderabek , Angelo Stiller 
+1066,64,Werder Bremen,home, 25 ,Yellow card, Christian Groß ,
+1067,64,Werder Bremen,home, 29 ,Substitution, Michael Zetterer , Jirí Pavlenka 
+1068,64,Augsburg,away, 32 ,Yellow card, Elvis Rexhbeçaj ,
+1069,64,Werder Bremen,home, 32 ,Disallowed goal,Disallowed goal,
+1070,64,Werder Bremen,home, 38 ,Yellow card, Niclas Füllkrug ,
+1071,64,Augsburg,away, 63 ,Goal, Ermedin Demirovic , Mërgim Berisha 
+1072,64,Werder Bremen,home, 67 ,Substitution, Ilia Gruev , Christian Groß 
+1073,64,Werder Bremen,home, 67 ,Substitution, Niklas Schmidt , Jens Stage 
+1074,64,Werder Bremen,home, 67 ,Substitution, Oliver Burke , Romano Schmid 
+1075,64,Augsburg,away, 70 ,Substitution, Fredrik Jensen , Ermedin Demirovic 
+1076,64,Augsburg,away, 76 ,Yellow card, Maximilian Bauer ,
+1077,64,Augsburg,away, 78 ,Substitution, Arne Maier , Florian Niederlechner 
+1078,64,Werder Bremen,home, 87 ,Substitution, Lee Buchanan , Anthony Jung 
+1079,64,Augsburg,away, 93 ,Yellow card, Jeffrey Gouweleeuw ,
+1080,64,Werder Bremen,home, 94 ,Missed penalty, Marvin Ducksch , Missed penalty 
+1081,64,Werder Bremen,home, 94 ,Yellow card, Marco Friedl ,
+1082,64,Augsburg,away, 94 ,Yellow card, Carlos Gruezo ,
+1083,64,Augsburg,away, 96 ,Yellow card, Rafal Gikiewicz ,
+1084,64,Augsburg,away, 97 ,Substitution, Daniel Caligiuri , Mërgim Berisha 
+1085,64,Werder Bremen,home, 98 ,Yellow card, Amos Pieper ,
+1086,65,M'gladbach,home, 26 ,Yellow card, K Koné ,
+1087,65,Mainz 05,away, 39 ,Yellow card, Leandro Barreiro ,
+1088,65,Mainz 05,away, 42 ,Yellow card, Lee Jae-sung ,
+1089,65,M'gladbach,home, 45 ,Substitution, Marvin Friedrich , Nico Elvedi 
+1090,65,M'gladbach,home, 52 ,Substitution, Lars Stindl , Alassane Plea 
+1091,65,M'gladbach,home, 53 ,Red card, Ko Itakura ,
+1092,65,Mainz 05,away, 55 ,Goal, Aarón Martin ,
+1093,65,Mainz 05,away, 58 ,Substitution, Angelo Fulgini , Leandro Barreiro 
+1094,65,Mainz 05,away, 58 ,Substitution, Anton Stach , Lee Jae-sung 
+1095,65,Mainz 05,away, 76 ,Substitution, Delano Burgzorg , Jonathan Burkardt 
+1096,65,Mainz 05,away, 81 ,Substitution, Marlon Mustapha , Karim Onisiwo 
+1097,65,Mainz 05,away, 81 ,Substitution, Edimilson Fernandes , Maxim Leitsch 
+1098,65,M'gladbach,home, 82 ,Substitution, Nathan Ngoumou , Joe Scally 
+1099,65,M'gladbach,home, 87 ,Substitution, Julian Weigl , K Koné 
+1100,65,Mainz 05,away, 88 ,Yellow card, Dominik Kohr ,
+1101,65,Mainz 05,away, 95 ,Yellow card, Robin Zentner ,
+1102,66,Hertha BSC,away, 23 ,Yellow card, Filip Uremović ,
+1103,66,Augsburg,home, 31 ,Yellow card, Carlos Gruezo ,
+1104,66,Augsburg,home, 36 ,Substitution, Julian Baumgartlinger , Carlos Gruezo 
+1105,66,Augsburg,home, 45 ,Substitution, Ruben Vargas , Arne Maier 
+1106,66,Hertha BSC,away, 57 ,Goal, Dodi Lukebakio , Marvin Plattenhardt 
+1107,66,Hertha BSC,away, 58 ,Substitution, Jean Boëtius , Suat Serdar 
+1108,66,Hertha BSC,away, 69 ,Substitution, Marco Richter , Chidera Ejuke 
+1109,66,Augsburg,home, 72 ,Yellow card, Mërgim Berisha ,
+1110,66,Augsburg,home, 74 ,Substitution, Florian Niederlechner , Ermedin Demirovic 
+1111,66,Augsburg,home, 74 ,Substitution, Andre Hahn , Mërgim Berisha 
+1112,66,Augsburg,home, 82 ,Substitution, Lukas Petkov , Elvis Rexhbeçaj 
+1113,66,Hertha BSC,away, 83 ,Substitution, Davie Selke , Wilfried Kanga 
+1114,66,Hertha BSC,away, 83 ,Substitution, Márton Dárdai , Dodi Lukebakio 
+1115,66,Hertha BSC,away, 93 ,Goal, Marco Richter , Davie Selke 
+1116,67,RB Leipzig,away, 11 ,Substitution, Emil Forsberg , Dani Olmo 
+1117,67,Eintracht Frankfurt,home, 16 ,Goal, Daichi Kamada , Randal Kolo Muani 
+1118,67,Eintracht Frankfurt,home, 22 ,Goal, Sebastian Rode , Randal Kolo Muani 
+1119,67,Eintracht Frankfurt,home, 32 ,Substitution, Éric Ebimbe , Sebastian Rode 
+1120,67,Eintracht Frankfurt,home, 33 ,Yellow card, Djibril Sow ,
+1121,67,RB Leipzig,away, 45 ,Substitution, Dominik Szoboszlai , Kevin Kampl 
+1122,67,RB Leipzig,away, 60 ,Yellow card, Benjamin Henrichs ,
+1123,67,Eintracht Frankfurt,home, 67 ,Goal, Tuta ,
+1124,67,RB Leipzig,away, 69 ,Substitution, Marcel Halstenberg , David Raum 
+1125,67,RB Leipzig,away, 69 ,Substitution, Amadou Haidara , Mohamed Simakan 
+1126,67,Eintracht Frankfurt,home, 74 ,Substitution, Rafael Borré , Randal Kolo Muani 
+1127,67,Eintracht Frankfurt,home, 74 ,Substitution, Ansgar Knauff , Jesper Lindstrøm 
+1128,67,RB Leipzig,away, 74 ,Substitution, André Silva , Timo Werner 
+1129,67,Eintracht Frankfurt,home, 84 ,Penalty, Rafael Borré , Penalty 
+1130,67,Eintracht Frankfurt,home, 86 ,Substitution, Timothy Chandler , Kristijan Jakić 
+1131,67,Eintracht Frankfurt,home, 87 ,Substitution, Hrvoje Smolčić , Christopher Lenz 
+1132,68,Bayer Leverkusen,home, 5 ,Yellow card, Jonathan Tah ,
+1133,68,SC Freiburg,away, 9 ,Substitution, Jeong Woo-yeong , Roland Sallai 
+1134,68,Bayer Leverkusen,home, 16 ,Goal, Kerem Demirbay ,
+1135,68,SC Freiburg,away, 34 ,Yellow card, Nicolas Höfler ,
+1136,68,SC Freiburg,away, 45 ,Substitution, Maximilian Eggestein , Yannik Keitel 
+1137,68,SC Freiburg,away, 45 ,Substitution, Ritsu Dōan , Manuel Gulde 
+1138,68,SC Freiburg,away, 48 ,Goal, Matthias Ginter , Vincenzo Grifo 
+1139,68,SC Freiburg,away, 51 ,Goal, Michael Gregoritsch , Jeong Woo-yeong 
+1140,68,SC Freiburg,away, 53 ,Yellow card, Michael Gregoritsch ,
+1141,68,Bayer Leverkusen,home, 60 ,Substitution, Charles Aránguiz , Kerem Demirbay 
+1142,68,Bayer Leverkusen,home, 60 ,Substitution, Callum Hudson-Odoi , Jonathan Tah 
+1143,68,Bayer Leverkusen,home, 60 ,Substitution, Sardar Azmoun , Exequiel Palacios 
+1144,68,Bayer Leverkusen,home, 65 ,Goal, Patrik Schick , Callum Hudson-Odoi 
+1145,68,SC Freiburg,away, 72 ,Goal, Ritsu Dōan , Nicolas Höfler 
+1146,68,Bayer Leverkusen,home, 78 ,Substitution, Timothy Fosu-Mensah , Daley Sinkgraven 
+1147,68,Bayer Leverkusen,home, 79 ,Substitution, Nadiem Amiri , Robert Andrich 
+1148,68,SC Freiburg,away, 80 ,Substitution, Nils Petersen , Vincenzo Grifo 
+1149,68,SC Freiburg,away, 80 ,Substitution, Keven Schlotterbeck , Michael Gregoritsch 
+1150,68,Bayer Leverkusen,home, 82 ,Yellow card, Nadiem Amiri ,
+1151,69,VfB Stuttgart,home, 18 ,Goal, Chris Führich , Silas Katompa Mvumpa 
+1152,69,Schalke 04,away, 21 ,Goal, Simon Terodde , Dominick Drexler 
+1153,69,Schalke 04,away, 28 ,Yellow card, Dominick Drexler ,
+1154,69,VfB Stuttgart,home, 45 ,Yellow card, Josha Vagnoman ,
+1155,69,Schalke 04,away, 45 ,Yellow card, Marius Bülter ,
+1156,69,VfB Stuttgart,home, 49 ,Yellow card, Borna Sosa ,
+1157,69,Schalke 04,away, 45 ,Substitution, Tobias Mohr , Thomas Ouwejan 
+1158,69,VfB Stuttgart,home, 62 ,Substitution, Tiago Tomás , Lilian Egloff 
+1159,69,VfB Stuttgart,home, 63 ,Substitution, Enzo Millot , Borna Sosa 
+1160,69,Schalke 04,away, 65 ,Substitution, Sebastian Polter , Simon Terodde 
+1161,69,Schalke 04,away, 65 ,Substitution, Rodrigo Zalazar , Jordan Larsson 
+1162,69,VfB Stuttgart,home, 67 ,Second yellow card, Josha Vagnoman ,
+1163,69,VfB Stuttgart,home, 73 ,Yellow card, Konstantinos Mavropanos ,
+1164,69,Schalke 04,away, 74 ,Substitution, Florent Mollet , Dominick Drexler 
+1165,69,VfB Stuttgart,home, 76 ,Substitution, Pascal Stenzel , Chris Führich 
+1166,69,VfB Stuttgart,home, 83 ,Substitution, Atakan Karazor , Naouirou Ahamada 
+1167,69,VfB Stuttgart,home, 83 ,Substitution, Sehrou Guirassy , Silas Katompa Mvumpa 
+1168,70,VfL Wolfsburg,home, 2 ,Goal, Lukas Nmecha , Bartol Franjić 
+1169,70,1. FC Köln,away, 22 ,Goal, Dejan Ljubičić , Florian Kainz 
+1170,70,1. FC Köln,away, 31 ,Own goal, Paulo Otávio , Own goal 
+1171,70,VfL Wolfsburg,home, 38 ,Yellow card, Micky van de Ven ,
+1172,70,1. FC Köln,away, 47 ,Penalty, Florian Kainz , Penalty 
+1173,70,VfL Wolfsburg,home, 45 ,Substitution, Omar Marmoush , Sebastiaan Bornauw 
+1174,70,VfL Wolfsburg,home, 61 ,Substitution, Kevin Paredes , Luca Waldschmidt 
+1175,70,1. FC Köln,away, 63 ,Yellow card, Ondrej Duda ,
+1176,70,1. FC Köln,away, 65 ,Substitution, Linton Maina , Ondrej Duda 
+1177,70,1. FC Köln,away, 65 ,Substitution, Sargis Adamyan , Jan Thielmann 
+1178,70,VfL Wolfsburg,home, 74 ,Substitution, Felix Nmecha , Bartol Franjić 
+1179,70,VfL Wolfsburg,home, 75 ,Substitution, Mattias Svanberg , Maximilian Arnold 
+1180,70,VfL Wolfsburg,home, 75 ,Substitution, Jakub Kamiński , Paulo Otávio 
+1181,70,VfL Wolfsburg,home, 79 ,Goal, Lukas Nmecha , Mattias Svanberg 
+1182,70,1. FC Köln,away, 80 ,Substitution, Tim Lemperle , Steffen Tigges 
+1183,70,1. FC Köln,away, 81 ,Goal, Sargis Adamyan , Florian Kainz 
+1184,70,VfL Wolfsburg,home, 82 ,Yellow card, Omar Marmoush ,
+1185,70,1. FC Köln,away, 88 ,Substitution, Eric Martel , Dejan Ljubičić 
+1186,70,1. FC Köln,away, 88 ,Substitution, Denis Huseinbašić , Florian Kainz 
+1187,71,1. FC Union Berlin,home, 12 ,Goal, Sheraldo Becker , Christopher Trimmel 
+1188,71,Bayern Munich,away, 15 ,Goal, Joshua Kimmich ,
+1189,71,Bayern Munich,away, 26 ,Yellow card, Joshua Kimmich ,
+1190,71,Bayern Munich,away, 62 ,Substitution, Thomas Müller , Jamal Musiala 
+1191,71,1. FC Union Berlin,home, 62 ,Substitution, Jamie Leweling , Sheraldo Becker 
+1192,71,Bayern Munich,away, 62 ,Substitution, Ryan Gravenberch , Joshua Kimmich 
+1193,71,1. FC Union Berlin,home, 62 ,Substitution, Sven Michel , Kevin Behrens 
+1194,71,Bayern Munich,away, 72 ,Yellow card, Ryan Gravenberch ,
+1195,71,Bayern Munich,away, 73 ,Substitution, Serge Gnabry , Kingsley Coman 
+1196,71,1. FC Union Berlin,home, 81 ,Substitution, Niko Gießelmann , Julian Ryerson 
+1197,71,Bayern Munich,away, 85 ,Substitution, Leon Goretzka , Alphonso Davies 
+1198,71,1. FC Union Berlin,home, 85 ,Substitution, Paul Seguin , András Schäfer 
+1199,71,1. FC Union Berlin,home, 85 ,Substitution, Genki Haraguchi , Morten Thorsby 
+1200,71,1. FC Union Berlin,home, 87 ,Yellow card, Rani Khedira ,
+1201,72,Werder Bremen,away, 33 ,Yellow card, Mitchell Weiser ,
+1202,72,VfL Bochum,home, 39 ,Yellow card, Simon Zoller ,
+1203,72,VfL Bochum,home, 65 ,Substitution, Philipp Hofmann , Gerrit Holtmann 
+1204,72,Werder Bremen,away, 69 ,Yellow card, Amos Pieper ,
+1205,72,VfL Bochum,home, 71 ,Substitution, Christopher Antwi-Adjei , Simon Zoller 
+1206,72,VfL Bochum,home, 71 ,Substitution, Patrick Osterhage , Philipp Förster 
+1207,72,Werder Bremen,away, 74 ,Substitution, Oliver Burke , Marvin Ducksch 
+1208,72,Werder Bremen,away, 74 ,Substitution, Jens Stage , Romano Schmid 
+1209,72,Werder Bremen,away, 77 ,Substitution, Niklas Stark , Amos Pieper 
+1210,72,VfL Bochum,home, 81 ,Disallowed goal,Disallowed goal,
+1211,72,Werder Bremen,away, 86 ,Goal, Niclas Füllkrug , Mitchell Weiser 
+1212,72,VfL Bochum,home, 89 ,Substitution, Ivan Ordets , Jordi Osei-Tutu 
+1213,72,Werder Bremen,away, 90 ,Substitution, Nicolai Rapp , Niklas Schmidt 
+1214,72,Werder Bremen,away, 90 ,Substitution, Ilia Gruev , Christian Groß 
+1215,72,VfL Bochum,home, 91 ,Yellow card, Vasilios Lampropoulos ,
+1216,72,Werder Bremen,away, 92 ,Penalty, Niclas Füllkrug , Penalty 
+1217,72,VfL Bochum,home, 97 ,Disallowed goal,Disallowed goal,
+1218,73,Borussia Dortmund,home, 16 ,Goal, Marco Reus , Julian Brandt 
+1219,73,Hoffenheim,away, 35 ,Yellow card, Robert Skov ,
+1220,73,Borussia Dortmund,home, 44 ,Substitution, Thorgan Hazard , Jamie Bynoe-Gittens 
+1221,73,Hoffenheim,away, 45 ,Substitution, Sebastian Rudy , Dennis Geiger 
+1222,73,Hoffenheim,away, 45 ,Substitution, Pavel Kaderabek , Robert Skov 
+1223,73,Hoffenheim,away, 45 ,Substitution, Muhammed Damar , Christoph Baumgartner 
+1224,73,Borussia Dortmund,home, 57 ,Yellow card, Marco Reus ,
+1225,73,Hoffenheim,away, 57 ,Yellow card, Kevin Vogt ,
+1226,73,Borussia Dortmund,home, 57 ,Yellow card, Jude Bellingham ,
+1227,73,Hoffenheim,away, 64 ,Yellow card, Ozan Kabak ,
+1228,73,Hoffenheim,away, 71 ,Substitution, Munas Dabbur , Grischa Prömel 
+1229,73,Borussia Dortmund,home, 76 ,Yellow card, Mats Hummels ,
+1230,73,Hoffenheim,away, 80 ,Yellow card, Andrej Kramarić ,
+1231,73,Borussia Dortmund,home, 83 ,Substitution, Niklas Süle , Marius Wolf 
+1232,73,Borussia Dortmund,home, 83 ,Substitution, Giovanni Reyna , Julian Brandt 
+1233,73,Hoffenheim,away, 86 ,Substitution, Jacob Bruun Larsen , Georginio Rutter 
+1234,73,Borussia Dortmund,home, 92 ,Substitution, Youssoufa Moukoko , Marco Reus 
+1235,74,Eintracht Frankfurt,away, 2 ,Goal, Mario Götze , Randal Kolo Muani 
+1236,74,Werder Bremen,home, 14 ,Goal, Anthony Jung ,
+1237,74,Werder Bremen,home, 17 ,Goal, Leonardo Bittencourt , Marvin Ducksch 
+1238,74,Werder Bremen,home, 30 ,Substitution, Romano Schmid , Leonardo Bittencourt 
+1239,74,Eintracht Frankfurt,away, 32 ,Goal, Randal Kolo Muani ,
+1240,74,Werder Bremen,home, 33 ,Yellow card, Amos Pieper ,
+1241,74,Eintracht Frankfurt,away, 39 ,Goal, Jesper Lindstrøm , Sebastian Rode 
+1242,74,Eintracht Frankfurt,away, 48 ,Goal, Djibril Sow , Daichi Kamada 
+1243,74,Eintracht Frankfurt,away, 64 ,Substitution, Christopher Lenz , Luca Pellegrini 
+1244,74,Werder Bremen,home, 65 ,Substitution, Ilia Gruev , Christian Groß 
+1245,74,Werder Bremen,home, 65 ,Substitution, Lee Buchanan , Anthony Jung 
+1246,74,Werder Bremen,home, 65 ,Substitution, Niklas Schmidt , Jens Stage 
+1247,74,Eintracht Frankfurt,away, 75 ,Yellow card, Kevin Trapp ,
+1248,74,Eintracht Frankfurt,away, 77 ,Substitution, Ansgar Knauff , Jesper Lindstrøm 
+1249,74,Eintracht Frankfurt,away, 77 ,Substitution, Timothy Chandler , Sebastian Rode 
+1250,74,Werder Bremen,home, 77 ,Substitution, Oliver Burke , Mitchell Weiser 
+1251,74,Eintracht Frankfurt,away, 86 ,Substitution, Rafael Borré , Randal Kolo Muani 
+1252,74,Eintracht Frankfurt,away, 86 ,Substitution, Lucas Alario , Mario Götze 
+1253,74,Werder Bremen,home, 92 ,Penalty, Niclas Füllkrug , Penalty 
+1254,74,Eintracht Frankfurt,away, 93 ,Yellow card, Djibril Sow ,
+1255,74,Eintracht Frankfurt,away, 96 ,Yellow card, Ansgar Knauff ,
+1256,75,1. FC Köln,home, 17 ,Substitution, Ondrej Duda , Mathias Olesen 
+1257,75,1. FC Köln,home, 45 ,Substitution, Sargis Adamyan , Florian Dietz 
+1258,75,1. FC Köln,home, 52 ,Substitution, Timo Hübers , Julian Chabot 
+1259,75,VfB Stuttgart,away, 56 ,Red card, Luca Pfeiffer ,
+1260,75,1. FC Köln,home, 58 ,Yellow card, Luca Kilian ,
+1261,75,1. FC Köln,home, 60 ,Substitution, Dejan Ljubičić , Kingsley Schindler 
+1262,75,1. FC Köln,home, 60 ,Substitution, Florian Kainz , Eric Martel 
+1263,75,VfB Stuttgart,away, 61 ,Substitution, Atakan Karazor , Borna Sosa 
+1264,75,VfB Stuttgart,away, 61 ,Substitution, Juan Perea , Chris Führich 
+1265,75,VfB Stuttgart,away, 76 ,Substitution, Pascal Stenzel , Silas Katompa Mvumpa 
+1266,75,VfB Stuttgart,away, 79 ,Yellow card, Atakan Karazor ,
+1267,75,1. FC Köln,home, 86 ,Yellow card, Dejan Ljubičić ,
+1268,75,VfB Stuttgart,away, 94 ,Substitution, Enzo Millot , Naouirou Ahamada 
+1269,75,VfB Stuttgart,away, 95 ,Yellow card, Enzo Millot ,
+1270,76,Bayern Munich,home, 35 ,Disallowed goal,Disallowed goal,
+1271,76,M'gladbach,away, 37 ,Yellow card, Alassane Plea ,
+1272,76,M'gladbach,away, 43 ,Goal, Marcus Thuram ,
+1273,76,M'gladbach,away, 52 ,Substitution, Hannes Wolf , Alassane Plea 
+1274,76,Bayern Munich,home, 62 ,Yellow card, Joshua Kimmich ,
+1275,76,Bayern Munich,home, 63 ,Yellow card, Marcel Sabitzer ,
+1276,76,Bayern Munich,home, 67 ,Substitution, Jamal Musiala , Marcel Sabitzer 
+1277,76,Bayern Munich,home, 68 ,Substitution, Serge Gnabry , Sadio Mané 
+1278,76,M'gladbach,away, 77 ,Substitution, Marvin Friedrich , Florian Neuhaus 
+1279,76,Bayern Munich,home, 80 ,Yellow card, Leroy Sané ,
+1280,76,Bayern Munich,home, 83 ,Goal, Leroy Sané , Jamal Musiala 
+1281,76,M'gladbach,away, 85 ,Substitution, Tony Jantschke , K Koné 
+1282,76,Bayern Munich,home, 85 ,Substitution, Matthijs de Ligt , Leroy Sané 
+1283,76,M'gladbach,away, 85 ,Substitution, Patrick Herrmann , Jonas Hofmann 
+1284,76,M'gladbach,away, 95 ,Yellow card, Christoph Kramer ,
+1285,76,Bayern Munich,home, 95 ,Yellow card, Benjamin Pavard ,
+1286,77,Hoffenheim,home, 39 ,Goal, Dennis Geiger , Robert Skov 
+1287,77,Augsburg,away, 56 ,Substitution, Ruben Vargas , Ermedin Demirovic 
+1288,77,Augsburg,away, 56 ,Substitution, Florian Niederlechner , Ricardo Pepi 
+1289,77,Augsburg,away, 59 ,Yellow card, Maximilian Bauer ,
+1290,77,Hoffenheim,home, 62 ,Substitution, Pavel Kaderabek , Robert Skov 
+1291,77,Hoffenheim,home, 62 ,Substitution, Sebastian Rudy , Dennis Geiger 
+1292,77,Hoffenheim,home, 72 ,Yellow card, Grischa Prömel ,
+1293,77,Hoffenheim,home, 72 ,Substitution, Munas Dabbur , Christoph Baumgartner 
+1294,77,Augsburg,away, 77 ,Substitution, Lukas Petkov , Raphael Framberger 
+1295,77,Augsburg,away, 77 ,Substitution, Daniel Caligiuri , Arne Maier 
+1296,77,Hoffenheim,home, 80 ,Substitution, Jacob Bruun Larsen , Georginio Rutter 
+1297,77,Hoffenheim,home, 80 ,Substitution, Diadié Samassékou , Andrej Kramarić 
+1298,77,Augsburg,away, 80 ,Substitution, Carlos Gruezo , Fredrik Jensen 
+1299,78,RB Leipzig,home, 5 ,Penalty, Christopher Nkunku , Penalty 
+1300,78,RB Leipzig,home, 8 ,Yellow card, Benjamin Henrichs ,
+1301,78,VfL Wolfsburg,away, 26 ,Yellow card, Maximilian Arnold ,
+1302,78,RB Leipzig,home, 42 ,Substitution, Joško Gvardiol , Benjamin Henrichs 
+1303,78,VfL Wolfsburg,away, 45 ,Substitution, Felix Nmecha , Josuha Guilavogui 
+1304,78,VfL Wolfsburg,away, 45 ,Substitution, Omar Marmoush , Jakub Kamiński 
+1305,78,RB Leipzig,home, 47 ,Yellow card, Konrad Laimer ,
+1306,78,VfL Wolfsburg,away, 51 ,Yellow card, Paulo Otávio ,
+1307,78,VfL Wolfsburg,away, 53 ,Yellow card, Ridle Baku ,
+1308,78,VfL Wolfsburg,away, 59 ,Substitution, Luca Waldschmidt , Lukas Nmecha 
+1309,78,VfL Wolfsburg,away, 59 ,Substitution, Josip Brekalo , Maximilian Philipp 
+1310,78,RB Leipzig,home, 64 ,Substitution, Timo Werner , André Silva 
+1311,78,RB Leipzig,home, 64 ,Substitution, Amadou Haidara , Kevin Kampl 
+1312,78,VfL Wolfsburg,away, 72 ,Substitution, Mattias Svanberg , Maximilian Arnold 
+1313,78,RB Leipzig,home, 82 ,Substitution, Xaver Schlager , Marcel Halstenberg 
+1314,78,RB Leipzig,home, 88 ,Yellow card, Timo Werner ,
+1315,78,RB Leipzig,home, 90 ,Goal, Christopher Nkunku ,
+1316,79,Borussia Dortmund,away, 32 ,Goal, Anthony Modeste , Salih Özcan 
+1317,79,Hertha BSC,home, 55 ,Substitution, Stevan Jovetic , Jean Boëtius 
+1318,79,Borussia Dortmund,away, 61 ,Substitution, Jamie Bynoe-Gittens , Karim Adeyemi 
+1319,79,Borussia Dortmund,away, 67 ,Substitution, Thomas Meunier , Marius Wolf 
+1320,79,Hertha BSC,home, 74 ,Substitution, Marco Richter , Dodi Lukebakio 
+1321,79,Hertha BSC,home, 74 ,Substitution, Kevin Boateng , Suat Serdar 
+1322,79,Hertha BSC,home, 80 ,Substitution, Davie Selke , Marc Kempf 
+1323,79,Borussia Dortmund,away, 86 ,Substitution, Niklas Süle , Anthony Modeste 
+1324,79,Borussia Dortmund,away, 86 ,Substitution, Thorgan Hazard , Raphaël Guerreiro 
+1325,79,Hertha BSC,home, 91 ,Yellow card, Marco Richter ,
+1326,80,1. FC Union Berlin,away, 6 ,Goal, Morten Thorsby , Danilho Doekhi 
+1327,80,Schalke 04,home, 31 ,Penalty, Marius Bülter , Penalty 
+1328,80,1. FC Union Berlin,away, 36 ,Goal, Sheraldo Becker , Jordan Siebatcheu 
+1329,80,Schalke 04,home, 47 ,Yellow card, Malick Thiaw ,
+1330,80,1. FC Union Berlin,away, 48 ,Goal, Janik Haberer ,
+1331,80,1. FC Union Berlin,away, 46 ,Goal, Sheraldo Becker ,
+1332,80,Schalke 04,home, 61 ,Substitution, Florian Flick , Tom Krauß 
+1333,80,Schalke 04,home, 61 ,Substitution, Danny Latza , Alex Král 
+1334,80,Schalke 04,home, 61 ,Substitution, Jordan Larsson , Dominick Drexler 
+1335,80,1. FC Union Berlin,away, 71 ,Substitution, Sven Michel , Sheraldo Becker 
+1336,80,1. FC Union Berlin,away, 71 ,Substitution, Kevin Behrens , Jordan Siebatcheu 
+1337,80,Schalke 04,home, 71 ,Substitution, Sebastian Polter , Simon Terodde 
+1338,80,Schalke 04,home, 71 ,Substitution, Florent Mollet , Rodrigo Zalazar 
+1339,80,1. FC Union Berlin,away, 75 ,Substitution, Milos Pantović , Morten Thorsby 
+1340,80,1. FC Union Berlin,away, 84 ,Substitution, Levin Öztunali , Janik Haberer 
+1341,80,1. FC Union Berlin,away, 85 ,Substitution, Paul Jaeckel , Danilho Doekhi 
+1342,80,1. FC Union Berlin,away, 87 ,Goal, Sven Michel ,
+1343,80,1. FC Union Berlin,away, 90 ,Goal, Sven Michel , Kevin Behrens 
+1344,81,Bayer Leverkusen,away, 3 ,Yellow card, Piero Hincapié ,
+1345,81,Bayer Leverkusen,away, 29 ,Goal, Exequiel Palacios ,
+1346,81,Bayer Leverkusen,away, 39 ,Goal, Jeremie Frimpong , Moussa Diaby 
+1347,81,Bayer Leverkusen,away, 41 ,Goal, Jeremie Frimpong ,
+1348,81,Bayer Leverkusen,away, 45 ,Yellow card, Robert Andrich ,
+1349,81,Mainz 05,home, 45 ,Substitution, Lee Jae-sung , Angelo Fulgini 
+1350,81,Mainz 05,home, 45 ,Substitution, Niklas Tauer , Alexander Hack 
+1351,81,Mainz 05,home, 45 ,Substitution, Delano Burgzorg , Jonathan Burkardt 
+1352,81,Bayer Leverkusen,away, 60 ,Yellow card, Jeremie Frimpong ,
+1353,81,Mainz 05,home, 66 ,Substitution, Leandro Barreiro , Dominik Kohr 
+1354,81,Mainz 05,home, 70 ,Yellow card, Delano Burgzorg ,
+1355,81,Bayer Leverkusen,away, 71 ,Substitution, Charles Aránguiz , Exequiel Palacios 
+1356,81,Bayer Leverkusen,away, 71 ,Substitution, Odilon Kossounou , Jeremie Frimpong 
+1357,81,Mainz 05,home, 73 ,Substitution, Anthony Caci , Aarón Martin 
+1358,81,Bayer Leverkusen,away, 76 ,Yellow card, Mitchel Bakker ,
+1359,81,Bayer Leverkusen,away, 77 ,Second yellow card, Piero Hincapié ,
+1360,81,Bayer Leverkusen,away, 81 ,Substitution, Nadiem Amiri , Kerem Demirbay 
+1361,81,Bayer Leverkusen,away, 81 ,Substitution, Timothy Fosu-Mensah , Moussa Diaby 
+1362,81,Bayer Leverkusen,away, 83 ,Substitution, Sardar Azmoun , Patrik Schick 
+1363,81,Bayer Leverkusen,away, 94 ,Second yellow card, Mitchel Bakker ,
+1364,82,VfL Bochum,away, 42 ,Yellow card, Constantinos Stafylidis ,
+1365,82,SC Freiburg,home, 48 ,Goal, Vincenzo Grifo ,
+1366,82,SC Freiburg,home, 48 ,Missed penalty, Vincenzo Grifo , Missed penalty 
+1367,82,VfL Bochum,away, 48 ,Yellow card, Manuel Riemann ,
+1368,82,VfL Bochum,away, 53 ,Substitution, Saidy Janko , Constantinos Stafylidis 
+1369,82,SC Freiburg,home, 73 ,Substitution, Nils Petersen , Michael Gregoritsch 
+1370,82,SC Freiburg,home, 73 ,Substitution, Jeong Woo-yeong , Ritsu Dōan 
+1371,82,SC Freiburg,home, 73 ,Substitution, Noah Weißhaupt , Vincenzo Grifo 
+1372,82,VfL Bochum,away, 75 ,Substitution, Philipp Hofmann , Takuma Asano 
+1373,82,VfL Bochum,away, 75 ,Substitution, Jordi Osei-Tutu , Jacek Góralski 
+1374,82,SC Freiburg,home, 77 ,Yellow card, Roland Sallai ,
+1375,82,SC Freiburg,home, 83 ,Yellow card, Nicolas Höfler ,
+1376,82,SC Freiburg,home, 83 ,Substitution, Robert Wagner , Yannik Keitel 
+1377,82,VfL Bochum,away, 85 ,Substitution, Ivan Ordets , Cristian Gamboa 
+1378,82,SC Freiburg,home, 87 ,Substitution, Manuel Gulde , Roland Sallai 
+1379,83,Bayern Munich,away, 4 ,Goal, Leroy Sané , Kingsley Coman 
+1380,83,Bayern Munich,away, 25 ,Goal, Matthijs de Ligt , Joshua Kimmich 
+1381,83,Bayern Munich,away, 33 ,Goal, Kingsley Coman ,
+1382,83,Bayern Munich,away, 40 ,Disallowed goal,Disallowed goal,
+1383,83,Bayern Munich,away, 42 ,Goal, Sadio Mané , Kingsley Coman 
+1384,83,VfL Bochum,home, 47 ,Yellow card, Saidy Janko ,
+1385,83,Bayern Munich,away, 60 ,Penalty, Sadio Mané , Penalty 
+1386,83,Bayern Munich,away, 62 ,Substitution, Josip Stanišić , Lucas Hernandez 
+1387,83,Bayern Munich,away, 62 ,Substitution, Ryan Gravenberch , Marcel Sabitzer 
+1388,83,Bayern Munich,away, 67 ,Substitution, Serge Gnabry , Thomas Müller 
+1389,83,Bayern Munich,away, 67 ,Substitution, Noussair Mazraoui , Benjamin Pavard 
+1390,83,VfL Bochum,home, 68 ,Substitution, Gerrit Holtmann , Takuma Asano 
+1391,83,VfL Bochum,home, 68 ,Substitution, Jacek Góralski , Philipp Förster 
+1392,83,Bayern Munich,away, 69 ,Own goal, Cristian Gamboa , Own goal 
+1393,83,VfL Bochum,home, 70 ,Substitution, Jordi Osei-Tutu , Saidy Janko 
+1394,83,Bayern Munich,away, 72 ,Substitution, Gabriel Vidović , Sadio Mané 
+1395,83,Bayern Munich,away, 76 ,Goal, Serge Gnabry , Gabriel Vidović 
+1396,83,VfL Bochum,home, 85 ,Substitution, Erhan Mašović , Ivan Ordets 
+1397,83,VfL Bochum,home, 85 ,Substitution, Vasilios Lampropoulos , Simon Zoller 
+1398,84,1. FC Köln,away, 56 ,Substitution, Florian Dietz , Steffen Tigges 
+1399,84,1. FC Köln,away, 56 ,Substitution, Linton Maina , Dejan Ljubičić 
+1400,84,1. FC Köln,away, 56 ,Substitution, Jan Thielmann , Sargis Adamyan 
+1401,84,1. FC Köln,away, 58 ,Yellow card, Florian Dietz ,
+1402,84,Eintracht Frankfurt,home, 63 ,Substitution, Ansgar Knauff , Sebastian Rode 
+1403,84,Eintracht Frankfurt,home, 69 ,Substitution, Daichi Kamada , Jesper Lindstrøm 
+1404,84,Eintracht Frankfurt,home, 69 ,Substitution, Lucas Alario , Rafael Borré 
+1405,84,Eintracht Frankfurt,home, 71 ,Goal, Daichi Kamada ,
+1406,84,1. FC Köln,away, 75 ,Substitution, Ondrej Duda , Mathias Olesen 
+1407,84,Eintracht Frankfurt,home, 80 ,Substitution, Christopher Lenz , Luca Pellegrini 
+1408,84,Eintracht Frankfurt,home, 80 ,Substitution, Faride Alidou , Randal Kolo Muani 
+1409,84,1. FC Köln,away, 82 ,Goal, Jan Thielmann ,
+1410,84,1. FC Köln,away, 87 ,Substitution, Kingsley Schindler , Florian Kainz 
+1411,85,RB Leipzig,away, 30 ,Yellow card, Kevin Kampl ,
+1412,85,1. FC Union Berlin,home, 32 ,Goal, Jordan Siebatcheu , Sheraldo Becker 
+1413,85,1. FC Union Berlin,home, 38 ,Goal, Sheraldo Becker , Jordan Siebatcheu 
+1414,85,RB Leipzig,away, 45 ,Substitution, Marcel Halstenberg , Joško Gvardiol 
+1415,85,1. FC Union Berlin,home, 49 ,Yellow card, Frederik Rønnow ,
+1416,85,1. FC Union Berlin,home, 62 ,Substitution, Kevin Behrens , Jordan Siebatcheu 
+1417,85,RB Leipzig,away, 62 ,Substitution, Amadou Haidara , Kevin Kampl 
+1418,85,1. FC Union Berlin,home, 65 ,Yellow card, Kevin Behrens ,
+1419,85,RB Leipzig,away, 71 ,Substitution, André Silva , Konrad Laimer 
+1420,85,1. FC Union Berlin,home, 74 ,Substitution, Morten Thorsby , Janik Haberer 
+1421,85,1. FC Union Berlin,home, 74 ,Substitution, Genki Haraguchi , András Schäfer 
+1422,85,1. FC Union Berlin,home, 74 ,Substitution, Sven Michel , Sheraldo Becker 
+1423,85,RB Leipzig,away, 78 ,Substitution, Emil Forsberg , Dani Olmo 
+1424,85,1. FC Union Berlin,home, 80 ,Substitution, Niko Gießelmann , Julian Ryerson 
+1425,85,RB Leipzig,away, 83 ,Goal, Willi Orban , David Raum 
+1426,86,SC Freiburg,away, 11 ,Goal, Vincenzo Grifo , Kiliann Sildillia 
+1427,86,VfB Stuttgart,home, 15 ,Yellow card, Borna Sosa ,
+1428,86,SC Freiburg,away, 28 ,Yellow card, Roland Sallai ,
+1429,86,VfB Stuttgart,home, 28 ,Yellow card, Chris Führich ,
+1430,86,VfB Stuttgart,home, 46 ,Yellow card, Naouirou Ahamada ,
+1431,86,SC Freiburg,away, 60 ,Substitution, Manuel Gulde , Roland Sallai 
+1432,86,SC Freiburg,away, 60 ,Substitution, Jeong Woo-yeong , Ritsu Dōan 
+1433,86,VfB Stuttgart,home, 71 ,Substitution, Luca Pfeiffer , Borna Sosa 
+1434,86,VfB Stuttgart,home, 71 ,Substitution, Lilian Egloff , Chris Führich 
+1435,86,VfB Stuttgart,home, 78 ,Substitution, Enzo Millot , Naouirou Ahamada 
+1436,86,SC Freiburg,away, 81 ,Substitution, Daniel-Kofi Kyereh , Michael Gregoritsch 
+1437,86,SC Freiburg,away, 81 ,Substitution, Hugo Siquet , Kiliann Sildillia 
+1438,86,SC Freiburg,away, 81 ,Substitution, Yannik Keitel , Vincenzo Grifo 
+1439,86,SC Freiburg,away, 84 ,Yellow card, Yannik Keitel ,
+1440,86,VfB Stuttgart,home, 85 ,Substitution, Juan Perea , Josha Vagnoman 
+1441,86,VfB Stuttgart,home, 98 ,Yellow card, Konstantinos Mavropanos ,
+1442,87,Augsburg,home, 3 ,Yellow card, Jeffrey Gouweleeuw ,
+1443,87,Mainz 05,away, 29 ,Yellow card, Stefan Bell ,
+1444,87,Augsburg,home, 29 ,Yellow card, Elvis Rexhbeçaj ,
+1445,87,Mainz 05,away, 31 ,Goal, Karim Onisiwo , Angelo Fulgini 
+1446,87,Augsburg,home, 35 ,Goal, Ermedin Demirovic , Felix Uduokhai 
+1447,87,Mainz 05,away, 62 ,Missed penalty, Aarón Martin , Missed penalty 
+1448,87,Mainz 05,away, 62 ,Yellow card, Jonathan Burkardt ,
+1449,87,Mainz 05,away, 68 ,Substitution, Lee Jae-sung , Angelo Fulgini 
+1450,87,Augsburg,home, 68 ,Substitution, Ricardo Pepi , Fredrik Jensen 
+1451,87,Augsburg,home, 68 ,Substitution, Ruben Vargas , Arne Maier 
+1452,87,Augsburg,home, 71 ,Substitution, Andre Hahn , Ermedin Demirovic 
+1453,87,Mainz 05,away, 75 ,Substitution, Edimilson Fernandes , Silvan Widmer 
+1454,87,Mainz 05,away, 75 ,Substitution, Delano Burgzorg , Jonathan Burkardt 
+1455,87,Augsburg,home, 85 ,Substitution, Julian Baumgartlinger , Carlos Gruezo 
+1456,87,Augsburg,home, 85 ,Substitution, Daniel Caligiuri , Mads Pedersen 
+1457,87,Mainz 05,away, 88 ,Substitution, Marlon Mustapha , Karim Onisiwo 
+1458,87,Mainz 05,away, 88 ,Substitution, Leandro Barreiro , Anton Stach 
+1459,87,Mainz 05,away, 93 ,Goal, Lee Jae-sung , Aarón Martin 
+1460,88,Borussia Dortmund,home, 18 ,Substitution, Emre Can , Mahmoud Dahoud 
+1461,88,Werder Bremen,away, 29 ,Yellow card, Niclas Füllkrug ,
+1462,88,Borussia Dortmund,home, 39 ,Yellow card, Anthony Modeste ,
+1463,88,Borussia Dortmund,home, 42 ,Yellow card, Emre Can ,
+1464,88,Borussia Dortmund,home, 47 ,Goal, Julian Brandt , Marco Reus 
+1465,88,Werder Bremen,away, 62 ,Substitution, Romano Schmid , Jens Stage 
+1466,88,Borussia Dortmund,home, 62 ,Substitution, Giovanni Reyna , Jamie Bynoe-Gittens 
+1467,88,Borussia Dortmund,home, 62 ,Substitution, Niklas Süle , Mats Hummels 
+1468,88,Borussia Dortmund,home, 62 ,Substitution, Thorgan Hazard , Julian Brandt 
+1469,88,Werder Bremen,away, 70 ,Substitution, Niklas Schmidt , Leonardo Bittencourt 
+1470,88,Werder Bremen,away, 70 ,Substitution, Lee Buchanan , Anthony Jung 
+1471,88,Borussia Dortmund,home, 77 ,Goal, Raphaël Guerreiro , Marco Reus 
+1472,88,Werder Bremen,away, 81 ,Substitution, Oliver Burke , Marvin Ducksch 
+1473,88,Borussia Dortmund,home, 81 ,Substitution, Youssoufa Moukoko , Anthony Modeste 
+1474,88,Werder Bremen,away, 81 ,Substitution, Ilia Gruev , Christian Groß 
+1475,88,Borussia Dortmund,home, 83 ,Yellow card, Marius Wolf ,
+1476,88,Werder Bremen,away, 89 ,Goal, Lee Buchanan ,
+1477,88,Borussia Dortmund,home, 91 ,Yellow card, Marco Reus ,
+1478,88,Werder Bremen,away, 93 ,Goal, Niklas Schmidt , Amos Pieper 
+1479,88,Werder Bremen,away, 95 ,Goal, Oliver Burke , Mitchell Weiser 
+1480,89,Hoffenheim,away, 9 ,Goal, Christoph Baumgartner , Grischa Prömel 
+1481,89,Hoffenheim,away, 34 ,Goal, Andrej Kramarić ,
+1482,89,Hoffenheim,away, 40 ,Disallowed goal,Disallowed goal,
+1483,89,Bayer Leverkusen,home, 45 ,Substitution, Exequiel Palacios , Charles Aránguiz 
+1484,89,Bayer Leverkusen,home, 45 ,Substitution, Kerem Demirbay , Adam Hložek 
+1485,89,Bayer Leverkusen,home, 56 ,Yellow card, Moussa Diaby ,
+1486,89,Hoffenheim,away, 57 ,Yellow card, Ozan Kabak ,
+1487,89,Bayer Leverkusen,home, 66 ,Substitution, Paulinho , Robert Andrich 
+1488,89,Hoffenheim,away, 69 ,Substitution, Munas Dabbur , Christoph Baumgartner 
+1489,89,Hoffenheim,away, 70 ,Substitution, Pavel Kaderabek , Robert Skov 
+1490,89,Hoffenheim,away, 74 ,Yellow card, Georginio Rutter ,
+1491,89,Hoffenheim,away, 75 ,Substitution, Sebastian Rudy , Dennis Geiger 
+1492,89,Bayer Leverkusen,home, 76 ,Substitution, Nadiem Amiri , Sardar Azmoun 
+1493,89,Bayer Leverkusen,home, 76 ,Substitution, Mitchel Bakker , Edmond Tapsoba 
+1494,89,Hoffenheim,away, 78 ,Goal, Georginio Rutter , Andrej Kramarić 
+1495,89,Hoffenheim,away, 83 ,Yellow card, Angeliño ,
+1496,89,Hoffenheim,away, 85 ,Substitution, Angelo Stiller , Georginio Rutter 
+1497,89,Hoffenheim,away, 86 ,Yellow card, Kevin Akpoguma ,
+1498,89,Hoffenheim,away, 86 ,Substitution, Jacob Bruun Larsen , Andrej Kramarić 
+1499,90,Schalke 04,away, 4 ,Yellow card, Danny Latza ,
+1500,90,Schalke 04,away, 25 ,Yellow card, Malick Thiaw ,
+1501,90,VfL Wolfsburg,home, 26 ,Yellow card, Sebastiaan Bornauw ,
+1502,90,Schalke 04,away, 48 ,Missed penalty, Simon Terodde , Missed penalty 
+1503,90,VfL Wolfsburg,home, 45 ,Substitution, Ridle Baku , Sebastiaan Bornauw 
+1504,90,Schalke 04,away, 45 ,Substitution, Florian Flick , Danny Latza 
+1505,90,VfL Wolfsburg,home, 59 ,Substitution, Max Kruse , Mattias Svanberg 
+1506,90,VfL Wolfsburg,home, 59 ,Substitution, Maximilian Philipp , Omar Marmoush 
+1507,90,Schalke 04,away, 65 ,Yellow card, Marius Bülter ,
+1508,90,VfL Wolfsburg,home, 66 ,Disallowed goal,Disallowed goal,
+1509,90,Schalke 04,away, 71 ,Substitution, Jordan Larsson , Rodrigo Zalazar 
+1510,90,Schalke 04,away, 71 ,Substitution, Sebastian Polter , Simon Terodde 
+1511,90,VfL Wolfsburg,home, 76 ,Substitution, Kevin Paredes , Jakub Kamiński 
+1512,90,Schalke 04,away, 87 ,Substitution, Mehmet Aydin , Tom Krauß 
+1513,90,Schalke 04,away, 87 ,Substitution, Kerim Çalhanoğlu , Thomas Ouwejan 
+1514,91,M'gladbach,home, 34 ,Penalty, Alassane Plea , Penalty 
+1515,91,Hertha BSC,away, 34 ,Yellow card, Filip Uremović ,
+1516,91,Hertha BSC,away, 57 ,Substitution, Jean Boëtius , Ivan Šunjić 
+1517,91,Hertha BSC,away, 69 ,Second yellow card, Filip Uremović ,
+1518,91,M'gladbach,home, 70 ,Missed penalty, Jonas Hofmann , Missed penalty 
+1519,91,Hertha BSC,away, 72 ,Substitution, Stevan Jovetic , Wilfried Kanga 
+1520,91,Hertha BSC,away, 72 ,Substitution, Márton Dárdai , Chidera Ejuke 
+1521,91,Hertha BSC,away, 83 ,Substitution, Kevin Boateng , Lucas Tousart 
+1522,91,Hertha BSC,away, 83 ,Substitution, Davie Selke , Suat Serdar 
+1523,91,M'gladbach,home, 91 ,Substitution, Hannes Wolf , Jonas Hofmann 
+1524,91,M'gladbach,home, 94 ,Substitution, Patrick Herrmann , Alassane Plea 
+1525,91,M'gladbach,home, 95 ,Yellow card, Patrick Herrmann ,
+1526,91,M'gladbach,home, 96 ,Substitution, Marvin Friedrich , Florian Neuhaus 
+1527,92,Bayern Munich,home, 15 ,Yellow card, Lucas Hernandez ,
+1528,92,Bayern Munich,home, 20 ,Disallowed goal,Disallowed goal,
+1529,92,Bayern Munich,home, 23 ,Yellow card, Sven Ulreich ,
+1530,92,Bayern Munich,home, 33 ,Goal, Jamal Musiala ,
+1531,92,Bayern Munich,home, 43 ,Goal, Thomas Müller , Joshua Kimmich 
+1532,92,Bayern Munich,home, 45 ,Substitution, Leroy Sané , Serge Gnabry 
+1533,92,VfL Wolfsburg,away, 45 ,Substitution, Max Kruse , Patrick Wimmer 
+1534,92,VfL Wolfsburg,away, 52 ,Yellow card, Mattias Svanberg ,
+1535,92,VfL Wolfsburg,away, 61 ,Substitution, Felix Nmecha , Mattias Svanberg 
+1536,92,VfL Wolfsburg,away, 68 ,Substitution, Luca Waldschmidt , Omar Marmoush 
+1537,92,Bayern Munich,home, 80 ,Substitution, Mathys Tel , Sadio Mané 
+1538,92,Bayern Munich,home, 83 ,Substitution, Ryan Gravenberch , Jamal Musiala 
+1539,92,VfL Wolfsburg,away, 83 ,Substitution, Aster Vranckx , Maximilian Arnold 
+1540,92,VfL Wolfsburg,away, 83 ,Substitution, Josip Brekalo , Lukas Nmecha 
+1541,93,Mainz 05,home, 5 ,Yellow card, Karim Onisiwo ,
+1542,93,1. FC Union Berlin,away, 61 ,Substitution, András Schäfer , Janik Haberer 
+1543,93,Mainz 05,home, 65 ,Substitution, Angelo Fulgini , Lee Jae-sung 
+1544,93,Mainz 05,home, 65 ,Substitution, Leandro Barreiro , Anton Stach 
+1545,93,1. FC Union Berlin,away, 70 ,Substitution, Morten Thorsby , Genki Haraguchi 
+1546,93,1. FC Union Berlin,away, 70 ,Substitution, Kevin Behrens , Jordan Siebatcheu 
+1547,93,Mainz 05,home, 75 ,Substitution, Marlon Mustapha , Marcus Ingvartsen 
+1548,93,1. FC Union Berlin,away, 82 ,Substitution, Christopher Trimmel , Julian Ryerson 
+1549,93,1. FC Union Berlin,away, 82 ,Substitution, Sven Michel , Sheraldo Becker 
+1550,93,Mainz 05,home, 85 ,Substitution, Delano Burgzorg , Karim Onisiwo 
+1551,94,Schalke 04,home, 29 ,Goal, Rodrigo Zalazar , Tobias Mohr 
+1552,94,Schalke 04,home, 35 ,Yellow card, Tom Krauß ,
+1553,94,Schalke 04,home, 40 ,Yellow card, Thomas Ouwejan ,
+1554,94,Schalke 04,home, 44 ,Yellow card, Rodrigo Zalazar ,
+1555,94,M'gladbach,away, 46 ,Yellow card, K Koné ,
+1556,94,Schalke 04,home, 57 ,Yellow card, Alex Král ,
+1557,94,Schalke 04,home, 60 ,Substitution, Jordan Larsson , Tobias Mohr 
+1558,94,Schalke 04,home, 66 ,Substitution, Sebastian Polter , Simon Terodde 
+1559,94,Schalke 04,home, 66 ,Substitution, Florent Mollet , Rodrigo Zalazar 
+1560,94,M'gladbach,away, 72 ,Goal, Jonas Hofmann , Marcus Thuram 
+1561,94,M'gladbach,away, 78 ,Goal, Marcus Thuram ,
+1562,94,Schalke 04,home, 85 ,Substitution, Danny Latza , Alex Král 
+1563,94,M'gladbach,away, 88 ,Substitution, Patrick Herrmann , Jonas Hofmann 
+1564,94,M'gladbach,away, 88 ,Substitution, Marvin Friedrich , K Koné 
+1565,94,M'gladbach,away, 92 ,Yellow card, Patrick Herrmann ,
+1566,94,Schalke 04,home, 93 ,Penalty, Marius Bülter , Penalty 
+1567,95,VfL Bochum,away, 10 ,Goal, Simon Zoller , Philipp Hofmann 
+1568,95,VfL Bochum,away, 13 ,Goal, Simon Zoller , Kevin Stöger 
+1569,95,Hoffenheim,home, 14 ,Goal, Christoph Baumgartner ,
+1570,95,Hoffenheim,home, 23 ,Goal, Ozan Kabak , Dennis Geiger 
+1571,95,Hoffenheim,home, 45 ,Substitution, Kevin Akpoguma , Stanley Nsoki 
+1572,95,Hoffenheim,home, 51 ,Substitution, Pavel Kaderabek , Kevin Vogt 
+1573,95,VfL Bochum,away, 58 ,Yellow card, Anthony Losilla ,
+1574,95,Hoffenheim,home, 59 ,Missed penalty, Andrej Kramarić , Missed penalty 
+1575,95,Hoffenheim,home, 62 ,Substitution, Georginio Rutter , Jacob Bruun Larsen 
+1576,95,Hoffenheim,home, 62 ,Substitution, Sebastian Rudy , Dennis Geiger 
+1577,95,Hoffenheim,home, 67 ,Yellow card, Kevin Akpoguma ,
+1578,95,VfL Bochum,away, 72 ,Substitution, Vasilios Lampropoulos , Dominique Heintz 
+1579,95,Hoffenheim,home, 75 ,Substitution, Munas Dabbur , Christoph Baumgartner 
+1580,95,VfL Bochum,away, 76 ,Substitution, Erhan Mašović , Jordi Osei-Tutu 
+1581,95,VfL Bochum,away, 76 ,Substitution, Philipp Förster , Takuma Asano 
+1582,95,Hoffenheim,home, 88 ,Goal, Munas Dabbur , Sebastian Rudy 
+1583,95,VfL Bochum,away, 89 ,Substitution, Silvère Ganvoula , Cristian Gamboa 
+1584,96,Werder Bremen,home, 4 ,Goal, Niclas Füllkrug , Anthony Jung 
+1585,96,Werder Bremen,home, 16 ,Yellow card, Marco Friedl ,
+1586,96,VfB Stuttgart,away, 38 ,Goal, Wataru Endo , Sasa Kalajdzic 
+1587,96,Werder Bremen,home, 45 ,Substitution, Niklas Stark , Amos Pieper 
+1588,96,VfB Stuttgart,away, 58 ,Substitution, Borna Sosa , Tiago Tomás 
+1589,96,VfB Stuttgart,away, 59 ,Yellow card, Sasa Kalajdzic ,
+1590,96,VfB Stuttgart,away, 70 ,Substitution, Pascal Stenzel , Josha Vagnoman 
+1591,96,VfB Stuttgart,away, 70 ,Substitution, Lilian Egloff , Chris Führich 
+1592,96,VfB Stuttgart,away, 71 ,Yellow card, Hiroki Ito ,
+1593,96,Werder Bremen,home, 71 ,Yellow card, Leonardo Bittencourt ,
+1594,96,VfB Stuttgart,away, 77 ,Goal, Silas Katompa Mvumpa , Sasa Kalajdzic 
+1595,96,Werder Bremen,home, 78 ,Substitution, Romano Schmid , Jens Stage 
+1596,96,VfB Stuttgart,away, 81 ,Substitution, Luca Pfeiffer , Sasa Kalajdzic 
+1597,96,VfB Stuttgart,away, 81 ,Substitution, Atakan Karazor , Silas Katompa Mvumpa 
+1598,96,Werder Bremen,home, 83 ,Yellow card, Niklas Stark ,
+1599,96,Werder Bremen,home, 84 ,Substitution, Oliver Burke , Leonardo Bittencourt 
+1600,96,Werder Bremen,home, 84 ,Substitution, Lee Buchanan , Anthony Jung 
+1601,96,Werder Bremen,home, 84 ,Substitution, Nicolai Rapp , Ilia Gruev 
+1602,96,Werder Bremen,home, 89 ,Yellow card, Marvin Ducksch ,
+1603,96,Werder Bremen,home, 95 ,Goal, Oliver Burke , Mitchell Weiser 
+1604,97,RB Leipzig,home, 10 ,Disallowed goal,Disallowed goal,
+1605,97,1. FC Köln,away, 18 ,Yellow card, Jan Thielmann ,
+1606,97,RB Leipzig,home, 36 ,Goal, Timo Werner , Benjamin Henrichs 
+1607,97,1. FC Köln,away, 40 ,Goal, Florian Dietz , Florian Kainz 
+1608,97,RB Leipzig,home, 46 ,Red card, Dominik Szoboszlai ,
+1609,97,RB Leipzig,home, 45 ,Substitution, Joško Gvardiol , Marcel Halstenberg 
+1610,97,RB Leipzig,home, 45 ,Substitution, Kevin Kampl , Hugo Novoa 
+1611,97,1. FC Köln,away, 48 ,Yellow card, Timo Hübers ,
+1612,97,RB Leipzig,home, 56 ,Goal, Christopher Nkunku , Dani Olmo 
+1613,97,1. FC Köln,away, 62 ,Substitution, Linton Maina , Jan Thielmann 
+1614,97,1. FC Köln,away, 62 ,Substitution, Benno Schmitz , Kingsley Ehizibue 
+1615,97,1. FC Köln,away, 62 ,Substitution, Ondrej Duda , Eric Martel 
+1616,97,RB Leipzig,home, 67 ,Substitution, André Silva , Timo Werner 
+1617,97,1. FC Köln,away, 72 ,Own goal, Joško Gvardiol , Own goal 
+1618,97,1. FC Köln,away, 72 ,Substitution, Sargis Adamyan , Florian Dietz 
+1619,97,1. FC Köln,away, 73 ,Substitution, Tim Lemperle , Dejan Ljubičić 
+1620,97,1. FC Köln,away, 76 ,Yellow card, Sargis Adamyan ,
+1621,97,1. FC Köln,away, 79 ,Yellow card, Florian Kainz ,
+1622,97,RB Leipzig,home, 87 ,Substitution, Amadou Haidara , Dani Olmo 
+1623,97,RB Leipzig,home, 89 ,Yellow card, Benjamin Henrichs ,
+1624,98,Hertha BSC,home, 3 ,Goal, Suat Serdar , Dodi Lukebakio 
+1625,98,Hertha BSC,home, 33 ,Yellow card, Maximilian Mittelstädt ,
+1626,98,Eintracht Frankfurt,away, 45 ,Substitution, Faride Alidou , Ansgar Knauff 
+1627,98,Eintracht Frankfurt,away, 48 ,Goal, Daichi Kamada , Randal Kolo Muani 
+1628,98,Hertha BSC,home, 57 ,Yellow card, Ivan Šunjić ,
+1629,98,Hertha BSC,home, 57 ,Substitution, Jean Boëtius , Ivan Šunjić 
+1630,98,Eintracht Frankfurt,away, 58 ,Yellow card, Djibril Sow ,
+1631,98,Hertha BSC,home, 58 ,Substitution, Derry Scherhant , Chidera Ejuke 
+1632,98,Eintracht Frankfurt,away, 66 ,Substitution, Jesper Lindstrøm , Mario Götze 
+1633,98,Eintracht Frankfurt,away, 66 ,Substitution, Rafael Borré , Lucas Alario 
+1634,98,Hertha BSC,home, 70 ,Substitution, Stevan Jovetic , Wilfried Kanga 
+1635,98,Eintracht Frankfurt,away, 73 ,Substitution, Makoto Hasebe , Almamy Toure 
+1636,98,Hertha BSC,home, 83 ,Substitution, Márton Dárdai , Filip Uremović 
+1637,98,Hertha BSC,home, 85 ,Yellow card, Suat Serdar ,
+1638,98,Eintracht Frankfurt,away, 86 ,Substitution, Kristijan Jakić , Daichi Kamada 
+1639,99,Augsburg,away, 15 ,Goal, Fredrik Jensen , Ermedin Demirovic 
+1640,99,Augsburg,away, 35 ,Yellow card, Mads Pedersen ,
+1641,99,Augsburg,away, 42 ,Yellow card, Ermedin Demirovic ,
+1642,99,Bayer Leverkusen,home, 43 ,Goal, Charles Aránguiz ,
+1643,99,Bayer Leverkusen,home, 62 ,Substitution, Kerem Demirbay , Exequiel Palacios 
+1644,99,Bayer Leverkusen,home, 62 ,Substitution, Piero Hincapié , Mitchel Bakker 
+1645,99,Bayer Leverkusen,home, 62 ,Substitution, Amine Adli , Adam Hložek 
+1646,99,Augsburg,away, 65 ,Substitution, Daniel Caligiuri , Iago 
+1647,99,Augsburg,away, 65 ,Substitution, Florian Niederlechner , Fredrik Jensen 
+1648,99,Augsburg,away, 65 ,Substitution, Andre Hahn , Ermedin Demirovic 
+1649,99,Augsburg,away, 70 ,Yellow card, Jeffrey Gouweleeuw ,
+1650,99,Augsburg,away, 75 ,Yellow card, Elvis Rexhbeçaj ,
+1651,99,Bayer Leverkusen,home, 79 ,Yellow card, Sardar Azmoun ,
+1652,99,Augsburg,away, 82 ,Goal, Andre Hahn ,
+1653,99,Augsburg,away, 82 ,Yellow card, Rafal Gikiewicz ,
+1654,99,Bayer Leverkusen,home, 87 ,Substitution, Odilon Kossounou , Jeremie Frimpong 
+1655,99,Bayer Leverkusen,home, 87 ,Substitution, Joel Pohjanpalo , Charles Aránguiz 
+1656,99,Augsburg,away, 88 ,Substitution, Maximilian Bauer , Arne Maier 
+1657,99,Augsburg,away, 88 ,Yellow card, Maximilian Bauer ,
+1658,99,Augsburg,away, 94 ,Substitution, Ricardo Pepi , Elvis Rexhbeçaj 
+1659,100,Borussia Dortmund,away, 33 ,Yellow card, Thomas Meunier ,
+1660,100,SC Freiburg,home, 35 ,Goal, Michael Gregoritsch , Matthias Ginter 
+1661,100,Borussia Dortmund,away, 45 ,Substitution, Marius Wolf , Thomas Meunier 
+1662,100,Borussia Dortmund,away, 60 ,Yellow card, Jude Bellingham ,
+1663,100,Borussia Dortmund,away, 64 ,Substitution, Jamie Bynoe-Gittens , Thorgan Hazard 
+1664,100,Borussia Dortmund,away, 67 ,Yellow card, Nico Schlotterbeck ,
+1665,100,Borussia Dortmund,away, 70 ,Substitution, Youssoufa Moukoko , Donyell Malen 
+1666,100,SC Freiburg,home, 74 ,Substitution, Nils Petersen , Michael Gregoritsch 
+1667,100,Borussia Dortmund,away, 76 ,Substitution, Julian Brandt , Mahmoud Dahoud 
+1668,100,Borussia Dortmund,away, 77 ,Goal, Jamie Bynoe-Gittens , Youssoufa Moukoko 
+1669,100,Borussia Dortmund,away, 84 ,Goal, Youssoufa Moukoko , Julian Brandt 
+1670,100,SC Freiburg,home, 84 ,Substitution, Noah Weißhaupt , Vincenzo Grifo 
+1671,100,SC Freiburg,home, 84 ,Substitution, Daniel-Kofi Kyereh , Ritsu Dōan 
+1672,100,SC Freiburg,home, 86 ,Yellow card, Daniel-Kofi Kyereh ,
+1673,100,Borussia Dortmund,away, 88 ,Goal, Marius Wolf ,
+1674,101,Schalke 04,away, 11 ,Disallowed goal,Disallowed goal,
+1675,101,Schalke 04,away, 35 ,Red card, Dominick Drexler ,
+1676,101,1. FC Köln,home, 49 ,Goal, Luca Kilian , Jonas Hector 
+1677,101,Schalke 04,away, 51 ,Yellow card, Cédric Brunner ,
+1678,101,Schalke 04,away, 58 ,Substitution, Marius Bülter , Rodrigo Zalazar 
+1679,101,1. FC Köln,home, 62 ,Substitution, Sargis Adamyan , Kingsley Schindler 
+1680,101,1. FC Köln,home, 62 ,Goal, Florian Kainz ,
+1681,101,Schalke 04,away, 76 ,Goal, Marius Bülter , Thomas Ouwejan 
+1682,101,1. FC Köln,home, 76 ,Substitution, Linton Maina , Florian Kainz 
+1683,101,1. FC Köln,home, 76 ,Substitution, Kristian Pedersen , Julian Chabot 
+1684,101,Schalke 04,away, 77 ,Substitution, Danny Latza , Tom Krauß 
+1685,101,Schalke 04,away, 77 ,Substitution, Florian Flick , Tobias Mohr 
+1686,101,1. FC Köln,home, 80 ,Goal, Dejan Ljubičić , Jan Thielmann 
+1687,101,1. FC Köln,home, 85 ,Substitution, Mathias Olesen , Dejan Ljubičić 
+1688,101,1. FC Köln,home, 86 ,Substitution, Tim Lemperle , Florian Dietz 
+1689,101,Schalke 04,away, 88 ,Substitution, Simon Terodde , Sebastian Polter 
+1690,101,Schalke 04,away, 89 ,Substitution, Kerim Çalhanoğlu , Alex Král 
+1691,102,RB Leipzig,away, 8 ,Goal, Christopher Nkunku , Dani Olmo 
+1692,102,VfB Stuttgart,home, 31 ,Goal, Naouirou Ahamada , Sasa Kalajdzic 
+1693,102,RB Leipzig,away, 59 ,Substitution, Dominik Szoboszlai , Kevin Kampl 
+1694,102,VfB Stuttgart,home, 63 ,Yellow card, Silas Katompa Mvumpa ,
+1695,102,VfB Stuttgart,home, 64 ,Substitution, Darko Churlinov , Sasa Kalajdzic 
+1696,102,VfB Stuttgart,home, 76 ,Substitution, Clinton Mola , Tiago Tomás 
+1697,102,VfB Stuttgart,home, 77 ,Substitution, Enzo Millot , Chris Führich 
+1698,102,RB Leipzig,away, 81 ,Substitution, Mohamed Simakan , Hugo Novoa 
+1699,102,RB Leipzig,away, 85 ,Substitution, Joško Gvardiol , Marcel Halstenberg 
+1700,102,RB Leipzig,away, 85 ,Substitution, Emil Forsberg , Dani Olmo 
+1701,102,RB Leipzig,away, 85 ,Substitution, Alexander Sorloth , André Silva 
+1702,102,RB Leipzig,away, 86 ,Yellow card, Alexander Sorloth ,
+1703,102,VfB Stuttgart,home, 90 ,Substitution, Juan Perea , Silas Katompa Mvumpa 
+1704,102,VfB Stuttgart,home, 91 ,Substitution, Atakan Karazor , Naouirou Ahamada 
+1705,102,VfB Stuttgart,home, 94 ,Yellow card, Clinton Mola ,
+1706,103,Borussia Dortmund,home, 10 ,Goal, Marco Reus ,
+1707,103,Bayer Leverkusen,away, 13 ,Substitution, Charles Aránguiz , Robert Andrich 
+1708,103,Borussia Dortmund,home, 23 ,Substitution, Thorgan Hazard , Karim Adeyemi 
+1709,103,Bayer Leverkusen,away, 27 ,Yellow card, Jonathan Tah ,
+1710,103,Bayer Leverkusen,away, 37 ,Yellow card, Exequiel Palacios ,
+1711,103,Borussia Dortmund,home, 43 ,Yellow card, Thorgan Hazard ,
+1712,103,Bayer Leverkusen,away, 45 ,Substitution, Adam Hložek , Karim Bellarabi 
+1713,103,Bayer Leverkusen,away, 56 ,Yellow card, Piero Hincapié ,
+1714,103,Bayer Leverkusen,away, 66 ,Substitution, Sardar Azmoun , Kerem Demirbay 
+1715,103,Borussia Dortmund,home, 68 ,Substitution, Julian Brandt , Youssoufa Moukoko 
+1716,103,Borussia Dortmund,home, 72 ,Yellow card, Nico Schlotterbeck ,
+1717,103,Bayer Leverkusen,away, 78 ,Substitution, Mitchel Bakker , Piero Hincapié 
+1718,103,Bayer Leverkusen,away, 79 ,Substitution, Nadiem Amiri , Exequiel Palacios 
+1719,103,Borussia Dortmund,home, 84 ,Substitution, Marius Wolf , Raphaël Guerreiro 
+1720,103,Borussia Dortmund,home, 84 ,Substitution, Emre Can , Donyell Malen 
+1721,103,Bayer Leverkusen,away, 92 ,Red card, Lukás Hrádecký ,
+1722,103,Bayer Leverkusen,away, 95 ,Yellow card, Mitchel Bakker ,
+1723,104,VfL Wolfsburg,home, 11 ,Goal, Lukas Nmecha , Patrick Wimmer 
+1724,104,Werder Bremen,away, 21 ,Goal, Niclas Füllkrug , Jens Stage 
+1725,104,Werder Bremen,away, 23 ,Goal, Leonardo Bittencourt , Marvin Ducksch 
+1726,104,VfL Wolfsburg,home, 45 ,Substitution, Josuha Guilavogui , Mattias Svanberg 
+1727,104,VfL Wolfsburg,home, 52 ,Yellow card, Micky van de Ven ,
+1728,104,Werder Bremen,away, 56 ,Yellow card, Mitchell Weiser ,
+1729,104,VfL Wolfsburg,home, 56 ,Substitution, Jonas Wind , Josip Brekalo 
+1730,104,Werder Bremen,away, 58 ,Yellow card, Amos Pieper ,
+1731,104,VfL Wolfsburg,home, 67 ,Substitution, Luca Waldschmidt , Omar Marmoush 
+1732,104,VfL Wolfsburg,home, 67 ,Substitution, Jakub Kamiński , Patrick Wimmer 
+1733,104,Werder Bremen,away, 69 ,Substitution, Lee Buchanan , Anthony Jung 
+1734,104,Werder Bremen,away, 75 ,Substitution, Felix Agu , Mitchell Weiser 
+1735,104,Werder Bremen,away, 75 ,Substitution, Nicolai Rapp , Leonardo Bittencourt 
+1736,104,VfL Wolfsburg,home, 76 ,Substitution, Max Kruse , Ridle Baku 
+1737,104,Werder Bremen,away, 80 ,Substitution, Oliver Burke , Niclas Füllkrug 
+1738,104,VfL Wolfsburg,home, 84 ,Goal, Josuha Guilavogui ,
+1739,104,VfL Wolfsburg,home, 93 ,Yellow card, Lukas Nmecha ,
+1740,105,VfL Bochum,home, 13 ,Yellow card, Constantinos Stafylidis ,
+1741,105,Mainz 05,away, 26 ,Goal, Karim Onisiwo , Edimilson Fernandes 
+1742,105,Mainz 05,away, 33 ,Yellow card, Anton Stach ,
+1743,105,VfL Bochum,home, 39 ,Goal, Kevin Stöger , Constantinos Stafylidis 
+1744,105,Mainz 05,away, 62 ,Substitution, Delano Burgzorg , Angelo Fulgini 
+1745,105,Mainz 05,away, 62 ,Substitution, Leandro Barreiro , Lee Jae-sung 
+1746,105,Mainz 05,away, 64 ,Yellow card, Stefan Bell ,
+1747,105,VfL Bochum,home, 76 ,Substitution, Jordi Osei-Tutu , Simon Zoller 
+1748,105,VfL Bochum,home, 76 ,Substitution, Silvère Ganvoula , Philipp Hofmann 
+1749,105,Mainz 05,away, 77 ,Goal, Karim Onisiwo , Anton Stach 
+1750,105,VfL Bochum,home, 81 ,Substitution, Philipp Förster , Gerrit Holtmann 
+1751,105,Mainz 05,away, 84 ,Yellow card, Delano Burgzorg ,
+1752,105,Mainz 05,away, 85 ,Substitution, Marlon Mustapha , Karim Onisiwo 
+1753,105,VfL Bochum,home, 87 ,Substitution, Saidy Janko , Cristian Gamboa 
+1754,105,VfL Bochum,home, 93 ,Yellow card, Silvère Ganvoula ,
+1755,105,Mainz 05,away, 94 ,Substitution, Anthony Caci , Edimilson Fernandes 
+1756,106,SC Freiburg,away, 46 ,Goal, Michael Gregoritsch , Kiliann Sildillia 
+1757,106,SC Freiburg,away, 48 ,Goal, Vincenzo Grifo ,
+1758,106,SC Freiburg,away, 56 ,Disallowed goal,Disallowed goal,
+1759,106,Augsburg,home, 59 ,Substitution, Fredrik Jensen , Andre Hahn 
+1760,106,Augsburg,home, 59 ,Substitution, Mads Pedersen , Daniel Caligiuri 
+1761,106,Augsburg,home, 59 ,Substitution, Florian Niederlechner , Ermedin Demirovic 
+1762,106,SC Freiburg,away, 61 ,Goal, Matthias Ginter , Michael Gregoritsch 
+1763,106,Augsburg,home, 75 ,Substitution, Ricardo Pepi , Elvis Rexhbeçaj 
+1764,106,SC Freiburg,away, 76 ,Substitution, Daniel-Kofi Kyereh , Roland Sallai 
+1765,106,SC Freiburg,away, 76 ,Substitution, Nils Petersen , Michael Gregoritsch 
+1766,106,SC Freiburg,away, 78 ,Goal, Ritsu Dōan ,
+1767,106,SC Freiburg,away, 81 ,Substitution, Noah Weißhaupt , Vincenzo Grifo 
+1768,106,SC Freiburg,away, 82 ,Substitution, Jeong Woo-yeong , Ritsu Dōan 
+1769,106,Augsburg,home, 82 ,Substitution, Robert Gumny , Iago 
+1770,106,SC Freiburg,away, 84 ,Substitution, Hugo Siquet , Kiliann Sildillia 
+1771,107,M'gladbach,home, 13 ,Yellow card, Joe Scally ,
+1772,107,Hoffenheim,away, 15 ,Yellow card, Stefan Posch ,
+1773,107,Hoffenheim,away, 19 ,Second yellow card, Stefan Posch ,
+1774,107,Hoffenheim,away, 22 ,Yellow card, Diadié Samassékou ,
+1775,107,Hoffenheim,away, 24 ,Substitution, Stanley Nsoki , Diadié Samassékou 
+1776,107,Hoffenheim,away, 25 ,Goal, Robert Skov , Andrej Kramarić 
+1777,107,M'gladbach,home, 42 ,Goal, Ramy Bensebaïni , Ko Itakura 
+1778,107,Hoffenheim,away, 64 ,Substitution, Jacob Bruun Larsen , Georginio Rutter 
+1779,107,Hoffenheim,away, 64 ,Substitution, Kevin Akpoguma , Pavel Kaderabek 
+1780,107,M'gladbach,home, 71 ,Goal, Marcus Thuram , Alassane Plea 
+1781,107,Hoffenheim,away, 75 ,Yellow card, Kevin Vogt ,
+1782,107,M'gladbach,home, 78 ,Goal, Nico Elvedi , Alassane Plea 
+1783,107,Hoffenheim,away, 80 ,Substitution, Sebastian Rudy , Andrej Kramarić 
+1784,107,Hoffenheim,away, 80 ,Substitution, Muhammed Damar , Christoph Baumgartner 
+1785,107,M'gladbach,home, 84 ,Substitution, Stefan Lainer , Joe Scally 
+1786,107,M'gladbach,home, 89 ,Substitution, Patrick Herrmann , Jonas Hofmann 
+1787,108,1. FC Union Berlin,home, 31 ,Goal, Jordan Siebatcheu , Sheraldo Becker 
+1788,108,1. FC Union Berlin,home, 35 ,Yellow card, Robin Knoche ,
+1789,108,1. FC Union Berlin,home, 50 ,Goal, Sheraldo Becker , Janik Haberer 
+1790,108,Hertha BSC,away, 52 ,Yellow card, Filip Uremović ,
+1791,108,1. FC Union Berlin,home, 54 ,Goal, Robin Knoche , Christopher Trimmel 
+1792,108,Hertha BSC,away, 56 ,Substitution, Stevan Jovetic , Myziane Maolida 
+1793,108,Hertha BSC,away, 56 ,Substitution, Chidera Ejuke , Kevin Boateng 
+1794,108,Hertha BSC,away, 56 ,Substitution, Wilfried Kanga , Davie Selke 
+1795,108,1. FC Union Berlin,home, 64 ,Substitution, Niko Gießelmann , Julian Ryerson 
+1796,108,1. FC Union Berlin,home, 70 ,Substitution, András Schäfer , Janik Haberer 
+1797,108,1. FC Union Berlin,home, 71 ,Substitution, Jamie Leweling , Sheraldo Becker 
+1798,108,Hertha BSC,away, 77 ,Yellow card, Ivan Šunjić ,
+1799,108,1. FC Union Berlin,home, 78 ,Substitution, Kevin Behrens , Jordan Siebatcheu 
+1800,108,1. FC Union Berlin,home, 78 ,Substitution, Milos Pantović , Genki Haraguchi 
+1801,108,Hertha BSC,away, 80 ,Substitution, Vladimir Darida , Ivan Šunjić 
+1802,108,Hertha BSC,away, 85 ,Goal, Dodi Lukebakio , Stevan Jovetic 
+1803,108,Hertha BSC,away, 87 ,Yellow card, Dodi Lukebakio ,
+1804,108,1. FC Union Berlin,home, 93 ,Yellow card, Jamie Leweling ,
+1805,109,Bayern Munich,away, 5 ,Goal, Joshua Kimmich ,
+1806,109,Bayern Munich,away, 10 ,Goal, Benjamin Pavard ,
+1807,109,Bayern Munich,away, 29 ,Goal, Sadio Mané , Serge Gnabry 
+1808,109,Bayern Munich,away, 35 ,Goal, Jamal Musiala , Thomas Müller 
+1809,109,Bayern Munich,away, 43 ,Goal, Serge Gnabry , Thomas Müller 
+1810,109,Eintracht Frankfurt,home, 45 ,Substitution, Christopher Lenz , Jesper Lindstrøm 
+1811,109,Eintracht Frankfurt,home, 45 ,Substitution, Kristijan Jakić , Sebastian Rode 
+1812,109,Eintracht Frankfurt,home, 45 ,Substitution, Randal Kolo Muani , Rafael Borré 
+1813,109,Bayern Munich,away, 57 ,Substitution, Ryan Gravenberch , Marcel Sabitzer 
+1814,109,Eintracht Frankfurt,home, 59 ,Yellow card, Evan Ndicka ,
+1815,109,Eintracht Frankfurt,home, 64 ,Goal, Randal Kolo Muani ,
+1816,109,Bayern Munich,away, 65 ,Substitution, Mathys Tel , Serge Gnabry 
+1817,109,Bayern Munich,away, 65 ,Substitution, Leroy Sané , Thomas Müller 
+1818,109,Eintracht Frankfurt,home, 71 ,Yellow card, Filip Kostić ,
+1819,109,Eintracht Frankfurt,home, 74 ,Substitution, Faride Alidou , Filip Kostić 
+1820,109,Eintracht Frankfurt,home, 81 ,Substitution, Makoto Hasebe , Tuta 
+1821,109,Bayern Munich,away, 82 ,Substitution, Matthijs de Ligt , Lucas Hernandez 
+1822,109,Bayern Munich,away, 82 ,Substitution, Noussair Mazraoui , Benjamin Pavard 
+1823,109,Bayern Munich,away, 83 ,Goal, Jamal Musiala , Leroy Sané 
