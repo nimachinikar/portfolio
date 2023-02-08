@@ -1,10 +1,11 @@
-install.packages("tidyverse")
-install.packages("dplyr")
+#install.packages("tidyverse")
+#install.packages("dplyr")
 library('tidyverse')
 library('dplyr')
 library('ggplot2')
 
 Soccer_BL_event <- read_csv('C:\\GitHub\\portfolio\\DataSet\\R\\Soccer\\events_bundesliga_2022-23.csv', col_names = TRUE 
+#https://www.kaggle.com/datasets/mcarujo/european-football-season-202223
          #, col_names = c("x", "y", "z")
          #, na = "."
          # comment = "#",
