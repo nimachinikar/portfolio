@@ -2,7 +2,16 @@
 	"name": "tr_process_formula1",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
+		"pipeline": {
+			"pipelineReference": {
+				"referenceName": "pl_process_formula1",
+				"type": "PipelineReference"
+			},
+			"parameters": {
+				"p_windows_end_date": "@trigger().outputs.windowEndTime"
+			}
+		},
 		"type": "TumblingWindowTrigger",
 		"typeProperties": {
 			"frequency": "Hour",
