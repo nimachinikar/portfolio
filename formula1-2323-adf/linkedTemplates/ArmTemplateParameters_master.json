@@ -5,8 +5,17 @@
 		"factoryName": {
 			"value": "formula1-2323-adf"
 		},
+		"ls_formula1df2323_accountKey": {
+			"value": ""
+		},
 		"ls_formula1_properties_typeProperties_existingClusterId": {
 			"value": "0214-030003-3w1hywa6"
+		},
+		"ls_formula1df2323_properties_typeProperties_url": {
+			"value": "https://formula1dl2323.dfs.core.windows.net/"
+		},
+		"tr_process_formula1_properties_pipeline_parameters_p_windows_end_date": {
+			"value": "@trigger().outputs.windowEndTime"
 		},
 		"containerUri": {
 			"value": ""

@@ -7,9 +7,21 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "formula1-2323-adf"
 		},
+		"ls_formula1df2323_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_formula1df2323'"
+		},
 		"ls_formula1_properties_typeProperties_existingClusterId": {
 			"type": "string",
 			"defaultValue": "0214-030003-3w1hywa6"
+		},
+		"ls_formula1df2323_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://formula1dl2323.dfs.core.windows.net/"
+		},
+		"tr_process_formula1_properties_pipeline_parameters_p_windows_end_date": {
+			"type": "string",
+			"defaultValue": "@trigger().outputs.windowEndTime"
 		},
 		"containerUri": {
 			"type": "string",
@@ -38,8 +50,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ls_formula1df2323_accountKey": {
+						"value": "[parameters('ls_formula1df2323_accountKey')]"
+					},
 					"ls_formula1_properties_typeProperties_existingClusterId": {
 						"value": "[parameters('ls_formula1_properties_typeProperties_existingClusterId')]"
+					},
+					"ls_formula1df2323_properties_typeProperties_url": {
+						"value": "[parameters('ls_formula1df2323_properties_typeProperties_url')]"
+					},
+					"tr_process_formula1_properties_pipeline_parameters_p_windows_end_date": {
+						"value": "[parameters('tr_process_formula1_properties_pipeline_parameters_p_windows_end_date')]"
 					}
 				}
 			},
