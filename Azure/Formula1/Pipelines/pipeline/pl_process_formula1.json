@@ -1,0 +1,59 @@
+{
+	"name": "pl_process_formula1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Transformation pipelines",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Ingestion pipelines",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pl_trans_formula1",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"p_window_end_date": {
+							"value": "@formatDateTime(pipeline().parameters.p_windows_end_date)",
+							"type": "Expression"
+						}
+					}
+				}
+			},
+			{
+				"name": "Ingestion pipelines",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pl_ingest_formula1_data",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"p_window_end_date": {
+							"value": "@formatDateTime(pipeline().parameters.p_windows_end_date)",
+							"type": "Expression"
+						}
+					}
+				}
+			}
+		],
+		"concurrency": 1,
+		"parameters": {
+			"p_windows_end_date": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
