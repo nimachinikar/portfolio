@@ -1,0 +1,50 @@
+{
+	"name": "pl_ingest_formula1_data",
+	"properties": {
+		"activities": [
+			{
+				"name": "Ingest Circuit File",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/gounzoul@hotmail.com/portfolio/Azure/Formula1/Transformations/ingestion_incremental_and_full/1.ingest_circuits_file",
+					"baseParameters": {
+						"p_data_source": {
+							"value": "@variables('v_data_source')",
+							"type": "Expression"
+						},
+						"p_file_date": {
+							"value": "@formatDateTime(pipeline().parameters.p_window_end_date,'yyyy-MM-dd')",
+							"type": "Expression"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_formula1",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"concurrency": 1,
+		"parameters": {
+			"p_window_end_date": {
+				"type": "string"
+			}
+		},
+		"variables": {
+			"v_data_source": {
+				"type": "String",
+				"defaultValue": "Ergast"
+			}
+		},
+		"annotations": []
+	}
+}
