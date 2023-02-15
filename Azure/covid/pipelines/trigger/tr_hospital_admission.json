@@ -13,6 +13,12 @@
 					"sourceRelativeURL": "/nimachinikar/portfolio/tree/main/DataSet/Covid%20Project/ECDC/hospital_admissions.csv",
 					"sinkFileName": "hospital_admissions.csv"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_pop_blob_adl_copy1",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
@@ -20,7 +26,7 @@
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 1,
-				"startTime": "2023-02-15T21:02:00Z",
+				"startTime": "2023-02-15T21:04:00Z",
 				"timeZone": "UTC"
 			}
 		}
