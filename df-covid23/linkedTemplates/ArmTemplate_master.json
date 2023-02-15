@@ -1,0 +1,77 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "df-covid23"
+		},
+		"ls_adl_covid23_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_adl_covid23'"
+		},
+		"ls_blob_covid_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_blob_covid'"
+		},
+		"ls_log_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_log'"
+		},
+		"ls_adl_covid23_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlcovid23.dfs.core.windows.net/"
+		},
+		"tr_ingest_population_Event_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/365f49c6-7b94-4aa1-998d-c0207f37c6f5/resourceGroups/rs-covid-project/providers/Microsoft.Storage/storageAccounts/sacovid23"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "df-covid23_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"ls_adl_covid23_accountKey": {
+						"value": "[parameters('ls_adl_covid23_accountKey')]"
+					},
+					"ls_blob_covid_connectionString": {
+						"value": "[parameters('ls_blob_covid_connectionString')]"
+					},
+					"ls_log_connectionString": {
+						"value": "[parameters('ls_log_connectionString')]"
+					},
+					"ls_adl_covid23_properties_typeProperties_url": {
+						"value": "[parameters('ls_adl_covid23_properties_typeProperties_url')]"
+					},
+					"tr_ingest_population_Event_properties_typeProperties_scope": {
+						"value": "[parameters('tr_ingest_population_Event_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

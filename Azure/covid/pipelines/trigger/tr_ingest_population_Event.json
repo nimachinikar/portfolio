@@ -1,0 +1,24 @@
+{
+	"name": "tr_ingest_population_Event",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_pop_blob_adl",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/365f49c6-7b94-4aa1-998d-c0207f37c6f5/resourceGroups/rs-covid-project/providers/Microsoft.Storage/storageAccounts/sacovid23",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
