@@ -5,7 +5,7 @@
 
 -  &nbsp; Currently developping end-to-end Azure projects
 -  &nbsp; Studying to become Microsoft Certified: Azure Data Engineer Associate
--  &nbsp; I'm looking for a [job](https://www.canva.com/design/DAFZXpDUfzU/AB92BiTO4qcfSjWXEGnXxg/view?utm_content=DAFZXpDUfzU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)!
+-  &nbsp; I'm looking for a [job](https://www.linkedin.com/in/nimachinikar/)!
 -  &nbsp; +5 years experience
 -  &nbsp; Master's degree in Economics
 -  &nbsp; When I'm not coding, find me on the mountain hiking/ snowboarding or on the beach playing volleyball
