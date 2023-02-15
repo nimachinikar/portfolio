@@ -140,7 +140,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "ds_ecdc_casedeath_csv",
+						"referenceName": "ds_ecdc_raw_csv",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
@@ -163,7 +163,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "ds_ecdc_casedeath_csv",
+						"referenceName": "ds_ecdc_raw_csv",
 						"type": "DatasetReference"
 					},
 					"timeout": "0.00:00:10",

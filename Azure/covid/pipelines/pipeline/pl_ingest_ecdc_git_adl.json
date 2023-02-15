@@ -67,18 +67,38 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_ecdc_casedeath_csv",
-						"type": "DatasetReference"
+						"referenceName": "ds_ecdc_raw_csv",
+						"type": "DatasetReference",
+						"parameters": {
+							"file_name_url": {
+								"value": "@pipeline().parameters.sourceRelativeURL",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_adl_ecdc_casedeath_csv",
-						"type": "DatasetReference"
+						"referenceName": "ds_adl_ecdc_raw_csv",
+						"type": "DatasetReference",
+						"parameters": {
+							"file_name": {
+								"value": "@pipeline().parameters.sinkFileName",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
 		],
+		"parameters": {
+			"sourceRelativeURL": {
+				"type": "string"
+			},
+			"sinkFileName": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
