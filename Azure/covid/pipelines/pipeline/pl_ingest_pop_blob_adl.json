@@ -1,13 +1,13 @@
 {
-	"name": "pipeline1",
+	"name": "pl_ingest_pop_blob_adl",
 	"properties": {
 		"activities": [
 			{
-				"name": "If Condition1",
+				"name": "If file Exists",
 				"type": "IfCondition",
 				"dependsOn": [
 					{
-						"activity": "Get Metadata1",
+						"activity": "Get file",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -15,14 +15,18 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"expression": {
+						"value": "@activity('Get file').output.exists",
+						"type": "Expression"
+					},
 					"ifTrueActivities": [
 						{
-							"name": "Load_Blob_ADL",
+							"name": "Copy population Data",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
-								"timeout": "0.12:00:00",
-								"retry": 0,
+								"timeout": "0.0:05:00",
+								"retry": 1,
 								"retryIntervalInSeconds": 30,
 								"secureOutput": false,
 								"secureInput": false
@@ -49,6 +53,7 @@
 									],
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
+										"maxConcurrentConnections": 1,
 										"recursive": true,
 										"enablePartitionDiscovery": false
 									},
@@ -59,7 +64,8 @@
 								"sink": {
 									"type": "DelimitedTextSink",
 									"storeSettings": {
-										"type": "AzureBlobFSWriteSettings"
+										"type": "AzureBlobFSWriteSettings",
+										"maxConcurrentConnections": 1
 									},
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
@@ -94,7 +100,7 @@
 				}
 			},
 			{
-				"name": "Get Metadata1",
+				"name": "Get file",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
@@ -110,7 +116,9 @@
 						"referenceName": "ds_covid_pop_raw_gz",
 						"type": "DatasetReference"
 					},
-					"fieldList": [],
+					"fieldList": [
+						"exists"
+					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
 						"enablePartitionDiscovery": false
