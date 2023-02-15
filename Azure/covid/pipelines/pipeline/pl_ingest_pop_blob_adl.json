@@ -3,11 +3,11 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "If file Exists",
+				"name": "If Column Counts matches",
 				"type": "IfCondition",
 				"dependsOn": [
 					{
-						"activity": "Get file",
+						"activity": "Get file Metadata",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -16,9 +16,29 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@activity('Get file').output.exists",
+						"value": "@equals(activity('Get file Metadata').output.columnCount,13)",
 						"type": "Expression"
 					},
+					"ifFalseActivities": [
+						{
+							"name": "Send Email File change",
+							"type": "WebActivity",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"url": "https://github.com/nimachinikar/portofolio",
+								"method": "POST",
+								"body": "hello"
+							}
+						}
+					],
 					"ifTrueActivities": [
 						{
 							"name": "Copy population Data",
@@ -100,12 +120,19 @@
 				}
 			},
 			{
-				"name": "Get file",
+				"name": "Get file Metadata",
 				"type": "GetMetadata",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Validation file Exists",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
+					"timeout": "0.00:01:00",
+					"retry": 1,
 					"retryIntervalInSeconds": 30,
 					"secureOutput": false,
 					"secureInput": false
@@ -117,7 +144,8 @@
 						"type": "DatasetReference"
 					},
 					"fieldList": [
-						"exists"
+						"exists",
+						"columnCount"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
@@ -126,6 +154,46 @@
 					"formatSettings": {
 						"type": "DelimitedTextReadSettings"
 					}
+				}
+			},
+			{
+				"name": "Validation file Exists",
+				"type": "Validation",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "ds_covid_pop_raw_gz",
+						"type": "DatasetReference"
+					},
+					"timeout": "0.00:00:10",
+					"sleep": 10,
+					"minimumSize": 1024
+				}
+			},
+			{
+				"name": "Send Email No file",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "Validation file Exists",
+						"dependencyConditions": [
+							"Failed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://github.com/nimachinikar/portofolio",
+					"method": "POST",
+					"body": "hello"
 				}
 			}
 		],
