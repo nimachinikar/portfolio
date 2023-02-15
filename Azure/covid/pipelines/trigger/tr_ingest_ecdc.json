@@ -1,0 +1,18 @@
+{
+	"name": "tr_ingest_ecdc",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2023-02-15T22:30:00Z",
+				"endTime": "2023-02-16T22:30:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
