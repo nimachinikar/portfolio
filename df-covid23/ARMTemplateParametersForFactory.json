@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "df-covid23"
+		},
+		"ls_blob_covid_connectionString": {
+			"value": ""
+		},
+		"ls_adl_covid23_accountKey": {
+			"value": ""
+		},
+		"ls_adl_covid23_properties_typeProperties_url": {
+			"value": "https://adlcovid23.dfs.core.windows.net/"
+		}
+	}
+}
