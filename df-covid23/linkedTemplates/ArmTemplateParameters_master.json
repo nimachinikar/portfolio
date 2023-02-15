@@ -21,7 +21,7 @@
 			"value": "https://raw.githubusercontent.com"
 		},
 		"tr_hospital_admission_properties_pl_ingest_ecdc_git_adl_parameters_sourceRelativeURL": {
-			"value": "/nimachinikar/portfolio/tree/main/DataSet/Covid%20Project/ECDC/hospital_admissions.csv"
+			"value": "/nimachinikar/portfolio/blob/main/DataSet/Covid%20Project/ECDC/hospital_admissions.csv"
 		},
 		"tr_hospital_admission_properties_pl_ingest_ecdc_git_adl_parameters_sinkFileName": {
 			"value": "hospital_admissions.csv"
