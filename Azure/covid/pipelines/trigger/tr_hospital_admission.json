@@ -8,6 +8,10 @@
 				"pipelineReference": {
 					"referenceName": "pl_ingest_ecdc_git_adl",
 					"type": "PipelineReference"
+				},
+				"parameters": {
+					"sourceRelativeURL": "/nimachinikar/portfolio/tree/main/DataSet/Covid%20Project/ECDC/hospital_admissions.csv",
+					"sinkFileName": "hospital_admissions.csv"
 				}
 			}
 		],
