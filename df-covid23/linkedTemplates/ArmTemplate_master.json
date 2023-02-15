@@ -29,7 +29,7 @@
 		},
 		"tr_hospital_admission_properties_pl_ingest_ecdc_git_adl_parameters_sourceRelativeURL": {
 			"type": "string",
-			"defaultValue": "/nimachinikar/portfolio/blob/main/DataSet/Covid%20Project/ECDC/hospital_admissions.csv"
+			"defaultValue": "/nimachinikar/portfolio/main/DataSet/Covid%20Project/ECDC/hospital_admissions.csv"
 		},
 		"tr_hospital_admission_properties_pl_ingest_ecdc_git_adl_parameters_sinkFileName": {
 			"type": "string",
