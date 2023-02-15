@@ -23,6 +23,18 @@
 			"type": "string",
 			"defaultValue": "https://adlcovid23.dfs.core.windows.net/"
 		},
+		"ls_http_ecdc_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com"
+		},
+		"tr_hospital_admission_properties_pl_ingest_ecdc_git_adl_parameters_sourceRelativeURL": {
+			"type": "string",
+			"defaultValue": "/nimachinikar/portfolio/tree/main/DataSet/Covid%20Project/ECDC/hospital_admissions.csv"
+		},
+		"tr_hospital_admission_properties_pl_ingest_ecdc_git_adl_parameters_sinkFileName": {
+			"type": "string",
+			"defaultValue": "hospital_admissions.csv"
+		},
 		"tr_ingest_population_Event_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/365f49c6-7b94-4aa1-998d-c0207f37c6f5/resourceGroups/rs-covid-project/providers/Microsoft.Storage/storageAccounts/sacovid23"
@@ -65,6 +77,15 @@
 					},
 					"ls_adl_covid23_properties_typeProperties_url": {
 						"value": "[parameters('ls_adl_covid23_properties_typeProperties_url')]"
+					},
+					"ls_http_ecdc_properties_typeProperties_url": {
+						"value": "[parameters('ls_http_ecdc_properties_typeProperties_url')]"
+					},
+					"tr_hospital_admission_properties_pl_ingest_ecdc_git_adl_parameters_sourceRelativeURL": {
+						"value": "[parameters('tr_hospital_admission_properties_pl_ingest_ecdc_git_adl_parameters_sourceRelativeURL')]"
+					},
+					"tr_hospital_admission_properties_pl_ingest_ecdc_git_adl_parameters_sinkFileName": {
+						"value": "[parameters('tr_hospital_admission_properties_pl_ingest_ecdc_git_adl_parameters_sinkFileName')]"
 					},
 					"tr_ingest_population_Event_properties_typeProperties_scope": {
 						"value": "[parameters('tr_ingest_population_Event_properties_typeProperties_scope')]"
