@@ -2,7 +2,7 @@
 	"name": "tr_ingest_population_Event",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
