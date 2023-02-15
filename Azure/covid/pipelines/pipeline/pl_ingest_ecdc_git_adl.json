@@ -3,11 +3,124 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy ECDC data",
-				"type": "Copy",
+				"name": "Execute copy for every record",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Lookup Url",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Lookup Url').output.value",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Copy ECDC data",
+							"type": "Copy",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"source": {
+									"type": "DelimitedTextSource",
+									"additionalColumns": [
+										{
+											"name": "LoadId",
+											"value": {
+												"value": "@pipeline().RunId",
+												"type": "Expression"
+											}
+										},
+										{
+											"name": "AdlLoadTime",
+											"value": {
+												"value": "@convertFromUtc(utcnow(),'Pacific Standard Time')\n",
+												"type": "Expression"
+											}
+										}
+									],
+									"storeSettings": {
+										"type": "HttpReadSettings",
+										"maxConcurrentConnections": 1,
+										"requestMethod": "GET",
+										"requestTimeout": ""
+									},
+									"formatSettings": {
+										"type": "DelimitedTextReadSettings"
+									}
+								},
+								"sink": {
+									"type": "DelimitedTextSink",
+									"storeSettings": {
+										"type": "AzureBlobFSWriteSettings",
+										"maxConcurrentConnections": 1
+									},
+									"formatSettings": {
+										"type": "DelimitedTextWriteSettings",
+										"quoteAllText": true,
+										"fileExtension": ".txt"
+									}
+								},
+								"enableStaging": false,
+								"translator": {
+									"type": "TabularTranslator",
+									"typeConversion": true,
+									"typeConversionSettings": {
+										"allowDataTruncation": true,
+										"treatBooleanAsNumber": false
+									}
+								}
+							},
+							"inputs": [
+								{
+									"referenceName": "ds_ecdc_raw_csv",
+									"type": "DatasetReference",
+									"parameters": {
+										"relative_url": {
+											"value": "@item().sourceRelativeURL",
+											"type": "Expression"
+										},
+										"base_url": {
+											"value": "@item().sourceBaseURL",
+											"type": "Expression"
+										}
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "ds_adl_ecdc_raw_csv",
+									"type": "DatasetReference",
+									"parameters": {
+										"source_file_name": {
+											"value": "@item().sinkFileName",
+											"type": "Expression"
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"name": "Lookup Url",
+				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
-					"timeout": "0.12:00:00",
+					"timeout": "0.00:02:00",
 					"retry": 0,
 					"retryIntervalInSeconds": 30,
 					"secureOutput": false,
@@ -16,89 +129,24 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
-						"additionalColumns": [
-							{
-								"name": "LoadId",
-								"value": {
-									"value": "@pipeline().RunId",
-									"type": "Expression"
-								}
-							},
-							{
-								"name": "AdlLoadTime",
-								"value": {
-									"value": "@convertFromUtc(utcnow(),'Pacific Standard Time')\n",
-									"type": "Expression"
-								}
-							}
-						],
+						"type": "JsonSource",
 						"storeSettings": {
-							"type": "HttpReadSettings",
-							"maxConcurrentConnections": 1,
-							"requestMethod": "GET",
-							"requestTimeout": ""
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
+							"type": "JsonReadSettings"
 						}
 					},
-					"sink": {
-						"type": "DelimitedTextSink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings",
-							"maxConcurrentConnections": 1
-						},
-						"formatSettings": {
-							"type": "DelimitedTextWriteSettings",
-							"quoteAllText": true,
-							"fileExtension": ".txt"
-						}
+					"dataset": {
+						"referenceName": "ds_ecdc_url_blob",
+						"type": "DatasetReference"
 					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
-					}
-				},
-				"inputs": [
-					{
-						"referenceName": "ds_ecdc_raw_csv",
-						"type": "DatasetReference",
-						"parameters": {
-							"file_name_url": {
-								"value": "@pipeline().parameters.sourceRelativeURL",
-								"type": "Expression"
-							}
-						}
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "ds_adl_ecdc_raw_csv",
-						"type": "DatasetReference",
-						"parameters": {
-							"source_file_name": {
-								"value": "@pipeline().parameters.sinkFileName",
-								"type": "Expression"
-							}
-						}
-					}
-				]
+					"firstRowOnly": false
+				}
 			}
 		],
-		"parameters": {
-			"sourceRelativeURL": {
-				"type": "string"
-			},
-			"sinkFileName": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }
