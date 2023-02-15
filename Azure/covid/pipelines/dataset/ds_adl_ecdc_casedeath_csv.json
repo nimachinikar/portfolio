@@ -1,0 +1,23 @@
+{
+	"name": "ds_adl_ecdc_casedeath_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adl_covid23",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "ecdc",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

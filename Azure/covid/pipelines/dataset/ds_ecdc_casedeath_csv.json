@@ -1,0 +1,22 @@
+{
+	"name": "ds_ecdc_casedeath_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_http_ecdc",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/nimachinikar/portfolio/main/DataSet/Covid%20Project/ECDC/cases_deaths.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
