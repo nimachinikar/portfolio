@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "case_death.csv",
 				"folderPath": "ecdc",
 				"fileSystem": "raw"
 			},
