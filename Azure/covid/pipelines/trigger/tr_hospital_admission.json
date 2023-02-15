@@ -13,12 +13,6 @@
 					"sourceRelativeURL": "/nimachinikar/portfolio/tree/main/DataSet/Covid%20Project/ECDC/hospital_admissions.csv",
 					"sinkFileName": "hospital_admissions.csv"
 				}
-			},
-			{
-				"pipelineReference": {
-					"referenceName": "pl_ingest_pop_blob_adl_copy1",
-					"type": "PipelineReference"
-				}
 			}
 		],
 		"type": "ScheduleTrigger",
