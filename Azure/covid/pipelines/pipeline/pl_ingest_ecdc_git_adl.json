@@ -82,7 +82,7 @@
 						"referenceName": "ds_adl_ecdc_raw_csv",
 						"type": "DatasetReference",
 						"parameters": {
-							"file_name": {
+							"source_file_name": {
 								"value": "@pipeline().parameters.sinkFileName",
 								"type": "Expression"
 							}
