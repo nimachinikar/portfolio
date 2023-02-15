@@ -1,0 +1,17 @@
+{
+	"name": "tr_hospital_admission",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2023-02-15T19:52:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
