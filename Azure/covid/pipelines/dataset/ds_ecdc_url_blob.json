@@ -1,0 +1,29 @@
+{
+	"name": "ds_ecdc_url_blob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_covid",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "ecdc_url_list.json",
+				"container": "ecdc"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"sourceRelativeURL": {
+					"type": "string"
+				},
+				"sinkFileName": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
