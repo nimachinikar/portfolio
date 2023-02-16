@@ -29,14 +29,14 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "ds_weeklyHospitalAdmission",
+						"referenceName": "ds_weeklyhospitaladmission",
 						"type": "DatasetReference"
 					},
 					"name": "sinkWeekly"
 				},
 				{
 					"dataset": {
-						"referenceName": "ds_dailyHospitalAdmission",
+						"referenceName": "ds_dailyhospitaladmission",
 						"type": "DatasetReference"
 					},
 					"name": "sinkDaily"
@@ -134,7 +134,7 @@
 				"     skipDuplicateMapOutputs: true) ~> SelectLookUp",
 				"SelectLookUp split(contains(split(indicator, ' '),#item=='Weekly'),",
 				"     contains(split(indicator, ' '),#item=='Daily'),",
-				"     disjoint: false) ~> split1@(weekly, daily, daily)",
+				"     disjoint: false) ~> split1@(weekly, daily)",
 				"split1@daily pivot(groupBy(country,",
 				"          country_code_2_digit,",
 				"          country_code_3_digit,",
@@ -172,7 +172,6 @@
 				"     asc(country, true)) ~> DailySort",
 				"WeeklySort sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     format: 'parquet',",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
@@ -180,7 +179,6 @@
 				"     skipDuplicateMapOutputs: true) ~> sinkWeekly",
 				"DailySort sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     format: 'parquet',",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
