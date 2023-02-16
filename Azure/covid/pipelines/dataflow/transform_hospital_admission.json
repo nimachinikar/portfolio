@@ -17,6 +17,13 @@
 						"type": "DatasetReference"
 					},
 					"name": "ImportDates"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_Lookup_Countries",
+						"type": "DatasetReference"
+					},
+					"name": "ImportCountries"
 				}
 			],
 			"sinks": [],
@@ -37,13 +44,13 @@
 					"name": "PivotIndicatorWeekly"
 				},
 				{
-					"name": "derivedECDCYearWeek"
-				},
-				{
-					"name": "join1"
+					"name": "JoinDates"
 				},
 				{
 					"name": "AggregateDim"
+				},
+				{
+					"name": "SelectWeekly"
 				}
 			],
 			"scriptLines": [
@@ -63,22 +70,32 @@
 				"     ignoreNoFilesFound: false) ~> ImportRawHospitalAdmission",
 				"source(output(",
 				"          date_key as string,",
-				"          date as date,",
+				"          date as string,",
 				"          year as string,",
-				"          month as short,",
-				"          day as short,",
+				"          month as string,",
+				"          day as string,",
 				"          day_name as string,",
-				"          day_of_year as short,",
-				"          week_of_month as short,",
+				"          day_of_year as string,",
+				"          week_of_month as string,",
 				"          week_of_year as string,",
 				"          month_name as string,",
-				"          year_month as integer,",
-				"          year_week as integer",
+				"          year_month as string,",
+				"          year_week as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> ImportDates",
-				"ImportRawHospitalAdmission, ImportDates lookup(ImportRawHospitalAdmission@country == ImportCountries@country,",
+				"source(output(",
+				"          country as string,",
+				"          country_code_2_digit as string,",
+				"          country_code_3_digit as string,",
+				"          continent as string,",
+				"          population as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> ImportCountries",
+				"ImportRawHospitalAdmission, ImportCountries lookup(ImportRawHospitalAdmission@country == ImportCountries@country,",
 				"     multiple: false,",
 				"     pickup: 'any',",
 				"     broadcast: 'auto')~> LookUpCountries",
@@ -88,8 +105,8 @@
 				"          country_code_3_digit,",
 				"          population,",
 				"          indicator,",
-				"          reported_date = ImportRawHospitalAdmission@date,",
-				"          year_week = ImportRawHospitalAdmission@year_week,",
+				"          reported_date = date,",
+				"          year_week,",
 				"          value,",
 				"          source,",
 				"          LoadId,",
@@ -112,28 +129,38 @@
 				"     count = sum(value),",
 				"     columnNaming: '$V_$N',",
 				"     lateral: true) ~> PivotIndicatorDaily",
-				"split1@weekly pivot(groupBy(country,",
+				"split1@weekly pivot(groupBy(year_week,",
+				"          country,",
 				"          country_code_2_digit,",
 				"          country_code_3_digit,",
 				"          population,",
-				"          year_week,",
 				"          source,",
 				"          AdlLoadTime),",
 				"     pivotBy(indicator),",
 				"     count = sum(value),",
 				"     columnNaming: '$V_$N',",
 				"     lateral: true) ~> PivotIndicatorWeekly",
-				"ImportDates derive(ecdc_year_week = year+'-W'+lpad(week_of_year,2,'0')\r",
-				"\r",
-				") ~> derivedECDCYearWeek",
-				"PivotIndicatorWeekly, derivedECDCYearWeek join(PivotIndicatorWeekly@year_week == ecdc_year_week,",
+				"PivotIndicatorWeekly, AggregateDim join(year_week == ecdc_year_week,",
 				"     joinType:'left',",
 				"     matchType:'exact',",
 				"     ignoreSpaces: false,",
-				"     broadcast: 'auto')~> join1",
-				"derivedECDCYearWeek aggregate(groupBy(ecdc_year_week),",
+				"     broadcast: 'auto')~> JoinDates",
+				"ImportDates aggregate(groupBy(ecdc_year_week = year+'-W'+lpad(week_of_year,2,'0')),",
 				"     weekStartDate = min(date),",
-				"          weekEndDate = max(Date)) ~> AggregateDim"
+				"          weekEndDate = max(date)) ~> AggregateDim",
+				"JoinDates select(mapColumn(",
+				"          year_week,",
+				"          weekStartDate,",
+				"          weekEndDate,",
+				"          country,",
+				"          country_code_2_digit,",
+				"          country_code_3_digit,",
+				"          population,",
+				"          source,",
+				"          AdlLoadTime",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> SelectWeekly"
 			]
 		}
 	}
