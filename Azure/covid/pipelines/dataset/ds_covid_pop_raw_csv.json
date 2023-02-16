@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"folderPath": "population_by_age",
 				"fileSystem": "raw"
 			},
 			"columnDelimiter": "|",
