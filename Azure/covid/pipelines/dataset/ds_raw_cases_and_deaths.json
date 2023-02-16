@@ -1,5 +1,5 @@
 {
-	"name": "df_raw_cases_and_deaths",
+	"name": "ds_raw_cases_and_deaths",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adl_covid23",

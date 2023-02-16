@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "df_raw_cases_and_deaths",
+						"referenceName": "ds_raw_cases_and_deaths",
 						"type": "DatasetReference"
 					},
 					"name": "CasesAndDeathsSource"
@@ -96,11 +96,11 @@
 				"          population = CasesAndDeathsSource@population,",
 				"          indicator,",
 				"          daily_count,",
-				"          each(match(name=='date'),",
-				"               'reported' + '_date' = $$),",
 				"          source,",
 				"          LoadId,",
-				"          AdlLoadTime",
+				"          AdlLoadTime,",
+				"          each(match(name=='date'),",
+				"               'reported'+'_date' = $$)",
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> SelectColumns",
@@ -118,7 +118,7 @@
 				"     lateral: true) ~> PivotCounts",
 				"PivotCounts select(mapColumn(",
 				"          each(match(true()),",
-				"               'cases_' + $$ = $$)",
+				"               'cases_'+$$ = $$)",
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> AddingCasesColumns",
