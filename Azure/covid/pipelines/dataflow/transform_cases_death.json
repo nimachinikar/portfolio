@@ -49,7 +49,7 @@
 					"name": "OrdergingColumns"
 				},
 				{
-					"name": "derivedColumn1"
+					"name": "AddingProcessTime"
 				}
 			],
 			"scriptLines": [
@@ -132,8 +132,8 @@
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> OrdergingColumns",
-				"OrdergingColumns derive(ProcessTime = fromUTC(currentTimestamp(),'Pacific Standard Time')) ~> derivedColumn1",
-				"derivedColumn1 sink(allowSchemaDrift: true,",
+				"OrdergingColumns derive(ProcessTime = fromUTC(currentTimestamp(),'Pacific Standard Time')) ~> AddingProcessTime",
+				"AddingProcessTime sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     format: 'parquet',",
 				"     umask: 0022,",
