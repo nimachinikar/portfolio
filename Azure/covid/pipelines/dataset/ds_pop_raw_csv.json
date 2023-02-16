@@ -1,5 +1,5 @@
 {
-	"name": "ds_covid_pop_raw_csv",
+	"name": "ds_pop_raw_csv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adl_covid23",

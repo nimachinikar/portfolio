@@ -1,5 +1,5 @@
 {
-	"name": "ds_covid_pop_raw_gz",
+	"name": "ds_pop_raw_gz",
 	"properties": {
 		"description": "DS for covid project. \nGetting info from blob to adl_raw for population data",
 		"linkedServiceName": {

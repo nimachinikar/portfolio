@@ -1,5 +1,5 @@
 {
-	"name": "pl_ingest_covid_pop_blob_adl",
+	"name": "pl_ingest_pop_blob_adl",
 	"properties": {
 		"activities": [
 			{
@@ -105,13 +105,13 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "ds_covid_pop_raw_gz",
+									"referenceName": "ds_pop_raw_gz",
 									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
-									"referenceName": "ds_covid_pop_raw_csv",
+									"referenceName": "ds_pop_raw_csv",
 									"type": "DatasetReference"
 								}
 							]
@@ -137,7 +137,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"dataset": {
-									"referenceName": "ds_covid_pop_raw_gz",
+									"referenceName": "ds_pop_raw_gz",
 									"type": "DatasetReference"
 								},
 								"logStorageSettings": {
@@ -178,7 +178,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "ds_covid_pop_raw_gz",
+						"referenceName": "ds_pop_raw_gz",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
@@ -202,7 +202,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "ds_covid_pop_raw_gz",
+						"referenceName": "ds_pop_raw_gz",
 						"type": "DatasetReference"
 					},
 					"timeout": "0.00:00:10",
