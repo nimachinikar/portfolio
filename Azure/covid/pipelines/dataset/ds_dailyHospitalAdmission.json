@@ -1,0 +1,20 @@
+{
+	"name": "ds_dailyHospitalAdmission",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adl_covid23",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "DailyHospitalAdmission",
+				"fileSystem": "processed"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
