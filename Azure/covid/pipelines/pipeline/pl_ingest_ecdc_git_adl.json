@@ -46,7 +46,7 @@
 										{
 											"name": "AdlLoadTime",
 											"value": {
-												"value": "@convertFromUtc(utcnow(),'Pacific Standard Time')\n",
+												"value": "@convertFromUtc(pipeline().TriggerTime,'Pacific Standard Time')",
 												"type": "Expression"
 											}
 										}
