@@ -59,7 +59,7 @@
 										{
 											"name": "LoadADLTime",
 											"value": {
-												"value": "@pipeline().TriggerTime",
+												"value": "@convertFromUtc(pipeline().TriggerTime,'Pacific Standard Time')",
 												"type": "Expression"
 											}
 										},
@@ -187,6 +187,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
