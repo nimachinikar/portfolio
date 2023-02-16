@@ -1,5 +1,5 @@
 {
-	"name": "pl_ingest_pop_blob_adl",
+	"name": "pl_ingest_covid_pop_blob_adl",
 	"properties": {
 		"activities": [
 			{
@@ -90,7 +90,7 @@
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
 										"quoteAllText": true,
-										"fileExtension": ".txt"
+										"fileExtension": ".csv"
 									}
 								},
 								"enableStaging": false,
@@ -111,7 +111,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "ds_covid_pop_raw_tsv",
+									"referenceName": "ds_covid_pop_raw_csv",
 									"type": "DatasetReference"
 								}
 							]
