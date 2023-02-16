@@ -1,0 +1,140 @@
+{
+	"name": "transform_hospital_admission",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ds_raw_hospital_admission",
+						"type": "DatasetReference"
+					},
+					"name": "ImportRawHospitalAdmission"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_dates",
+						"type": "DatasetReference"
+					},
+					"name": "ImportDates"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "LookUpCountries"
+				},
+				{
+					"name": "SelectLookUp"
+				},
+				{
+					"name": "split1"
+				},
+				{
+					"name": "PivotIndicatorDaily"
+				},
+				{
+					"name": "PivotIndicatorWeekly"
+				},
+				{
+					"name": "derivedECDCYearWeek"
+				},
+				{
+					"name": "join1"
+				},
+				{
+					"name": "AggregateDim"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          country as string,",
+				"          indicator as string,",
+				"          date as date,",
+				"          year_week as string,",
+				"          value as double,",
+				"          source as string,",
+				"          url as string,",
+				"          LoadId as string,",
+				"          AdlLoadTime as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> ImportRawHospitalAdmission",
+				"source(output(",
+				"          date_key as string,",
+				"          date as date,",
+				"          year as string,",
+				"          month as short,",
+				"          day as short,",
+				"          day_name as string,",
+				"          day_of_year as short,",
+				"          week_of_month as short,",
+				"          week_of_year as string,",
+				"          month_name as string,",
+				"          year_month as integer,",
+				"          year_week as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> ImportDates",
+				"ImportRawHospitalAdmission, ImportDates lookup(ImportRawHospitalAdmission@country == ImportCountries@country,",
+				"     multiple: false,",
+				"     pickup: 'any',",
+				"     broadcast: 'auto')~> LookUpCountries",
+				"LookUpCountries select(mapColumn(",
+				"          country = ImportRawHospitalAdmission@country,",
+				"          country_code_2_digit,",
+				"          country_code_3_digit,",
+				"          population,",
+				"          indicator,",
+				"          reported_date = ImportRawHospitalAdmission@date,",
+				"          year_week = ImportRawHospitalAdmission@year_week,",
+				"          value,",
+				"          source,",
+				"          LoadId,",
+				"          AdlLoadTime",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> SelectLookUp",
+				"SelectLookUp split(contains(split(indicator, ' '),#item=='Weekly'),",
+				"     contains(split(indicator, ' '),#item=='Daily'),",
+				"     disjoint: false) ~> split1@(weekly, daily)",
+				"split1@daily pivot(groupBy(country,",
+				"          country_code_2_digit,",
+				"          country_code_3_digit,",
+				"          population,",
+				"          reported_date,",
+				"          source,",
+				"          LoadId,",
+				"          AdlLoadTime),",
+				"     pivotBy(indicator),",
+				"     count = sum(value),",
+				"     columnNaming: '$V_$N',",
+				"     lateral: true) ~> PivotIndicatorDaily",
+				"split1@weekly pivot(groupBy(country,",
+				"          country_code_2_digit,",
+				"          country_code_3_digit,",
+				"          population,",
+				"          year_week,",
+				"          source,",
+				"          AdlLoadTime),",
+				"     pivotBy(indicator),",
+				"     count = sum(value),",
+				"     columnNaming: '$V_$N',",
+				"     lateral: true) ~> PivotIndicatorWeekly",
+				"ImportDates derive(ecdc_year_week = year+'-W'+lpad(week_of_year,2,'0')\r",
+				"\r",
+				") ~> derivedECDCYearWeek",
+				"PivotIndicatorWeekly, derivedECDCYearWeek join(PivotIndicatorWeekly@year_week == ecdc_year_week,",
+				"     joinType:'left',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> join1",
+				"derivedECDCYearWeek aggregate(groupBy(ecdc_year_week),",
+				"     weekStartDate = min(date),",
+				"          weekEndDate = max(Date)) ~> AggregateDim"
+			]
+		}
+	}
+}
