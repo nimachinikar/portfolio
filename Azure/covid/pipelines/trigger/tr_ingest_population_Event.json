@@ -6,7 +6,7 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "pl_ingest_covid_pop_blob_adl",
+					"referenceName": "pl_ingest_pop_blob_adl",
 					"type": "PipelineReference"
 				}
 			}
