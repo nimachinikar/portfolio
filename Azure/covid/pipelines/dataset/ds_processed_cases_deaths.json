@@ -1,0 +1,19 @@
+{
+	"name": "ds_processed_cases_deaths",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adl_covid23",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "processed"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

@@ -19,7 +19,15 @@
 					"name": "CountriesLookup"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "ds_processed_cases_deaths",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
 			"transformations": [
 				{
 					"name": "FilterToEurope"
@@ -33,6 +41,15 @@
 				},
 				{
 					"name": "PivotCounts"
+				},
+				{
+					"name": "AddingCasesColumns"
+				},
+				{
+					"name": "OrdergingColumns"
+				},
+				{
+					"name": "derivedColumn1"
 				}
 			],
 			"scriptLines": [
@@ -94,7 +111,36 @@
 				"     pivotBy(indicator, ['confirmed', 'deaths']),",
 				"     count = sum(daily_count),",
 				"     columnNaming: '$V_$N',",
-				"     lateral: true) ~> PivotCounts"
+				"     lateral: true) ~> PivotCounts",
+				"PivotCounts select(mapColumn(",
+				"          each(match(true()),",
+				"               'cases_' + $$ = $$)",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> AddingCasesColumns",
+				"AddingCasesColumns select(mapColumn(",
+				"          cases_country,",
+				"          cases_country_code_2_digit,",
+				"          cases_country_code_3_digit,",
+				"          cases_continent,",
+				"          cases_population,",
+				"          cases_reported_date,",
+				"          cases_confirmed_count,",
+				"          AdlLoadTime = cases_AdlLoadTime,",
+				"          LoadId = cases_LoadId,",
+				"          cases_deaths_count",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> OrdergingColumns",
+				"OrdergingColumns derive(ProcessTime = fromUTC(currentTimestamp(),'Pacific Standard Time')) ~> derivedColumn1",
+				"derivedColumn1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     format: 'parquet',",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
 		}
 	}
