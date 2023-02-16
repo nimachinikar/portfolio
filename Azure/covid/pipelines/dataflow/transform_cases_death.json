@@ -25,7 +25,7 @@
 						"referenceName": "ds_processed_cases_deaths",
 						"type": "DatasetReference"
 					},
-					"name": "sink1",
+					"name": "SinkDeathCases",
 					"rejectedDataLinkedService": {
 						"referenceName": "ls_adl_covid23",
 						"type": "LinkedServiceReference"
@@ -145,7 +145,7 @@
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sink1"
+				"     skipDuplicateMapOutputs: true) ~> SinkDeathCases"
 			]
 		}
 	}
