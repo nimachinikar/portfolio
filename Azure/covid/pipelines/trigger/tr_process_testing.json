@@ -3,10 +3,16 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
+		"pipeline": {
+			"pipelineReference": {
+				"referenceName": "pl_processed_testing",
+				"type": "PipelineReference"
+			}
+		},
 		"type": "TumblingWindowTrigger",
 		"typeProperties": {
-			"frequency": "Minute",
-			"interval": 15,
+			"frequency": "Hour",
+			"interval": 24,
 			"startTime": "2023-02-17T00:33:00Z",
 			"delay": "00:00:00",
 			"maxConcurrency": 50,
