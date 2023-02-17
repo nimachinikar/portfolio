@@ -1,0 +1,28 @@
+{
+	"name": "tr_process_cases_and_deaths",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"type": "TumblingWindowTrigger",
+		"typeProperties": {
+			"frequency": "Hour",
+			"interval": 24,
+			"startTime": "2023-02-16T00:29:00Z",
+			"delay": "00:00:00",
+			"maxConcurrency": 50,
+			"retryPolicy": {
+				"intervalInSeconds": 30
+			},
+			"dependsOn": [
+				{
+					"type": "TumblingWindowTriggerDependencyReference",
+					"offset": "-0:00:02:00",
+					"referenceTrigger": {
+						"referenceName": "tr_ingest_ecdc_data",
+						"type": "TriggerReference"
+					}
+				}
+			]
+		}
+	}
+}
