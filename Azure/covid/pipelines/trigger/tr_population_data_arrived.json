@@ -6,7 +6,7 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "Population",
+					"referenceName": "pl_Population",
 					"type": "PipelineReference"
 				}
 			}
