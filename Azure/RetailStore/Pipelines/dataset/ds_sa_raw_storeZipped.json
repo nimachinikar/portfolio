@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "*",
+				"fileName": "DatasetToCompleteTheSixSparkExercises.zip",
 				"container": "raw"
 			},
 			"columnDelimiter": ",",
