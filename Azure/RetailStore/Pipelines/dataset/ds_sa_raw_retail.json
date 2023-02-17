@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "DatasetToCompleteTheSixSparkExercises.zip",
 				"container": "raw"
 			},
 			"compressionCodec": "snappy"
