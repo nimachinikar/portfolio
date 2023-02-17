@@ -1,0 +1,20 @@
+{
+	"name": "ds_sa_raw_retail",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_Store",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "DatasetToCompleteTheSixSparkExercises.zip",
+				"container": "raw"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
