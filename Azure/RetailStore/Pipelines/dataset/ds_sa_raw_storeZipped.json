@@ -1,0 +1,24 @@
+{
+	"name": "ds_sa_raw_storeZipped",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_Store",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "*",
+				"container": "raw"
+			},
+			"columnDelimiter": ",",
+			"compressionCodec": "ZipDeflate",
+			"compressionLevel": "Fastest",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

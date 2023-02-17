@@ -1,0 +1,19 @@
+{
+	"name": "ds_adl_raw_retail",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adl_retail",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "raw"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
