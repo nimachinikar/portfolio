@@ -6,6 +6,9 @@
 			"referenceName": "ls_blob_covid",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "ingest"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

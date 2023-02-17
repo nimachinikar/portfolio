@@ -1,0 +1,44 @@
+{
+	"name": "Population",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Population Ingest",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pl_ingest_pop_blob_adl",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Execute Population Process",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Execute Population Ingest",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pl_processed_population",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": false
+				}
+			}
+		],
+		"folder": {
+			"name": "Execute"
+		},
+		"annotations": []
+	}
+}

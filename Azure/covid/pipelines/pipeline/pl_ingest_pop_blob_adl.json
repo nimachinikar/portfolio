@@ -236,6 +236,9 @@
 				}
 			}
 		],
+		"folder": {
+			"name": "Ingest"
+		},
 		"annotations": []
 	}
 }
