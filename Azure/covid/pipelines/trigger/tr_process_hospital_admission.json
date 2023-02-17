@@ -3,10 +3,16 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
+		"pipeline": {
+			"pipelineReference": {
+				"referenceName": "pi_df_transform_hospitalAdmis",
+				"type": "PipelineReference"
+			}
+		},
 		"type": "TumblingWindowTrigger",
 		"typeProperties": {
-			"frequency": "Minute",
-			"interval": 15,
+			"frequency": "Hour",
+			"interval": 24,
 			"startTime": "2023-02-17T00:31:00Z",
 			"delay": "00:00:00",
 			"maxConcurrency": 50,
