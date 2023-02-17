@@ -9,6 +9,12 @@
 					"referenceName": "pl_ingest_ecdc_git_adl",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ECDC",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",

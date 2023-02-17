@@ -5,6 +5,9 @@
 			"referenceName": "ls_adl_covid23",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "ingest"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

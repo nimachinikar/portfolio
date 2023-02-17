@@ -19,6 +19,9 @@
 				"type": "string"
 			}
 		},
+		"folder": {
+			"name": "ingest"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
