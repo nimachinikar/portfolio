@@ -1,18 +1,18 @@
 {
-	"name": "ds_sa_raw_retail",
+	"name": "Parquet1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ls_blob_Store",
+			"referenceName": "ls_adl_retail",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"container": "raw"
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "processed"
 			},
-			"compressionCodec": "none"
+			"compressionCodec": "gzip"
 		},
 		"schema": []
 	}

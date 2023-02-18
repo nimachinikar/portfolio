@@ -10,10 +10,11 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "DatasetToCompleteTheSixSparkExercises.zip",
 				"folderPath": "retail",
 				"fileSystem": "raw"
 			},
-			"compressionCodec": "snappy"
+			"compressionCodec": "gzip"
 		},
 		"schema": []
 	}
