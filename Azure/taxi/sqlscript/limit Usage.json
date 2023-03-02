@@ -1,0 +1,17 @@
+{
+	"name": "limit Usage",
+	"properties": {
+		"content": {
+			"query": "select * From sys.dm_external_data_processed;\n\nselect * from sys.configurations\nwhere name like 'Data Processed %';\n\nsp_set_data_processed_limit\n    @type=N'monthly', --weekly or daily\n    @limit_tb= 2;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
