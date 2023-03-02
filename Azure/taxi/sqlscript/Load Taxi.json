@@ -5,7 +5,7 @@
 			"name": "demo"
 		},
 		"content": {
-			"query": "-- This is auto-generated code\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://adltaxi.dfs.core.windows.net/raw/taxi_zone.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0'\n    ) AS [result]\n",
+			"query": "-- This is auto-generated code to load taxi\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://adltaxi.dfs.core.windows.net/raw/taxi_zone.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0'\n    ) AS [result]\n",
 			"metadata": {
 				"language": "sql"
 			},
