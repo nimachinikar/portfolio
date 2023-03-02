@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "ws-synapse23"
+		},
+		"ws-synapse23-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:ws-synapse23.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"ws-synapse23-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://adltaxi.dfs.core.windows.net"
+		}
+	}
+}
