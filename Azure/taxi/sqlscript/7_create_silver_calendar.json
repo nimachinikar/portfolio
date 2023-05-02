@@ -1,0 +1,20 @@
+{
+	"name": "7_create_silver_calendar",
+	"properties": {
+		"folder": {
+			"name": "Logical Data Warehouse"
+		},
+		"content": {
+			"query": "USE nyc_taxi_ldw;\n\nIF OBJECT_ID('silver.calendar') IS NOT NULL\n    DROP EXTERNAL TABLE silver.calendar\nGO\n\nCREATE EXTERNAL TABLE silver.calendar\n    WITH\n    (\n        DATA_SOURCE = nyc_taxi_src,\n        LOCATION = 'silver/calendar',\n        FILE_FORMAT = parquet_file_format\n    )\nAS\nSELECT *\n  FROM bronze.calendar;\n\n\nSELECT * FROM silver.calendar; \n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
