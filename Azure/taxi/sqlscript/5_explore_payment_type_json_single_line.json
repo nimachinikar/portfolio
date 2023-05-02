@@ -1,0 +1,20 @@
+{
+	"name": "5_explore_payment_type_json_single_line",
+	"properties": {
+		"folder": {
+			"name": "nyc_taxi/discovery"
+		},
+		"content": {
+			"query": "USE nyc_taxi_discovery;\n--v1\nSELECT CAST(JSON_VALUE(jsonDoc, '$.payment_type') AS SMALLINT) payment_type,\n        CAST(JSON_VALUE(jsonDoc, '$.payment_type_desc') AS VARCHAR(15)) payment_type_desc\n  FROM OPENROWSET(\n      BULK 'payment_type.json',\n      DATA_SOURCE = 'nyc_taxi_data_raw',\n      FORMAT = 'CSV',\n      PARSER_VERSION = '1.0', \n      FIELDTERMINATOR = '0x0b',\n      FIELDQUOTE = '0x0b',\n      ROWTERMINATOR = '0x0a'\n  )\n  WITH\n  (\n      jsonDoc NVARCHAR(MAX)\n  ) AS payment_type;\n\nEXEC sp_describe_first_result_set N'\n SELECT CAST(JSON_VALUE(jsonDoc, ''$.payment_type'') AS SMALLINT) payment_type,\n        CAST(JSON_VALUE(jsonDoc, ''$.payment_type_desc'') AS VARCHAR(15)) payment_type_desc\n  FROM OPENROWSET(\n      BULK ''payment_type.json'',\n      DATA_SOURCE = ''nyc_taxi_data_raw'',\n      FORMAT = ''CSV'',\n      PARSER_VERSION = ''1.0'', \n      FIELDTERMINATOR = ''0x0b'',\n      FIELDQUOTE = ''0x0b'',\n      ROWTERMINATOR = ''0x0a''\n  )\n  WITH\n  (\n      jsonDoc NVARCHAR(MAX)\n  ) AS payment_type';  \n  \n--v2 better\nSELECT payment_type, description\n  FROM OPENROWSET(\n      BULK 'payment_type.json',\n      DATA_SOURCE = 'nyc_taxi_data_raw',\n      FORMAT = 'CSV',\n      FIELDTERMINATOR = '0x0b',\n      FIELDQUOTE = '0x0b'\n  )\n  WITH\n  (\n      jsonDoc NVARCHAR(MAX)\n  ) AS payment_type\n  CROSS APPLY OPENJSON(jsonDoc)\n  WITH(\n      payment_type SMALLINT,\n      description VARCHAR(20) '$.payment_type_desc'\n  );\n\n-----------------------------------------------------\n-- Reading data from JSON with arrays\n-----------------------------------------------------\n--v1 needs to explicit how many nested\nSELECT CAST(JSON_VALUE(jsonDoc, '$.payment_type') AS SMALLINT) payment_type,\n        CAST(JSON_VALUE(jsonDoc, '$.payment_type_desc[0].value') AS VARCHAR(15)) payment_type_desc_0,\n        CAST(JSON_VALUE(jsonDoc, '$.payment_type_desc[1].value') AS VARCHAR(15)) payment_type_desc_01\n  FROM OPENROWSET(\n      BULK 'payment_type_array.json',\n      DATA_SOURCE = 'nyc_taxi_data_raw',\n      FORMAT = 'CSV',\n      PARSER_VERSION = '1.0', \n      FIELDTERMINATOR = '0x0b',\n      FIELDQUOTE = '0x0b',\n      ROWTERMINATOR = '0x0a'\n  )\n  WITH\n  (\n      jsonDoc NVARCHAR(MAX)\n  ) AS payment_type;\n\n-- Use openjson to explode the array\n--v2 better\nSELECT  payment_type, payment_type_desc_value\n  FROM OPENROWSET(\n      BULK 'payment_type_array.json',\n      DATA_SOURCE = 'nyc_taxi_data_raw',\n      FORMAT = 'CSV',\n      PARSER_VERSION = '1.0', \n      FIELDTERMINATOR = '0x0b',\n      FIELDQUOTE = '0x0b',\n      ROWTERMINATOR = '0x0a'\n  )\n  WITH\n  (\n      jsonDoc NVARCHAR(MAX)\n  ) AS payment_type     -- json file name\n  CROSS APPLY OPENJSON(jsonDoc)\n  WITH\n  (\n      payment_type SMALLINT,\n      payment_type_desc NVARCHAR(MAX) AS JSON\n  )\n  CROSS APPLY OPENJSON(payment_type_desc)\n  WITH(\n      sub_type SMALLINT,\n      payment_type_desc_value VARCHAR(20) '$.value'\n  );\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "nyc_taxi_discovery",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
