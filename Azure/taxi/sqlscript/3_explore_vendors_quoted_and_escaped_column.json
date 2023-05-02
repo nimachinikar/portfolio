@@ -5,12 +5,12 @@
 			"name": "nyc_taxi/discovery"
 		},
 		"content": {
-			"query": "",
+			"query": "USE nyc_taxi_discovery;\n-- issue with comma\nSELECT *\n  FROM OPENROWSET(\n      BULK 'vendor_unquoted.csv',\n      DATA_SOURCE = 'nyc_taxi_data_raw',\n      FORMAT = 'CSV',\n      PARSER_VERSION = '2.0',\n      HEADER_ROW = TRUE\n  ) AS vendor;\n\n--solution 1 -- diff file\nSELECT *\n  FROM OPENROWSET(\n      BULK 'vendor_escaped.csv',\n      DATA_SOURCE = 'nyc_taxi_data_raw',\n      FORMAT = 'CSV',\n      PARSER_VERSION = '2.0',\n      HEADER_ROW = TRUE,\n      ESCAPECHAR = '\\\\'\n  ) AS vendor;\n\n--solution 2 -- diff file\nSELECT *\n  FROM OPENROWSET(\n      BULK 'vendor.csv',\n      DATA_SOURCE = 'nyc_taxi_data_raw',\n      FORMAT = 'CSV',\n      PARSER_VERSION = '2.0',\n      HEADER_ROW = TRUE,\n      FIELDQUOTE = '\"'\n  ) AS vendor;\n\n\n",
 			"metadata": {
 				"language": "sql"
 			},
 			"currentConnection": {
-				"databaseName": "master",
+				"databaseName": "nyc_taxi_discovery",
 				"poolName": "Built-in"
 			},
 			"resultLimit": 5000
