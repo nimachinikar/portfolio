@@ -1,11 +1,11 @@
 {
-	"name": "Load Taxi",
+	"name": "1_explore_taxi_zone",
 	"properties": {
 		"folder": {
-			"name": "demo"
+			"name": "nyc_taxi/discovery"
 		},
 		"content": {
-			"query": "-- This is auto-generated code to load taxi\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://adltaxi.dfs.core.windows.net/raw/taxi_zone.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0'\n    ) AS [result]\n",
+			"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://adltaxi.dfs.core.windows.net/nytaxi/raw/taxi_zone.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',\n        header_row = true,\n        FIELDTERMINATOR=',',\n        ROWTERMINATOR='\\n'  \n    ) AS [result]\n\n\n-- or \nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'abfss://nytaxi@adltaxi.dfs.core.windows.net/raw/taxi_zone.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',\n        header_row = true,\n        FIELDTERMINATOR=',',\n        ROWTERMINATOR='\\n'        \n    ) AS [result]\n",
 			"metadata": {
 				"language": "sql"
 			},
