@@ -10,7 +10,7 @@
 				"language": "sql"
 			},
 			"currentConnection": {
-				"databaseName": "master",
+				"databaseName": "nyc_taxi_ldw",
 				"poolName": "Built-in"
 			},
 			"resultLimit": 5000
