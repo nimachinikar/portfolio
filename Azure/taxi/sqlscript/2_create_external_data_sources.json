@@ -5,7 +5,7 @@
 			"name": "Logical Data Warehouse"
 		},
 		"content": {
-			"query": "USE nyc_taxi_ldw;\n\nIF NOT EXISTS (SELECT * FROM sys.external_data_sources WHERE name = 'nyc_taxi_src')\n    CREATE EXTERNAL DATA SOURCE nyc_taxi_src\n    WITH\n    (    LOCATION         = 'https://adltaxi.dfs.core.windows.net/nytaxi/bronze/'\n    );",
+			"query": "USE nyc_taxi_ldw;\n\nIF NOT EXISTS (SELECT * FROM sys.external_data_sources WHERE name = 'nyc_taxi_src')\n    CREATE EXTERNAL DATA SOURCE nyc_taxi_src\n    WITH\n    (    LOCATION         = 'https://adltaxi.dfs.core.windows.net/nytaxi/'\n    );",
 			"metadata": {
 				"language": "sql"
 			},
