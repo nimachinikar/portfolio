@@ -28,9 +28,16 @@
 				}
 			},
 			{
-				"name": "Stored procedure1",
+				"name": "Create Silver Taxi Zone Folder",
 				"type": "SqlServerStoredProcedure",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Delete Silver Taxi Zone Folder",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -39,6 +46,9 @@
 					"secureInput": false
 				},
 				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[silver].[usp_silver_taxi_zone]"
+				},
 				"linkedServiceName": {
 					"referenceName": "ls_serverless_sqlpool",
 					"type": "LinkedServiceReference",
