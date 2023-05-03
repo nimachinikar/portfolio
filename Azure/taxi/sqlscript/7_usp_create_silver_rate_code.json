@@ -1,0 +1,20 @@
+{
+	"name": "7_usp_create_silver_rate_code",
+	"properties": {
+		"folder": {
+			"name": "usp"
+		},
+		"content": {
+			"query": "USE nyc_taxi_ldw\nGO\n\n\nCREATE OR ALTER PROCEDURE silver.usp_silver_rate_code\nAS\nBEGIN\n\n    IF OBJECT_ID('silver.rate_code') IS NOT NULL\n        DROP EXTERNAL TABLE silver.rate_code;\n\n    CREATE EXTERNAL TABLE silver.rate_code\n        WITH\n        (\n            DATA_SOURCE = nyc_taxi_src,\n            LOCATION = 'silver/rate_code',\n            FILE_FORMAT = parquet_file_format\n        )\n    AS\n    SELECT rate_code_id, rate_code\n    FROM OPENROWSET(\n        BULK 'raw/rate_code.json',\n        DATA_SOURCE = 'nyc_taxi_src',\n        FORMAT = 'CSV',\n        FIELDTERMINATOR = '0x0b',\n        FIELDQUOTE = '0x0b',\n        ROWTERMINATOR = '0x0b'\n    )\n    WITH\n    (\n        jsonDoc NVARCHAR(MAX)\n    ) AS rate_code\n    CROSS APPLY OPENJSON(jsonDoc)\n    WITH(\n        rate_code_id TINYINT,\n        rate_code VARCHAR(20) \n    );\n\nEND;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
