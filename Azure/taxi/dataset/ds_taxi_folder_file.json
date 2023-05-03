@@ -6,9 +6,8 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"folder/file": {
-				"type": "String",
-				"defaultValue": "silver/taxi_zone"
+			"p_folder_path": {
+				"type": "String"
 			}
 		},
 		"annotations": [],
@@ -17,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"folderPath": {
-					"value": "@dataset().folder/file",
+					"value": "@dataset().p_folder_path",
 					"type": "Expression"
 				},
 				"fileSystem": "nytaxi"
