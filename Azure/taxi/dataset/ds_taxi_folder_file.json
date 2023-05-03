@@ -1,0 +1,27 @@
+{
+	"name": "ds_taxi_folder_file",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adltaxi",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folder/file": {
+				"type": "String",
+				"defaultValue": "silver/taxi_zone"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().folder/file",
+					"type": "Expression"
+				},
+				"fileSystem": "nytaxi"
+			}
+		}
+	}
+}
