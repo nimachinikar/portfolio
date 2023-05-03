@@ -1,0 +1,24 @@
+{
+	"name": "ls_serverless_sqlpool",
+	"properties": {
+		"parameters": {
+			"AzureSQLDb": {
+				"type": "String",
+				"defaultValue": "ws-synapse23-ondemand.sql.azuresynapse.net,1433"
+			},
+			"DB_Name": {
+				"type": "String",
+				"defaultValue": "nyc_taxi_ldw"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDW",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=@{linkedService().AzureSQLDb};Initial Catalog=@{linkedService().DB_Name}"
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
