@@ -1,5 +1,5 @@
 {
-	"name": "ds_taxi_folder_file",
+	"name": "ds_taxi_folder_path",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adltaxi",

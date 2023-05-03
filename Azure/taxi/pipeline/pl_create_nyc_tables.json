@@ -1,5 +1,5 @@
 {
-	"name": "pl_create_silver_taxi_zone",
+	"name": "pl_create_nyc_tables",
 	"properties": {
 		"activities": [
 			{
@@ -16,8 +16,14 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "ds_silver_taxi_zone",
-						"type": "DatasetReference"
+						"referenceName": "ds_taxi_folder_path",
+						"type": "DatasetReference",
+						"parameters": {
+							"p_folder_path": {
+								"value": "@variables('v_folder_path')",
+								"type": "Expression"
+							}
+						}
 					},
 					"enableLogging": false,
 					"storeSettings": {
@@ -47,18 +53,45 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[silver].[usp_silver_taxi_zone]"
+					"storedProcedureName": {
+						"value": "@variables('v_usp_name')",
+						"type": "Expression"
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "ls_serverless_sqlpool",
 					"type": "LinkedServiceReference",
 					"parameters": {
-						"AzureSQLDb": "ws-synapse23-ondemand.sql.azuresynapse.net,1433",
-						"DB_Name": "nyc_taxi_ldw"
+						"AzureSQLDb": {
+							"value": "@variables('v_SQL_DB')",
+							"type": "Expression"
+						},
+						"DB_Name": {
+							"value": "@variables('v_DB_Name')",
+							"type": "Expression"
+						}
 					}
 				}
 			}
 		],
+		"variables": {
+			"v_folder_path": {
+				"type": "String",
+				"defaultValue": "silver/taxi_zone"
+			},
+			"v_usp_name": {
+				"type": "String",
+				"defaultValue": "silver.usp_silver_taxi_zone"
+			},
+			"v_SQL_DB": {
+				"type": "String",
+				"defaultValue": "ws-synapse23-ondemand.sql.azuresynapse.net,1433"
+			},
+			"v_DB_Name": {
+				"type": "String",
+				"defaultValue": "nyc_taxi_ldw"
+			}
+		},
 		"annotations": []
 	}
 }
