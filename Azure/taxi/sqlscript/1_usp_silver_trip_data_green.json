@@ -1,0 +1,20 @@
+{
+	"name": "1_usp_silver_trip_data_green",
+	"properties": {
+		"folder": {
+			"name": "usp"
+		},
+		"content": {
+			"query": "USE nyc_taxi_ldw\nGO\n\nCREATE OR ALTER PROCEDURE silver.usp_silver_trip_data_green\n@year VARCHAR(4),\n@month VARCHAR(2)\nAS\nBEGIN\n\n    DECLARE @create_sql_stmt NVARCHAR(MAX),\n            @drop_sql_stmt   NVARCHAR(MAX);\n\n    SET @create_sql_stmt = \n        'CREATE EXTERNAL TABLE silver.trip_data_green_' + @year + '_' + @month + \n        ' WITH\n            (\n                DATA_SOURCE = nyc_taxi_src,\n                LOCATION = ''silver/trip_data_green/year=' + @year + '/month=' + @month + ''',\n                FILE_FORMAT = parquet_file_format\n            )\n        AS\n        SELECT [VendorID] AS vendor_id\n                ,[lpep_pickup_datetime]\n                ,[lpep_dropoff_datetime]\n                ,[store_and_fwd_flag]\n                ,[total_amount]\n                ,[payment_type]\n                ,[trip_type]\n                ,[congestion_surcharge]\n                ,[extra]\n                ,[mta_tax]\n                ,[tip_amount]\n                ,[tolls_amount]\n                ,[ehail_fee]\n                ,[improvement_surcharge]\n                ,[RatecodeID] AS rate_code_id\n                ,[PULocationID] AS pu_location_id\n                ,[DOLocationID] AS do_location_id\n                ,[passenger_count]\n                ,[trip_distance]\n                ,[fare_amount]\n        FROM bronze.vw_trip_data_green_csv\n        WHERE year = ''' + @year + '''\n          AND month = ''' + @month + '''';    \n\n    print(@create_sql_stmt)\n\n    EXEC sp_executesql @create_sql_stmt;\n\n    SET @drop_sql_stmt = \n        'DROP EXTERNAL TABLE silver.trip_data_green_' + @year + '_' + @month;\n\n    print(@drop_sql_stmt)\n    EXEC sp_executesql @drop_sql_stmt;\n\nEND;\n\n\n\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "nyc_taxi_ldw",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
