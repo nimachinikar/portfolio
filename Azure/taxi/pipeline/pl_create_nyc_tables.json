@@ -9,12 +9,12 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "",
+						"value": "@variables('v_folder_path_usp_name')",
 						"type": "Expression"
 					},
 					"activities": [
 						{
-							"name": "Delete Container Folder File",
+							"name": "Delete Silver Tables",
 							"type": "Delete",
 							"dependsOn": [],
 							"policy": {
@@ -45,11 +45,11 @@
 							}
 						},
 						{
-							"name": "Create Container Folder File",
+							"name": "Create Silver Tables",
 							"type": "SqlServerStoredProcedure",
 							"dependsOn": [
 								{
-									"activity": "Delete Container Folder File",
+									"activity": "Delete Silver Tables",
 									"dependencyConditions": [
 										"Succeeded"
 									]
@@ -108,7 +108,30 @@
 			"v_folder_path_usp_name": {
 				"type": "Array",
 				"defaultValue": [
-					"[ \t{ \t\t\"folder_path\": \"silver/calendar\", \t\t\"usp_name\": silver.usp_silver_calendar \t}, \t{ \t\t\"folder_path\": \"silver/taxi_zone\", \t\t\"usp_name\": silver.usp_silver_taxi_zone \t}, \t{ \t\t\"folder_path\": \"silver/trip_type\", \t\t\"usp_name\": silver.usp_silver_trip_type \t}, \t{ \t\t\"folder_path\": \"silver/vendor\", \t\t\"usp_name\": silver.usp_silver_vendor \t}, \t{ \t\t\"folder_path\": \"silver/rate_code\", \t\t\"usp_name\": silver.usp_silver_rate_code \t}, \t{ \t\t\"folder_path\": \"silver/payment_type\", \t\t\"usp_name\": silver.usp_silver_payment_type \t} ]"
+					{
+						"folder_path": "silver/calendar",
+						"usp_name": "silver.usp_silver_calendar"
+					},
+					{
+						"folder_path": "silver/taxi_zone",
+						"usp_name": "silver.usp_silver_taxi_zone"
+					},
+					{
+						"folder_path": "silver/trip_type",
+						"usp_name": "silver.usp_silver_trip_type"
+					},
+					{
+						"folder_path": "silver/vendor",
+						"usp_name": "silver.usp_silver_vendor"
+					},
+					{
+						"folder_path": "silver/rate_code",
+						"usp_name": "silver.usp_silver_rate_code"
+					},
+					{
+						"folder_path": "silver/payment_type",
+						"usp_name": "silver.usp_silver_payment_type"
+					}
 				]
 			}
 		},
