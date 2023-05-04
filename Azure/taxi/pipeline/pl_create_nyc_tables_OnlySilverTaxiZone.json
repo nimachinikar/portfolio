@@ -1,86 +1,76 @@
 {
-	"name": "pl_create_nyc_tables",
+	"name": "pl_create_nyc_tables_OnlySilverTaxiZone",
 	"properties": {
 		"activities": [
 			{
-				"name": "ForEach1",
-				"type": "ForEach",
+				"name": "Delete Silver Taxi Zone Folder",
+				"type": "Delete",
 				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
 				"userProperties": [],
 				"typeProperties": {
-					"activities": [
-						{
-							"name": "Delete Container Folder File",
-							"type": "Delete",
-							"dependsOn": [],
-							"policy": {
-								"timeout": "0.12:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"dataset": {
-									"referenceName": "ds_taxi_folder_path",
-									"type": "DatasetReference",
-									"parameters": {
-										"p_folder_path": {
-											"value": "@variables('v_folder_path')",
-											"type": "Expression"
-										}
-									}
-								},
-								"enableLogging": false,
-								"storeSettings": {
-									"type": "AzureBlobFSReadSettings",
-									"recursive": true,
-									"enablePartitionDiscovery": false
-								}
-							}
-						},
-						{
-							"name": "Create Container Folder File",
-							"type": "SqlServerStoredProcedure",
-							"dependsOn": [
-								{
-									"activity": "Delete Container Folder File",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								}
-							],
-							"policy": {
-								"timeout": "0.12:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"storedProcedureName": {
-									"value": "@variables('v_usp_name')",
-									"type": "Expression"
-								}
-							},
-							"linkedServiceName": {
-								"referenceName": "ls_serverless_sqlpool",
-								"type": "LinkedServiceReference",
-								"parameters": {
-									"AzureSQLDb": {
-										"value": "@variables('v_SQL_DB')",
-										"type": "Expression"
-									},
-									"DB_Name": {
-										"value": "@variables('v_DB_Name')",
-										"type": "Expression"
-									}
-								}
+					"dataset": {
+						"referenceName": "ds_taxi_folder_path",
+						"type": "DatasetReference",
+						"parameters": {
+							"p_folder_path": {
+								"value": "@variables('v_folder_path')",
+								"type": "Expression"
 							}
 						}
-					]
+					},
+					"enableLogging": false,
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					}
+				}
+			},
+			{
+				"name": "Create Silver Taxi Zone Folder",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [
+					{
+						"activity": "Delete Silver Taxi Zone Folder",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": {
+						"value": "@variables('v_usp_name')",
+						"type": "Expression"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_serverless_sqlpool",
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"AzureSQLDb": {
+							"value": "@variables('v_SQL_DB')",
+							"type": "Expression"
+						},
+						"DB_Name": {
+							"value": "@variables('v_DB_Name')",
+							"type": "Expression"
+						}
+					}
 				}
 			}
 		],
@@ -100,10 +90,6 @@
 			"v_DB_Name": {
 				"type": "String",
 				"defaultValue": "nyc_taxi_ldw"
-			},
-			"v_folder_path_usp_name": {
-				"type": "String",
-				"defaultValue": "[ \t{ \t\t\"folder_path\": \"silver/calendar\", \t\t\"usp_name\": silver.usp_silver_calendar \t}, \t{ \t\t\"folder_path\": \"silver/taxi_zone\", \t\t\"usp_name\": silver.usp_silver_taxi_zone \t}, \t{ \t\t\"folder_path\": \"silver/trip_type\", \t\t\"usp_name\": silver.usp_silver_trip_type \t}, \t{ \t\t\"folder_path\": \"silver/vendor\", \t\t\"usp_name\": silver.usp_silver_vendor \t}, \t{ \t\t\"folder_path\": \"silver/rate_code\", \t\t\"usp_name\": silver.usp_silver_rate_code \t}, \t{ \t\t\"folder_path\": \"silver/payment_type\", \t\t\"usp_name\": silver.usp_silver_payment_type \t} ]"
 			}
 		},
 		"annotations": []
