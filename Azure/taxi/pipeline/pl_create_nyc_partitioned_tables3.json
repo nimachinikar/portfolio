@@ -1,0 +1,77 @@
+{
+	"name": "pl_create_nyc_partitioned_tables3",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach Folder Path",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@variables('v_scriptquery')",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Script1",
+							"type": "Script",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"linkedServiceName": {
+								"referenceName": "ls_serverless_sqlpool",
+								"type": "LinkedServiceReference",
+								"parameters": {
+									"AzureSQLDb": {
+										"value": "@variables('v_SQL_DB')",
+										"type": "Expression"
+									},
+									"DB_Name": {
+										"value": "@variables('v_DB_Name')",
+										"type": "Expression"
+									}
+								}
+							},
+							"typeProperties": {
+								"scripts": [
+									{
+										"type": "Query",
+										"text": "use nyc_taxi_ldw;\n\nselect distinct year, month\nfrom  [@{item().schema_table}];"
+									}
+								],
+								"scriptBlockExecutionTimeout": "02:00:00"
+							}
+						}
+					]
+				}
+			}
+		],
+		"variables": {
+			"v_SQL_DB": {
+				"type": "String",
+				"defaultValue": "ws-synapse23-ondemand.sql.azuresynapse.net,1433"
+			},
+			"v_DB_Name": {
+				"type": "String",
+				"defaultValue": "nyc_taxi_ldw"
+			},
+			"v_scriptquery": {
+				"type": "Array",
+				"defaultValue": [
+					{
+						"schema_table": "bronze.vw_trip_data_green_csv",
+						"column": "distinct year, month"
+					}
+				]
+			}
+		},
+		"annotations": []
+	}
+}

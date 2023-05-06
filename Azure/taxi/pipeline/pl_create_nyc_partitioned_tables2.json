@@ -1,0 +1,117 @@
+{
+	"name": "pl_create_nyc_partitioned_tables2",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach Partitioned Table",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@variables('v_Partitioned_table')",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Script1",
+							"type": "Script",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"linkedServiceName": {
+								"referenceName": "ls_serverless_sqlpool",
+								"type": "LinkedServiceReference",
+								"parameters": {
+									"AzureSQLDb": {
+										"value": "@variables('v_SQL_DB')",
+										"type": "Expression"
+									},
+									"DB_Name": {
+										"value": "@variables('v_DB_Name')",
+										"type": "Expression"
+									}
+								}
+							},
+							"typeProperties": {
+								"scripts": [
+									{
+										"parameters": [
+											{
+												"name": "scpSchemaTable",
+												"type": "String",
+												"value": {
+													"value": "@item().schema_table",
+													"type": "Expression"
+												},
+												"direction": "Input"
+											},
+											{
+												"name": "scpColumns",
+												"type": "String",
+												"value": {
+													"value": "@item().column",
+													"type": "Expression"
+												},
+												"direction": "Input"
+											}
+										],
+										"type": "Query",
+										"text": "use nyc_taxi_ldw;\n\nselect @scpColumns\nfrom @scpSchemaTable;"
+									}
+								],
+								"scriptBlockExecutionTimeout": "02:00:00"
+							}
+						}
+					]
+				}
+			}
+		],
+		"variables": {
+			"v_SQL_DB": {
+				"type": "String",
+				"defaultValue": "ws-synapse23-ondemand.sql.azuresynapse.net,1433"
+			},
+			"v_DB_Name": {
+				"type": "String",
+				"defaultValue": "nyc_taxi_ldw"
+			},
+			"v_Partitioned_table": {
+				"type": "Array",
+				"defaultValue": [
+					{
+						"folder_path": "silver/calendar",
+						"usp_name": "silver.usp_silver_calendar"
+					},
+					{
+						"folder_path": "silver/taxi_zone",
+						"usp_name": "silver.usp_silver_taxi_zone"
+					},
+					{
+						"folder_path": "silver/trip_type",
+						"usp_name": "silver.usp_silver_trip_type"
+					},
+					{
+						"folder_path": "silver/vendor",
+						"usp_name": "silver.usp_silver_vendor"
+					},
+					{
+						"folder_path": "silver/rate_code",
+						"usp_name": "silver.usp_silver_rate_code"
+					},
+					{
+						"folder_path": "silver/payment_type",
+						"usp_name": "silver.usp_silver_payment_type"
+					}
+				]
+			}
+		},
+		"annotations": []
+	}
+}

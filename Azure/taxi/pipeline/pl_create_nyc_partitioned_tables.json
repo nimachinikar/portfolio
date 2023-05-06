@@ -1,0 +1,215 @@
+{
+	"name": "pl_create_nyc_partitioned_tables",
+	"properties": {
+		"activities": [
+			{
+				"name": "Get Trip Year and Month",
+				"type": "Script",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"linkedServiceName": {
+					"referenceName": "ls_serverless_sqlpool",
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"AzureSQLDb": {
+							"value": "@variables('v_SQL_DB')",
+							"type": "Expression"
+						},
+						"DB_Name": {
+							"value": "@variables('v_DB_Name')",
+							"type": "Expression"
+						}
+					}
+				},
+				"typeProperties": {
+					"scripts": [
+						{
+							"type": "Query",
+							"text": "use nyc_taxi_ldw;\n\nselect distinct year, month\nfrom  bronze.vw_trip_data_green_csv;"
+						}
+					],
+					"scriptBlockExecutionTimeout": "02:00:00"
+				}
+			},
+			{
+				"name": "ForEach Year and Month",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Get Trip Year and Month",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Trip Year and Month').output.resultSets[0].Rows",
+						"type": "Expression"
+					},
+					"batchCount": 5,
+					"activities": [
+						{
+							"name": "Delete Partition",
+							"type": "Delete",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"dataset": {
+									"referenceName": "ds_taxi_folder_path",
+									"type": "DatasetReference",
+									"parameters": {
+										"p_folder_path": {
+											"value": "silver/trip_data_green/year=@{item().year}/month=@{item().month}",
+											"type": "Expression"
+										}
+									}
+								},
+								"enableLogging": false,
+								"storeSettings": {
+									"type": "AzureBlobFSReadSettings",
+									"recursive": true,
+									"enablePartitionDiscovery": false
+								}
+							}
+						},
+						{
+							"name": "create partition",
+							"type": "SqlServerStoredProcedure",
+							"dependsOn": [
+								{
+									"activity": "Delete Partition",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"storedProcedureName": "[silver].[usp_silver_trip_data_green]",
+								"storedProcedureParameters": {
+									"month": {
+										"value": {
+											"value": "@item().month",
+											"type": "Expression"
+										},
+										"type": "String"
+									},
+									"year": {
+										"value": {
+											"value": "@item().year",
+											"type": "Expression"
+										},
+										"type": "String"
+									}
+								}
+							},
+							"linkedServiceName": {
+								"referenceName": "ls_serverless_sqlpool",
+								"type": "LinkedServiceReference",
+								"parameters": {
+									"AzureSQLDb": {
+										"value": "@variables('v_SQL_DB')",
+										"type": "Expression"
+									},
+									"DB_Name": {
+										"value": "@variables('v_DB_Name')",
+										"type": "Expression"
+									}
+								}
+							}
+						},
+						{
+							"name": "Create Silver View",
+							"type": "Script",
+							"dependsOn": [
+								{
+									"activity": "create partition",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"linkedServiceName": {
+								"referenceName": "ls_serverless_sqlpool",
+								"type": "LinkedServiceReference",
+								"parameters": {
+									"AzureSQLDb": {
+										"value": "@variables('v_SQL_DB')",
+										"type": "Expression"
+									},
+									"DB_Name": {
+										"value": "@variables('v_DB_Name')",
+										"type": "Expression"
+									}
+								}
+							},
+							"typeProperties": {
+								"scripts": [
+									{
+										"type": "NonQuery",
+										"text": "USE nyc_taxi_ldw"
+									},
+									{
+										"type": "Query",
+										"text": "DROP VIEW IF EXISTS silver.vw_trip_data_green\n"
+									},
+									{
+										"type": "Query",
+										"text": "CREATE VIEW silver.vw_trip_data_green\nAS\nSELECT\n    result.filepath(1) AS year,\n    result.filepath(2) AS month,\n    result.*\nFROM\n    OPENROWSET(\n        BULK 'silver/trip_data_green/year=*/month=*/*.parquet',\n        DATA_SOURCE = 'nyc_taxi_src',\n        FORMAT = 'PARQUET'\n    )\n    WITH (\n        vendor_id INT,\n        lpep_pickup_datetime datetime2(7),\n        lpep_dropoff_datetime datetime2(7),\n        store_and_fwd_flag CHAR(1),\n        rate_code_id INT,\n        pu_location_id INT,\n        do_location_id INT,\n        passenger_count INT,\n        trip_distance FLOAT,\n        fare_amount FLOAT,\n        extra FLOAT,\n        mta_tax FLOAT,\n        tip_amount FLOAT,\n        tolls_amount FLOAT,\n        ehail_fee INT,\n        improvement_surcharge FLOAT,\n        total_amount FLOAT,\n        payment_type INT,\n        trip_type INT,\n        congestion_surcharge FLOAT\n  ) AS [result]"
+									}
+								],
+								"scriptBlockExecutionTimeout": "02:00:00"
+							}
+						}
+					]
+				}
+			}
+		],
+		"variables": {
+			"v_SQL_DB": {
+				"type": "String",
+				"defaultValue": "ws-synapse23-ondemand.sql.azuresynapse.net,1433"
+			},
+			"v_DB_Name": {
+				"type": "String",
+				"defaultValue": "nyc_taxi_ldw"
+			},
+			"v_folder_path": {
+				"type": "String",
+				"defaultValue": "silver/trip_data_green/"
+			}
+		},
+		"annotations": []
+	}
+}
