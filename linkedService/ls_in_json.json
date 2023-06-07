@@ -1,0 +1,13 @@
+{
+	"name": "ls_in_json",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "link service for reading data of type json",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlvancouver.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEFEOTg2MzM1LTZCQzUtNEJCRC1BRTBFLTM5NEQxNDk4RDMwQl8wZjQ5MTQ5ZS0yZjZlLTRhZTYtODkzOC1iNmE4NWNlMWRmZGQiDQp9"
+		}
+	}
+}
