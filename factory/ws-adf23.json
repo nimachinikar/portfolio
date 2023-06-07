@@ -1,9 +1,0 @@
-{
-	"name": "ws-adf23",
-	"location": "eastus",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "fc67b97a-84f4-448e-99d7-26b18d14fe70",
-		"tenantId": "023f72ab-1502-4649-9146-7519820d0df3"
-	}
-}
