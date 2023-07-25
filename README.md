@@ -22,8 +22,10 @@
 <h3>My Portfolio</h3>
 
 -  &nbsp; [Data Science end-to-end Project](https://github.com/nimachinikar/portfolio/tree/main/Data%20Science%20Bootcamp%20Capstone): Data Transformation, EDA, Modeling and Interpretation
--  
--  &nbsp; [Azure end-to-end Project](https://github.com/nimachinikar/portfolio/tree/main/Azure/Formula1): Pipelines in Data Factory, ingestion and transformation in DataBricks with PySpark and SparkSQL
+  
+-  &nbsp; [Azure end-to-end Project](https://github.com/nimachinikar/portfolio/tree/main/Azure/covid): Pipelines in Data Factory, ingestion and transformation in DataBricks with PySpark and SparkSQL
+  
+-  &nbsp; [Azure end-to-end Project 2](https://github.com/nimachinikar/portfolio/tree/main/Azure/Formula1): Pipelines in Data Factory, ingestion and transformation in DataBricks with PySpark and SparkSQL
 
 -  &nbsp; [PySpark Project](https://github.com/nimachinikar/portfolio/tree/main/Python/PySpark): Analyzing Airbnb Revenue in Vancouver
 
