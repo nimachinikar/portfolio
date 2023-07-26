@@ -1,40 +1,53 @@
-<h1> Hey there!  </h1>
-<h2> 🌟 During 3 months, I took part in a Data Science bootcamp by BrainStation and this is my final project  </h2>
-<h3> About the the project </h3>
-The underlying question of this project is to predict the prices of Airbnb listings in Vancouver accurately. 
-By applying data science techniques, the goal is to understand the factors influencing rental prices and develop a model that adds business and societal value. 
-This project aims to benefit both hosts and travelers in the competitive short-term rental market by providing insights into optimal pricing strategies and informed decision-making.
+# Airbnb Price Prediction in Vancouver - Data Science Capstone Project
 
-Our analysis revealed that the number of bathrooms, accommodation capacity, and availability are the primary factors influencing the price of properties. 
-Moreover, properties offering amenities such as a dishwasher, shampoo, refrigerator, and a dedicated workspace tend to command higher prices.
+![GitHub](https://img.shields.io/badge/Made%20by-nimachinikar-blue?style=flat-square&logo=github)
 
-<h3>💡  The folder structure: </h3>
+## Introduction
 
--  &nbsp; On the main page, you can find 4 Jupyter files. If you want to run them, you can just run the 4_Modeling. It will launch all dependant scripts. (*)
--  &nbsp; Each Jupyter notebook saves the transformations applied in outputs and saves a python script in executables
--  &nbsp; Key Images are saved in images
--  &nbsp; The folder 'documentations' contains a report summarizing the project. It also contains a lighter version of the former meant for presentation.
--  &nbsp; Source contains the original dataset
+Hey there! 👋 During a 3-month Data Science Bootcamp by BrainStation, I worked on an exciting final project focusing on predicting the prices of Airbnb in Vancouver. The goal of this project was to leverage data science techniques to gain insights into the factors influencing rental prices and develop an accurate predictive model. The project aims to benefit both hosts and travelers in the competitive short-term rental market by providing valuable pricing strategies and informed decision-making.
 
-(*)  [List of required packages and versions](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/environment.yml)
+## Project Highlights
 
-<h3> 🔗 Links: </h3>
+- Explored the factors influencing Airbnb rental prices in Vancouver.
+- Developed a predictive model to accurately estimate listing prices.
+- Identified key amenities that tend to command higher prices.
+- Created informative visualizations and analysis in Jupyter notebooks.
 
--  &nbsp; [Documentations](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/documentations): Contains a presentation and a report summarizing the process of the project
+## Folder Structure
 
--  &nbsp; [PreProcessing](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/1_DataPreProcessing.ipynb)
+The project repository has the following folder structure:
 
--  &nbsp; [EDA](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/2_EDA.ipynb)
+- 📁 `documentations`: Contains a detailed report summarizing the project and a lighter version for presentations.
+- 📁 `images`: Stores key images used in the documentation and presentation.
+- 📁 `source`: Holds the original dataset used for analysis.
 
--  &nbsp; [PreModeling](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/3_PreModeling.ipynb)
+The main Jupyter files are:
 
--  &nbsp; [Modeling & Interpretation](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/4_Modeling.ipynb)
+- 📝 [PreProcessing](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/1_DataPreProcessing.ipynb): Data preprocessing notebook.
+- 📝 [EDA](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/2_EDA.ipynb): Exploratory Data Analysis notebook.
+- 📝 [PreModeling](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/3_PreModeling.ipynb): Notebook for preparing data for modeling.
+- 📝 [Modeling & Interpretation](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/4_Modeling.ipynb): Contains the model building and interpretation.
 
-<h3> 🤝🏻 Connect with Me </h3>
+To run the entire project, you can execute the `4_Modeling.ipynb` notebook, which will automatically launch all dependent scripts.
 
-<p align="center">
-&nbsp; <a href="https://www.linkedin.com/in/nimachinikar/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/linkedin.png" width="50" /></a>
-&nbsp; <a href="mailto:nimachinikar@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
-</p>
+> Note: For a list of required packages and versions, check the [environment.yml](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/environment.yml) file.
 
-⭐️ From [nimachinikar](https://github.com/nimachinikar)
+## Links
+
+- 📄 [Documentations](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/documentations): Contains the detailed report and a presentation summarizing the project.
+- 📄 [PreProcessing](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/1_DataPreProcessing.ipynb): Data preprocessing notebook.
+- 📄 [EDA](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/2_EDA.ipynb): Exploratory Data Analysis notebook.
+- 📄 [PreModeling](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/3_PreModeling.ipynb): Notebook for preparing data for modeling.
+- 📄 [Modeling & Interpretation](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/4_Modeling.ipynb): Contains the model building and interpretation.
+
+## Connect with Me
+
+Feel free to reach out to me if you have any questions, suggestions, or just want to connect! 😊
+
+- LinkedIn: [nimachinikar](https://www.linkedin.com/in/nimachinikar/)
+- Email: [nimachinikar@gmail.com](mailto:nimachinikar@gmail.com)
+
+Don't forget to give this repository a star ⭐️ if you find it interesting!
+
+---
+*This project is authored by [nimachinikar](https://github.com/nimachinikar).*
