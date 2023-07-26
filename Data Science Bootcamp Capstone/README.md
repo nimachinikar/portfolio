@@ -8,7 +8,7 @@
 -  &nbsp; The folder 'documentations' contains a report summarizing the project. It also contains a lighter version of the former meant for presentation.
 -  &nbsp; Source contains the original dataset
 
-(*)  [List  of all the dependencies](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/environment.yml)
+(*)  [List of required packages and versions](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/environment.yml)
 <h3> Links </h3>
 
 -  &nbsp; [Documentations](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/documentations): Contains a presentation and a report summarizing the process of the project
