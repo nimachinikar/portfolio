@@ -5,12 +5,12 @@
 -  &nbsp; On the main page, you can find 4 Jupyter files. If you want to run them, you can just run the 4_Modeling. It will launch all dependencies. 
 -  &nbsp; Each Jupyter notebook saves the transformations applied in outputs and saves a python script in executables
 -  &nbsp; Key Images are saved in images
--  &nbsp; The folder Documentation contains a report summarizing the project (purpose, transformation, insight and modeling). It also contains a lighter version of the former meant for presentation.
+-  &nbsp; The folder 'documentations' contains a report summarizing the project. It also contains a lighter version of the former meant for presentation.
 -  &nbsp; Source contains the original dataset
 
 <h3> Links </h3>
 
--  &nbsp; [Documentations](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/documentation): Contains a presentation and a report summarizing the process of the project
+-  &nbsp; [Documentations](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/documentations): Contains a presentation and a report summarizing the process of the project
 
 -  &nbsp; [PreProcessing](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/1_DataPreProcessing.ipynb)
 
@@ -19,13 +19,6 @@
 -  &nbsp; [PreModeling](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/3_PreModeling.ipynb)
 
 -  &nbsp; [Modeling & Interpretation](https://github.com/nimachinikar/portfolio/blob/main/Data%20Science%20Bootcamp%20Capstone/4_Modeling.ipynb)
-
-
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nimachinikar&layout=compact&text_color=daf7dc&bg_color=151515)](https://github.com/nimachinikar/github-readme-stats)
-
-
-
 
 <h3> 🤝🏻 Connect with Me </h3>
 
