@@ -19,7 +19,7 @@
 -  &nbsp; Tableau | Power BI | Microstrategy
 -  &nbsp; Bash | Jupyter  | Git | Shiny
 
-<h3>My Portfolio</h3>
+<h3>📚 My Portfolio</h3>
 
 -  &nbsp; [Data Science end-to-end Project](https://github.com/nimachinikar/portfolio/tree/main/Data%20Science%20Bootcamp%20Capstone): Data Transformation, EDA, Modeling and Interpretation
   
