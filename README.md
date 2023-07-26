@@ -5,7 +5,7 @@
 
 -  &nbsp; Currently working at [Airport Council International World](https://aci.aero/)
 -  &nbsp; [Certified Microsoft: Azure Data Engineer Associate](https://www.credly.com/badges/801d48c8-9c1a-4518-a47a-b753e797a954/linked_in_profile)
--  &nbsp; [Check my resume](https://www.linkedin.com/in/nimachinikar/)
+-  &nbsp; [My resume](https://www.linkedin.com/in/nimachinikar/)
 -  &nbsp; +5 years experience
 -  &nbsp; Master's degree in Economics
 -  &nbsp; When I'm not coding, find me on the mountain hiking/ snowboarding or on the beach playing volleyball
